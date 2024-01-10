@@ -1,0 +1,45 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .info-bar {
+    @apply grid grid-cols-3 px-4;
+
+    > * {
+      @apply mx-auto;
+    }
+  }
+}
+
+:local(.card) {
+  border-radius: 4px;
+  @apply mx-4 flex py-3 flex-col bg-card_bg_color_01 !important;
+
+  .rv-divider {
+    height: 0.5px;
+    @apply border-line_color_02 text-line_color_02;
+  }
+
+  .show-analysis,
+  .bold-text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .not-show-analysis {
+    @apply text-xl;
+  }
+
+  .common-digit-wrapper {
+    .text-zoom {
+      @apply text-2xl;
+    }
+
+    .text-wrapper {
+      padding-top: 11px;
+
+    }
+
+  }
+
+  
+} 

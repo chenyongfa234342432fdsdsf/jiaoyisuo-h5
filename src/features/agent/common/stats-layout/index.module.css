@@ -1,0 +1,8 @@
+:local(.scoped) {
+  height: calc(var(--vh100) - 90px);
+  @apply bg-bg_color relative flex flex-col w-full overflow-scroll;
+
+  .layout-header {
+    @apply mb-4;
+  }
+}

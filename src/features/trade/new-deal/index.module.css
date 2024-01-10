@@ -1,0 +1,101 @@
+:local(.scoped) {
+  @apply w-full py-4;
+
+  .trade-deal-table {
+    
+    @apply overflow-scroll flex-1 px-3.5;
+
+    .deal-table-header {
+      font-size: 12px;
+      @apply sticky bg-bg_color top-0 w-full z-10 py-1 left-0 grid-cols-3 grid  text-text_color_03  last:text-right;
+
+      div:first-child {
+        @apply text-start;
+      }
+      
+      div {
+        @apply w-full last:text-right;
+      }
+
+            
+      div:nth-child(2) {
+        @apply text-center pr-2;
+      }
+    }
+    
+    .deal-table-body {
+      height: 349px;
+      
+      .deal-note-date {
+        @apply mt-4;
+
+        img {
+          @apply w-28;
+        }
+
+        .suppor-lazy-image {
+          @apply flex flex-col items-center;
+        }
+      }
+
+      .deal-table-tr {
+        @apply grid-cols-3 grid py-1 relative;
+        
+        div {
+          font-size: 12px;
+          @apply text-center break-all py-0.5 flex items-center last:justify-end;
+        }
+        
+        div:nth-child(2) {
+          @apply pr-3 justify-center;
+        }
+
+        div:nth-child(3) {
+          @apply pl-3;
+        }
+        
+        .table-price-green {
+          @apply text-success_color;
+        }
+
+        .table-price-red {
+          @apply text-warning_color;
+        }
+      }
+      
+      @keyframes bganimation {
+        0% {
+          @apply opacity-100;
+        }
+
+        100% {
+          @apply opacity-0;
+        }
+      }
+
+      .deal-table-tr-green::before {
+        background: linear-gradient(to left, var(--buy_up_color_special_03), rgba(0 128 0 / 0%) 90%);
+        animation-name: bganimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        content: "";
+        @apply absolute block right-0 top-0 w-full h-full;
+      }
+      
+      .deal-table-tr-red::before {
+        background: linear-gradient(to left, var(--sell_down_color_special_03), rgba(255 0 0 / 0%) 90%);
+        animation-name: bganimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        content: "";
+        @apply absolute block right-0 top-0 w-full h-full;
+      }
+    }
+  }
+}

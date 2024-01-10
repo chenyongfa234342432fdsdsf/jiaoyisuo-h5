@@ -1,0 +1,21 @@
+:local(.scoped) {
+  @apply flex justify-between;
+
+  .symol, .desc {
+    @apply text-text_color_01 font-medium text-xl;
+  }
+
+  .desc {
+    @apply text-text_color_01 font-medium text-sm;
+  }
+
+  .rv-icon {
+    @apply text-xl;
+
+    color: #858e9b;
+  }
+
+  .icon-item + .icon-item {
+    @apply ml-5;
+  }
+}

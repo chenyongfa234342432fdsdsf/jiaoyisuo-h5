@@ -1,0 +1,240 @@
+:local(.withdraw-layout-root) {
+  @apply w-full h-full flex relative;
+
+  .withdraw-layout-wrap {
+    @apply w-full h-full flex flex-col;
+
+    .withdraw-layout-content {
+      @apply flex flex-col p-4 mb-20;
+
+      .form-cell {
+        @apply flex flex-col mb-8;
+
+        .form-label {
+          @apply text-sm text-text_color_02 mb-2;
+        }
+
+        .form-coin {
+          @apply h-10 px-3 flex items-center justify-between rounded bg-bg_sr_color text-text_color_01 text-sm;
+        }
+
+        .form-address-error {
+          @apply text-xs text-warning_color mt-1;
+        }
+
+        .network-hint-icon {
+          @apply ml-1;
+
+          svg {
+            @apply w-3 h-3;
+          }
+        }
+
+        .form-network {
+          @apply flex items-center text-sm flex-1;
+
+          .network-name {
+            @apply text-text_color_01;
+          }
+
+          .network-name-pause {
+            @apply text-text_color_04;
+          }
+
+          .network-pause {
+            @apply px-2 rounded-tr rounded-bl bg-bg_button_disabled flex items-center justify-center ml-1;
+
+            height: 18px;
+
+            .network-pause-text {
+              @apply text-xs text-text_color_02;
+
+              transform: scale(0.83);
+            }
+          }
+        }
+
+        .form-network-icon {
+          @apply ml-3 w-2 h-2;
+
+          svg {
+            @apply w-2 h-2;
+          }
+        }
+      }
+
+      .form-type {
+        @apply flex items-center justify-between rounded px-3 py-2 bg-bg_sr_color mb-8;
+
+        .type-icon {
+          @apply mr-3;
+
+          svg {
+            @apply w-5 h-5;
+          }
+        }
+
+        .type-info {
+          @apply flex flex-col flex-1;
+
+          .info-title {
+            @apply text-sm text-text_color_01 font-semibold;
+          }
+
+          .info-desc {
+            @apply text-xs text-text_color_02 break-all;
+          }
+        }
+
+        .type-drop {
+          @apply ml-3;
+
+          svg {
+            @apply w-2 h-2;
+          }
+        }
+      }
+
+      .form-input {
+        @apply h-10 px-3 flex items-center rounded bg-bg_sr_color text-text_color_01 text-sm placeholder:text-text_color_04;
+      }
+
+      .form-input-focus {
+        @apply h-10 px-3 flex items-center rounded border border-brand_color text-text_color_01 text-sm;
+      }
+
+      .form-amount-operate {
+        @apply flex items-center text-sm text-text_color_01;
+
+        .operate-line {
+          @apply text-text_color_04;
+        }
+
+        .operate-btn {
+          @apply text-brand_color;
+        }
+      }
+
+      .form-available-amount {
+        @apply flex items-center mt-1 text-sm text-text_color_02;
+      }
+
+      .hint-wrap {
+        @apply flex flex-col mb-2;
+
+        .hint-cell {
+          @apply flex;
+
+          .hint-icon {
+            @apply mr-1 w-1.5 h-1.5;
+
+            margin-top: 5px;
+
+            svg {
+              @apply w-1.5 h-1.5;
+            }
+          }
+
+          .hint-text {
+            @apply text-xs text-text_color_02 break-all flex-1;
+          }
+        }
+      }
+    }
+
+    .operate-wrap {
+      @apply w-full h-20 px-4 bg-card_bg_color_01 fixed bottom-0 flex items-center justify-between;
+
+      .info-wrap {
+        @apply flex items-center w-2/3;
+
+        .info-cell {
+          @apply w-full flex flex-col mr-4 break-words truncate;
+
+          .info-title {
+            @apply text-xs text-text_color_02 flex items-center;
+
+            .info-hint-icon {
+              @apply ml-1;
+
+              svg {
+                @apply w-3 h-3;
+              }
+            }
+          }
+
+          .info-value {
+            @apply text-sm text-text_color_01 break-words truncate;
+          }
+        }
+      }
+
+      .withdraw-btn {
+        @apply h-10 rounded;
+
+        min-width: 88px;
+        margin-left: 18px;
+      }
+    }
+  }
+}
+
+:local(.withdraw-from-address-action) {
+  .action-item {
+    @apply py-3 text-sm text-text_color_01 border-t border-line_color_02 text-center font-medium bg-card_bg_color_03;
+  }
+
+  .active-text {
+    @apply text-brand_color
+  }
+}
+
+:local(.add-address-root) {
+  @apply w-full h-full;
+}
+
+:local(.withdraw-operate-popover-root) {
+  @apply px-4 text-sm text-button_text_01 left-0 !important;
+
+  line-height: 22px !important;
+  
+  .rv-popover__content {
+    @apply rounded px-2.5;
+  }
+    
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+}
+
+:local(.withdraw-network-popover-root) {
+  @apply px-4 text-sm text-button_text_01 left-0 !important;
+
+  line-height: 22px !important;
+  
+  .rv-popover__content {
+    @apply rounded px-3;
+  }
+    
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+}
+
+:local(.limit-dialog-wrapper) {
+  @apply flex flex-col !rounded-2xl;
+
+  padding: 22px;
+  
+  .limit-hint {
+    @apply text-sm text-text_color_01;
+  }
+
+  .limit-bottom {
+    @apply flex items-center mt-4;
+
+    .limit-btn {
+      @apply flex-1 text-sm rounded-lg
+    }
+  }
+}

@@ -1,0 +1,62 @@
+:local(.scoped) {
+  padding: 10px 0;
+  @apply flex justify-center items-center flex-col;
+
+  .price {
+    @apply text-left w-full;
+  }
+
+  .buy, .sell, .primary {
+    font-size: 16px;
+    @apply leading-none my-1 font-medium;
+  }
+
+  .primary {
+    @apply text-text_color_01;
+  }
+
+  .buy {
+    label {
+      @apply text-buy_up_color;
+    }
+  }
+
+  .sell {
+    label {
+      @apply text-sell_down_color;
+    }
+  }
+
+  .rate, .index-price {
+    @apply flex w-full;
+
+    label, a {
+      font-size: 12px;
+      @apply text-text_color_02 font-normal;
+    }
+
+    label {
+      &:last-child {
+        @apply font-medium;
+      }
+    }
+
+    .spot {
+      @apply leading-none text-left w-full;
+
+      label:first-child {
+        margin-right: 2px;
+      }
+    }
+
+    .contract {
+      height: 18px;
+      @apply flex w-full;
+
+      label:first-child {
+        margin-right: 2px;
+        @apply text-left;
+      }
+    }
+  }
+}

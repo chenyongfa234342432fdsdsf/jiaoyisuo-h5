@@ -1,0 +1,4 @@
+:local(.chart-tooltip) {
+  color: #FFFFFF;
+  @apply py-1 px-3 rounded text-sm font-medium bg-toast_bg_color;
+}

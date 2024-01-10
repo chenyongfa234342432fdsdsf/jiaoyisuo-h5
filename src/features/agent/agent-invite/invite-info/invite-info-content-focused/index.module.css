@@ -1,0 +1,6 @@
+:local(.scoped) {
+  .div {
+    @apply block;
+  }
+
+}

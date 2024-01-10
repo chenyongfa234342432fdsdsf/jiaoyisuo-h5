@@ -1,0 +1,3 @@
+:local(.apply-button) {
+  @apply h-10 w-full bg-brand_color font-medium text-sm !text-button_text_02 !rounded-lg;
+}

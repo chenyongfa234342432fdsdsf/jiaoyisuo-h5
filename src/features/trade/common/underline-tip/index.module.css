@@ -1,0 +1,20 @@
+:local(.underline-tip-wrapper) {
+  @apply underline decoration-dashed;
+
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0.5px;
+}
+
+:local(.underline-tip-modal-wrapper) {
+  .rv-dialog__content {
+    @apply text-sm;
+  }
+  
+  .rv-dialog__cancel.rv-button {
+    @apply bg-bg_color border-brand_color text-brand_color;
+  }
+
+  .rv-dialog__confirm.rv-button:last-child {
+    @apply text-text_color_01;
+  }
+}

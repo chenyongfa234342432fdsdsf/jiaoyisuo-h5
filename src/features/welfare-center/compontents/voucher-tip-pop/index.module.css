@@ -1,0 +1,20 @@
+:local(.tipPop) {
+  width: 292px;
+  max-height: 503px;
+  padding: 16px 22px 22px;
+  @apply flex flex-col;
+
+  .rv-popup__title {
+    @apply mt-[6px] mb-4;
+  }
+
+  .tip-content {
+    @apply text-sm text-text_color_01 flex-1 overflow-y-auto ;
+
+    max-height: 359px;
+  }
+
+  .confirm-btn {
+    @apply w-full text-center mt-4 rounded-lg ;
+  }
+}

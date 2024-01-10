@@ -1,0 +1,18 @@
+:local(.scoped) {
+  @apply grid grid-flow-col grid-rows-1;
+
+  .rv-selector__item {
+    min-height: 26px;
+    @apply !bg-transparent border-none !text-text_color_02;
+  }
+
+  > * {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    @apply text-sm text-text_color_01 font-normal px-2 !important;
+  }
+
+  .rv-selector__item--active {
+    @apply text-text_color_01 font-medium bg-bg_sr_color !important;
+  }
+}

@@ -1,0 +1,64 @@
+:local(.scoped) {
+  @apply flex flex-col min-h-screen;
+
+  .modify-username-wrap {
+    @apply flex flex-col flex-1;
+
+    .modify-username-form {
+      @apply flex flex-1 justify-between flex-col mt-4;
+
+      .rv-form {
+        @apply flex flex-col flex-1 px-4 justify-between mb-6;
+      }
+
+      input {
+        height: 46px;
+      }
+
+      .rv-input {
+        .rv-input__control {
+          @apply rounded-lg;
+        }
+
+        .rv-input__control::placeholder {
+          @apply text-text_color_04;
+
+          font-weight: 400;
+        }
+
+        .rv-input__clear {
+          @apply mr-0;
+        }
+      }
+    }
+
+    .rv-field {
+      @apply p-0;
+    }
+
+    .btn-wrap {
+      @apply p-4 pb-10;
+    }
+
+    .desc-list {
+      @apply px-4;
+    }
+
+    .desc { 
+      @apply text-sm font-normal text-text_color_03 mb-3 pl-3.5 relative;
+
+      line-height: 22px;
+
+      .add-icon {
+        @apply absolute left-0 top-2.5;
+
+        font-size: 6px;
+      }
+    }
+  
+  }
+
+  button {
+    @apply w-full;
+  }
+}

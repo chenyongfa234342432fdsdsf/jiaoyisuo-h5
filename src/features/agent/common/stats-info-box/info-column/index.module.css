@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply flex flex-row text-right;
+
+  > :last-child {
+    height: 42px;
+    @apply inline;
+
+  }
+
+  .increase-wrap {
+    @apply text-xs font-medium;
+  }
+}

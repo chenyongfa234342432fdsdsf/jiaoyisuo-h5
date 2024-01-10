@@ -1,0 +1,58 @@
+:local(.scoped) {
+  @apply flex justify-between sticky top-0 bg-bg_color z-30;
+
+  .symol {
+    @apply text-text_color_01 font-medium text-xl;
+  }
+
+  .icon-item + .icon-item {
+    @apply ml-5;
+  }
+}
+
+:local(.more-features-wrapper) {
+  @apply rounded-lg;
+
+  .features {
+    @apply grid pt-4 grid-cols-4;
+
+    
+
+    .feature-item-outer {
+      @apply mb-8 flex justify-center;
+
+      .feature-item {
+        @apply text-text_color_03 text-xs flex flex-col items-center text-center;
+  
+        .icon {
+          @apply mb-2;
+  
+          font-size: 32px;
+        }
+      }
+    }
+    
+  }
+}
+
+:local(.market-comparison-wrapper) {
+  @apply p-4 rounded;
+
+  .title {
+    @apply text-base font-semibold text-center mb-4;
+  }
+
+  .list {
+    @apply overflow-y-auto;
+
+    max-height: calc(60 * var(--vh));
+
+    .coin-item {
+      @apply px-4 py-2.5 mb-2 w-64 text-sm flex justify-between items-center rounded bg-card_bg_color_02
+    }
+  }
+}
+
+:local(.more-features-popup-wrapper) {
+  @apply rounded-b-lg;
+}

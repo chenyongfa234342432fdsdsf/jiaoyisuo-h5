@@ -1,0 +1,77 @@
+:local(.close-position-modal-root) {
+  @apply !rounded-tl-lg !rounded-tr-lg !bg-card_bg_color_03;
+
+  .modal-content {
+    @apply flex flex-col px-4 mt-4;
+
+    .price-content {
+      @apply flex items-center mt-4;
+    }
+
+    .price-select-item {
+      @apply flex flex-col ml-1 w-36;
+    }
+
+    .form-item {
+      @apply flex flex-col z-1 mt-4;
+    }
+
+    .form-input {
+      @apply w-full h-10 rounded-lg text-sm px-3 font-medium;
+
+      &.is-focused {
+        @apply !bg-bg_color;
+      }
+
+      .rv-input__control {
+        @apply font-medium placeholder-text_color_04 placeholder:font-medium;
+      }
+
+      .rv-input__control:disabled {
+        @apply text-text_color_04;
+      }
+    }
+
+    .price-cell {
+      @apply flex relative flex-1;
+    }
+
+    .price-input-focus {
+      @apply absolute bg-transparent;
+    }
+
+    .input-disabled {
+      @apply bg-bg_button_disabled text-text_color_04 !important
+    }
+
+    .form-slider {
+      @apply mt-5;
+
+      margin-bottom: 19px;
+
+      .rv-slider {
+        @apply h-1 bg-line_color_02;
+      }
+    }
+
+    .form-info {
+      @apply flex items-center justify-between text-sm text-text_color_02 mb-2 last:mb-0; 
+
+      .info-value {
+        @apply text-text_color_01 flex-1 flex justify-end;
+      }
+
+      .msg-icon {
+        @apply px-1;
+
+        svg {
+          @apply text-xs;
+        }
+      }
+    }
+
+    .modal-btn {
+      @apply w-full h-10 mt-6 mb-7 rounded-lg;
+    }
+  }
+}

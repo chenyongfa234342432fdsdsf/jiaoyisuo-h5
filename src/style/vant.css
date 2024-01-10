@@ -1,0 +1,335 @@
+body {
+  /** 放在 body 下才能覆盖默认情况 */
+
+  /** 覆盖 css 变量的形式适合从头开始，现在直接用类覆盖，覆盖 css 变量的业务应该放到 vant 源码去做 */
+
+  /** radio */
+  .rv-radio__label:not(.rv-radio__label--disabled) {
+    @apply text-text_color_01;
+  }
+
+  .rv-radio__label--disabled {
+    @apply text-text_color_04;
+  }
+
+  /** textarea */
+  .rv-textarea .rv-textarea__control {
+    @apply text-text_color_01;
+  }
+
+  /** action-sheet */
+  .rv-action-sheet {
+    @apply text-text_color_01;
+
+    .rv-action-sheet__item:active,
+    .rv-action-sheet__cancel:active {
+      background: none !important;
+    }
+
+    .rv-action-sheet__cancel {
+      @apply bg-card_bg_color_03 text-text_color_02;
+    }
+
+    .rv-action-sheet__item {
+      @apply bg-card_bg_color_03;
+    }
+
+    .rv-action-sheet__gap {
+      @apply bg-line_color_02 h-1;
+    }
+
+    /* 添加分割线 */
+    .rv-action-sheet__content {
+      @apply divide-y divide-line_color_02 divide-solid;
+
+      .selected-action {
+        @apply text-auxiliary_color_01 !important;
+      }
+
+      .option {
+        &.active {
+          @apply text-auxiliary_color_01 !important;
+        }
+      }
+    }
+  }
+
+  /** dropdown */
+  .rv-dropdown-menu {
+    .rv-dropdown-item {
+      .rv-dropdown-item__option {
+        &.rv-dropdown-item__option--active {
+          @apply text-auxiliary_color_01 !important;
+        }
+      }
+    }
+  }
+
+  /** search */
+  .rv-search {
+    @apply bg-transparent;
+  }
+
+  div.rv-switch {
+    @apply bg-bg_sr_color;
+
+    &.rv-switch--on {
+      @apply bg-brand_color;
+    }
+  }
+
+  div.rv-picker.rv-datetime-picker {
+    @apply bg-card_bg_color_03;
+
+    .rv-picker__mask {
+      @apply hidden;
+    }
+
+    .rv-picker-column__item {
+      @apply text-text_color_03;
+
+      &.rv-picker-column__item--selected {
+        @apply text-auxiliary_color_01 !important;
+      }
+    }
+
+    .rv-picker__confirm {
+      @apply text-auxiliary_color_01 !important;
+    }
+  }
+
+  /* 待修改 vant 源码 */
+  .rv-button {
+    /** 默认有圆角 40px */
+    --rv-button-default-height: 40px;
+
+    /** 大按钮 48px */
+    --rv-button-large-height: 48px;
+
+    @apply font-medium text-text_color_01 rounded-lg;
+
+  }
+
+  button.rv-button--disabled {
+    @apply bg-bg_button_disabled border-bg_button_disabled text-text_color_04 opacity-100 font-medium;
+  }
+
+  /** 主要按钮  */
+  button.rv-button.rv-button--primary {
+    @apply bg-brand_color border-brand_color text-button_text_02;
+
+    &:active {
+      @apply bg-brand_color_animate border-brand_color_animate;
+
+      &::before {
+        @apply opacity-0;
+      }
+    }
+
+    &[disabled] {
+      @apply bg-bg_button_disabled text-text_color_04 border-bg_button_disabled;
+    }
+  }
+
+  .rv-field__body {
+    @apply bg-bg_sr_color !important;
+  }
+
+  .rv-search__content {
+    @apply bg-bg_sr_color !important;
+  }
+
+  .rv-input__control {
+    --rv-input-placeholder-text-color: var(--nc-06);
+    @apply text-sm font-medium text-text_color_01;
+  }
+
+  /** 给输入框添加一种选项 */
+  div.rv-textarea.text-xs {
+    --rv-input-placeholder-text-font-size: 12px;
+  }
+
+  /** 调整表单下默认的输入框高度 */
+  .rv-form {
+    .rv-field__body {
+      @apply rounded-lg;
+    }
+
+    .rv-form-item--vertical .rv-field__control-wrapper input:not(.rv-uploader__input) {
+      @apply h-10 bg-bg_sr_color rounded-lg text-text_color_01;
+    }
+
+    /** 登录注册表单下高度为 48 px  */
+    &.form-input-large-size {
+      .rv-form-item--vertical .rv-field__control-wrapper input {
+        @apply h-12;
+      } 
+    }
+
+    --rv-cell-vertical-padding: 8px;
+  }
+
+  .rv-textarea {
+    .rv-textarea__word-limit {
+      @apply text-text_color_04;
+    }
+  }
+
+  /* 修改 tab 样式 */
+  div.rv-tab {
+    @apply text-sm text-text_color_02 font-medium;
+  }
+
+  div.rv-tabs__line {
+    @apply bg-brand_color;
+  }
+
+  div.rv-tab.rv-tab--active {
+    @apply text-text_color_01
+  }
+
+  div.rv-tabs__nav--start .rv-tab {
+    @apply px-4;
+  }
+  
+  .rv-tabs__line {
+    @apply w-5 h-0.5
+  }
+
+  /** checkbox  */
+  div.rv-checkbox {
+    .rv-checkbox__label {
+      @apply text-text_color_01;
+    }
+  }
+
+  .rv-popup {
+    @apply bg-card_bg_color_03;
+  
+    /** 底部弹窗默认上面有圆角 */
+    &.rv-popup--bottom {
+      @apply rounded-t-lg;
+  
+      &.h-full {
+        height: 100%;
+  
+        @apply rounded-t-none;
+      }
+    }
+  }
+  
+  .rv-hairline--bottom {
+    @apply border-line_color_02
+  }
+  
+  [class*= rv-hairline]::after {
+    @apply border-line_color_02
+  }
+
+  /** 添加圆角 */
+  .rv-hairline-rounded[class*= rv-hairline]::after {
+    @apply rounded;
+  }
+
+  /** 添加主题色边框 */
+  .rv-hairline-brand-color[class*= rv-hairline]::after {
+    @apply border-brand_color;
+  }
+
+  /** 添加背景色边框 */
+  .rv-hairline-sr-color[class*= rv-hairline]::after {
+    @apply border-bg_sr_color;
+  }
+  
+  .rv-popover__content {
+    @apply py-2.5 px-3 bg-card_bg_color_02;
+
+    .active {
+      @apply text-auxiliary_color_01 !important;
+    }
+  }
+  
+  .rv-dialog.rv-popup {
+    @apply bg-card_bg_color_03;
+  }
+  
+  .rv-cell--required::before {
+    content: '';
+    @apply hidden;
+  }
+  
+  .rv-form-item--vertical {
+    @apply flex-col;
+  
+    .rv-field__label {
+      @apply w-auto !important;
+    }
+  }
+
+  .rv-overlay {
+    background: rgb(16 16 20 / 60%)!important;
+  }
+
+  .rv-action-sheet__wrapper {
+    @apply rounded-t-2xl !important;
+
+    .close {
+      &> div {
+        @apply text-xl;
+      }
+    }
+  }
+  
+  
+  /* toast 成功/失败样式 */
+  .rv-toast.rv-popup {
+    @apply rounded !important;
+  
+    .rv-toast__info {
+      @apply text-button_text_01;
+    }
+  }
+  
+  /** selector */
+  div.rv-selector {
+    .rv-selector__item {
+      &:not(.rv-selector__item--multiple-active):not(.rv-selector__item--active) {
+        @apply bg-bg_sr_color text-text_color_01 border-bg_sr_color;
+      }
+
+      &.rv-selector__item--multiple-active,
+      &.rv-selector__item--active {
+        @apply border-brand_color bg-brand_color_special_02 text-brand_color;
+      }
+      
+    }
+  
+    &.size-small {
+      .rv-selector__item {
+        @apply mb-2 mr-2 text-xs py-1.5;
+      }
+    }
+  }
+  
+  /** rv-cell */
+  div.rv-cell--clickable:active {
+    @apply bg-bg_color_03;
+  }
+
+  /** index-bar */
+  .rv-index-bar {
+    .rv-index-bar__sidebar {
+      /** 在导航栏之下定位，可以解决小屏幕上显示不完全和错位的问题  */
+      top: calc(50% + 46px);
+      z-index: 11;
+    }
+  }
+
+  
+  .rv-cell.rv-cell--clickable {
+    svg {
+      @apply text-icon_color_01 !important;
+    }
+  }
+
+}

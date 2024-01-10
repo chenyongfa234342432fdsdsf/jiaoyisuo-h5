@@ -1,0 +1,3 @@
+:local(.option-position-layout-root) {
+  @apply flex flex-col;
+}

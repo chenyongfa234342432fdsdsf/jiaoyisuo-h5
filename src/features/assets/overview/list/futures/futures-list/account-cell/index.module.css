@@ -1,0 +1,70 @@
+:local(.futures-account-list-root) {
+  @apply flex flex-col bg-card_bg_color_01 rounded-lg mb-4;
+
+  .tag-wrap {
+    @apply flex;
+
+    height: 18px;
+    line-height: 18px;
+
+    .tag-cell {
+      @apply flex items-center px-1 rounded-tl-lg rounded-br-lg;
+
+      .tag-text {
+        @apply text-xs;
+  
+        transform: scale(0.83);
+      }
+    }
+  }
+
+  .futures-account-list-content {
+    @apply w-full px-3 flex flex-col mt-2 mb-3 pb-3 border-b border-line_color_02;
+
+    .futures-account-list-header {
+      @apply flex items-start justify-between mb-3;
+
+      .name {
+        @apply text-sm text-text_color_01;
+
+        line-height: 22px;
+      }
+
+      .next-icon {
+        @apply flex items-center mt-0;
+
+        height: 22px;
+
+        svg {
+          @apply w-4 h-4;
+        }
+      }
+    }
+
+    .info-wrap {
+      @apply flex items-center justify-between;
+
+      .info-cell {
+        @apply flex flex-col;
+
+        .info-label {
+          @apply text-xs text-text_color_02;
+        }
+
+        .info-content {
+          @apply text-sm text-text_color_01 font-medium;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    @apply px-3 mb-3 flex items-center;
+
+    .btn-cell {
+      @apply flex-1 rounded mr-3 last:mr-0 text-sm text-text_color_01 bg-bg_sr_color;
+
+      height: 30px;
+    }
+  }
+}

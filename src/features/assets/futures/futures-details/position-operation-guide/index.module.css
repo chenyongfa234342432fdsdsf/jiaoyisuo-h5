@@ -1,0 +1,131 @@
+:local(.position-operation-guide-root) {
+  @apply flex flex-col;
+
+  .content-text {
+    @apply text-xs text-text_color_01 font-medium;
+  }
+
+  .close-btn {
+    @apply w-20 h-8 rounded mt-2 self-end fixed -bottom-10;
+  }
+}
+
+:local(.introjs-highlight-custom) {
+  background: none !important;
+  @apply p-0 !important;
+}
+
+:local(.intro-tooltip-lock) {
+  width: 218px;
+  min-width: 218px;
+  transform: translate(-8px, -7px);
+
+  .introjs-tooltiptext {
+    @apply p-2.5;
+  }
+
+  .introjs-tooltip-header {
+    display: none;
+  }
+
+  .introjs-tooltipbuttons {
+    width: 218px;
+    @apply fixed p-0 pt-2 border-t-0;
+
+    .introjs-button {
+      @apply rounded bg-brand_color border-brand_color text-xs text-button_text_02 text-center p-0 shadow-none;
+
+      width: 75px;
+      height: 30px;
+      line-height: 30px !important;
+      text-shadow: none;
+    }
+
+    .introjs-prevbutton {
+      display: none;
+    }
+  }
+}
+
+:local(.intro-tooltip-migrate) {
+  width: 218px;
+  min-width: 218px;
+  transform: translate(8px, 6px);
+
+  .introjs-tooltiptext {
+    @apply p-2.5;
+  }
+
+  .introjs-tooltip-header {
+    display: none;
+  }
+
+  .introjs-tooltipbuttons {
+    width: 218px;
+    @apply fixed p-0 pt-2 border-t-0;
+
+    .introjs-button {
+      @apply rounded bg-brand_color border-brand_color text-xs text-button_text_02 text-center p-0 shadow-none;
+
+      width: 75px;
+      height: 30px;
+      line-height: 30px !important;
+      text-shadow: none;
+    }
+
+    .introjs-nextbutton {
+      top: -121px;
+    }
+
+    .introjs-prevbutton {
+      display: none;
+    }
+  }
+}
+
+:local(.intro-tooltip-reverse) {
+  width: 218px;
+  min-width: 218px;
+  transform: translate(8px, 6px);
+
+  .introjs-tooltiptext {
+    @apply p-2.5;
+  }
+
+  .introjs-tooltip-header {
+    display: none;
+  }
+
+  .introjs-tooltipbuttons {
+    width: 218px;
+    @apply fixed p-0 pt-2 border-t-0;
+
+    .introjs-button {
+      @apply rounded bg-brand_color border-brand_color text-xs text-button_text_02 text-center p-0 shadow-none;
+
+      width: 75px;
+      height: 30px;
+      line-height: 30px !important;
+      text-shadow: none;
+    }
+
+    .introjs-nextbutton {
+      top: -121px;
+    }
+
+    .introjs-prevbutton {
+      display: none;
+    }
+  }
+}
+
+:local(.intro-jump-btn-root) {
+  @apply rounded-xl bg-bg_sr_color text-sm text-text_color_01 font-normal text-center fixed;
+
+  top: 38px;
+  right: 31px;
+  z-index: 999999991;
+  width: 62px;
+  height: 26px;
+  line-height: 26px;
+}

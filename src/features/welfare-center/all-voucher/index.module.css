@@ -1,0 +1,16 @@
+:local(.voucher-content) {
+  @apply py-4 px-4  bg-bg_color;
+
+  padding-bottom: 52px;
+
+  .expired-jump {
+    @apply w-full bg-card_bg_color_03 text-brand_color text-sm flex justify-center items-center fixed bottom-0 left-0;
+
+    height: 52px;
+  }
+
+  .loading {
+    width: 25px;
+    height: 25px;
+  }
+}

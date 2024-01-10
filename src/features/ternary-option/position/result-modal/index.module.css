@@ -1,0 +1,41 @@
+:local(.position-result-modal-root) {
+  @apply !bg-transparent !rounded-lg w-4/5 flex flex-col;
+
+  .result-icon {
+    @apply w-28 h-28 flex self-center z-1;
+  }
+
+  .result-modal-wrap {
+    @apply flex flex-col w-full relative rounded-lg;
+
+    top: -65px;
+    min-height: 167px;
+    background-color: #ffffff;
+
+    .modal-bg {
+      @apply w-full rounded-lg absolute;
+
+      height: 167px;
+
+      img {
+        @apply rounded-lg;
+      }
+    }
+
+    .result-info-wrap {
+      @apply flex flex-col items-center pb-10 z-1;
+
+      margin-top: 65px;
+
+      .result-title {
+        @apply text-lg font-medium;
+
+        color: rgb(16 16 20 / 100%);
+      }
+
+      .result-text {
+        @apply text-base mt-2;
+      }
+    }
+  }
+}

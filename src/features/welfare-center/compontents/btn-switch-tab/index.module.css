@@ -1,0 +1,22 @@
+:local(.tab-switch) {
+  @apply w-full whitespace-nowrap overflow-x-auto overflow-y-hidden;
+
+  &::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .tab-item {
+    @apply ml-2 px-4 inline-block rounded-lg py-1 text-sm text-text_color_02;
+
+    height: 26px;
+
+    &:first-child {
+      @apply ml-0;
+    }
+
+    &.active {
+      @apply bg-bg_sr_color text-text_color_01;
+    }
+  }
+}

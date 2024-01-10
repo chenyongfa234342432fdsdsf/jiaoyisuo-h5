@@ -1,0 +1,20 @@
+/* stylelint-disable */
+:local(.scoped) {
+  @apply mx-4;
+  
+  > :first-child {
+    @apply px-5 pt-3;
+  }
+
+  .rv-button {
+    border: none;
+  }
+
+  .rv-tab--active {
+    @apply text-text_color_01;
+  }
+
+  .rv-tabs__line {
+    @apply bg-brand_color;
+  }
+}

@@ -1,0 +1,118 @@
+:local(.manage-account-wrap) {
+  @apply pt-6 px-4;
+
+  label {
+    @apply text-base font-medium;
+  }
+
+  .rv-radio-group {
+    .rv-radio {
+      @apply mb-0 mt-6 items-center justify-between;
+    }
+
+    .settlement-select-icon {
+      @apply w-4 h-4 mb-1;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  .manage-account-input {
+    @apply p-3 mt-4 rounded-lg bg-card_bg_color_01;
+
+    .rv-textarea__control, .rv-textarea__word-limit {
+      @apply text-sm;
+    }
+  }
+
+  .manage-account-footer {
+    @apply px-4 pb-10 fixed bottom-0 left-0 right-0;
+
+    .footer-checkobx {
+      @apply text-xs items-center;
+
+      span {
+        @apply text-text_color_03;
+      }
+
+      .footer-checkobx-icon {
+        @apply w-3 h-3 mb-1;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
+      label {
+        @apply text-xs text-brand_color;
+      }
+    }
+
+    .footer-button {
+      @apply mt-4 w-full rounded-lg h-12;
+    }
+  }
+}
+
+:local(.manage-account-popup) {
+  .popup-wrap {
+    padding: 22px;
+
+    .popup-icon {
+      @apply mb-5;
+    
+      .manage-account-popup-icon {
+        @apply w-9 h-9;
+        
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .popup-tips {
+      @apply mb-2 text-center;
+
+      .manage-account-popup-content {
+        p {
+          @apply mb-5 text-text_color_01;
+        }
+
+        .content-box {
+          @apply flex items-center;
+
+          .popup-content-checkobx-icon {
+            @apply w-3 h-3 mb-1;
+
+            svg {
+              @apply w-full h-full;
+            }
+          }
+
+          label {
+            @apply ml-2 text-xs text-text_color_02;
+          }
+        }
+      }
+    }
+
+    .popup-btn {
+      .cancel {
+        @apply pr-4;
+
+        .rv-button {
+          border: 1px solid transparent;
+          @apply bg-bg_sr_color text-text_color_01 rounded-lg overflow-hidden;
+        }
+      }
+
+      .continue {
+        .rv-button {
+          @apply rounded-lg overflow-hidden;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+:local(.ternaryorder-delete-modal) {
+  .rv-dialog__cancel {
+    @apply bg-bg_sr_color border-none;
+
+    .rv-button__text {
+      @apply text-text_color_01;
+    }
+  }
+
+}

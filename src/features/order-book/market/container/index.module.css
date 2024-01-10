@@ -1,0 +1,71 @@
+:local(.scoped) {
+  @apply flex py-2 px-4;
+
+  .buy, .sell {
+    @apply flex-1;
+
+    label {
+      font-size: 12px;
+    }
+  }
+
+  .buy, .sell {
+    .cell {
+      height: 20px;
+      @apply flex relative leading-none overflow-hidden;
+
+      .price, .volume {
+        @apply flex-1;
+
+        label {
+          @apply text-text_color_03 font-normal;
+        }
+      }
+
+      .progress {
+        @apply absolute inset-y-0;
+      }
+    }
+  }
+
+  .buy .cell {
+    @apply pr-2 pl-1;
+  }
+
+  .sell .cell {
+    @apply pl-2 pr-1;
+  }
+
+  .buy .cell .price {
+    @apply text-right;
+
+    label {
+      @apply text-buy_up_color;
+    }
+  }
+
+  .buy .cell .volume {
+    @apply text-left;
+  }
+
+  .buy .cell .progress {
+    @apply right-0 bg-buy_up_color_special_02;
+  }
+
+  .sell .cell .price {
+    @apply text-left;
+
+    label {
+      @apply text-sell_down_color;
+    }
+  }
+
+  .sell .cell .volume {
+    @apply text-right;
+  }
+
+  .sell .cell .progress {
+    @apply left-0 bg-sell_down_color_special_02;
+  }
+
+}

@@ -1,0 +1,29 @@
+:local(.futures-history-position-root) {
+  @apply w-full h-full flex flex-col;
+
+  .filter-wrap {
+    @apply flex items-center p-4 bg-card_bg_color_01;
+
+    margin-bottom: 5px;
+
+    .filter-cell {
+      @apply flex items-center mr-8;
+
+      .filter-label {
+        @apply text-xs text-text_color_03;
+      }
+
+      .filter-icon {
+        @apply ml-1;
+
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+    }
+  }
+
+  .history-cell {
+    @apply w-full flex flex-col py-3 px-4 border-b border-line_color_02;
+  }
+}

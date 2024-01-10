@@ -1,0 +1,19 @@
+:local(.search-user-layout) {
+  @apply w-full h-full flex flex-col bg-bg_color;
+  
+  .search-cell {
+    margin-top: 5px;
+  
+    .search-icon {
+      @apply mt-0;
+    }
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-b-0;
+  }
+
+  .rv-input__control {
+    @apply placeholder:font-normal font-normal placeholder:text-text_color_04;
+  }
+}

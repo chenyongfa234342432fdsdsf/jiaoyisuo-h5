@@ -1,0 +1,467 @@
+:local(.scoped) {
+  @apply w-full h-full;
+
+  .full-wrap {
+    @apply relative w-full bg-bg_color text-text_color_02;
+
+    .full-coin-info {
+      @apply flex justify-between;
+    }
+
+    .ind-select {
+      font-size: 10px;
+      @apply flex justify-between items-center w-full h-8 space-x-9 px-4 py-2 text-text_color_03;
+
+      .ind-main {
+        flex-grow: 1;
+        @apply flex justify-between;
+
+        .ind-did {
+          width: 1px;
+          height: 10px;
+          @apply bg-card_bg_color_02;
+        }
+      }
+
+      .ind-sub {
+        flex-grow: 2;
+        @apply flex justify-between;
+      }
+    }
+
+
+    .ind-full-select {
+      font-size: 10px;
+      @apply flex flex-col justify-between items-center h-full w-8 gap-9 p-4 font-bold text-text_color_01;
+
+      .ind-full-main {
+        flex-grow: 1;
+        @apply flex justify-between;
+
+        .ind-full-did {
+          width: 10px;
+          height: 1px;
+          @apply bg-card_bg_color_02;
+        }
+      }
+
+      .ind-full-sub {
+        flex-grow: 2;
+        @apply flex justify-between;
+      }
+    }
+  }
+
+  .show {
+    @apply block;
+  }
+
+  .not-show {
+    @apply hidden !important
+  }
+
+  .k-set-wrap {
+    border-top: 1px solid var(--line_color_02);
+    border-bottom: 1px solid var(--line_color_02);
+    @apply relative flex items-center  box-border w-full h-8 py-2;
+
+    .left-wrap {
+      @apply flex items-center h-8;
+  
+      .tile {
+        font-size: 12px;
+        @apply flex items-center h-8 text-text_color_03;
+        
+        div {
+          height: 15px;
+          font-size: 12px;
+          line-height: 15px;
+          @apply ml-4 text-center cursor-pointer whitespace-nowrap;
+        }
+      }
+
+      .icon-wrap {
+        font-size: 10px;
+
+        @apply flex justify-center items-center w-12 h-4 ml-4;
+
+        .icon {
+          font-size: 10px;
+          @apply flex items-center ml-1;
+        }
+      }
+    }
+      
+    ::-webkit-scrollbar {display: none}
+    
+    .trade-left-wrap {
+      max-width: calc(100% - 70px);
+      @apply overflow-x-scroll;
+    }
+
+    .rest-warp {
+      top: 31px;
+      height: 167px;
+      @apply absolute w-full z-10  bg-bg_color;
+
+      .button-wrap {
+        height: 131px;
+        @apply flex gap-2 flex-wrap w-full p-4 box-border;
+
+        .button {
+          width: calc((100% - 24px) / 4);
+          @apply h-7 text-xs rounded text-text_color_01;
+        }
+      }
+    }
+
+    .dept-wrap {
+      font-size: 10px;
+      @apply ml-4;
+    }
+
+    .right-wrap {
+      @apply absolute right-4 top-1;
+
+      .icon {
+        @apply text-xs;
+      }
+    }
+  }
+    
+  .full-screen {
+    @apply absolute z-20 bottom-16 left-2;
+  }
+
+  .chart-wrap {
+    @apply w-full;
+
+    .not-avi {
+      @apply w-full h-full;
+    }
+
+    .chart-include-ind {
+      @apply w-full h-full flex justify-between gap-2;
+    }
+
+    .chart-common {
+      
+      @apply w-full h-full;
+    }
+
+    .spin-wrap {
+      @apply flex items-center justify-center w-full h-full;
+    }
+  }
+    
+  .k-set-icon {
+    @apply w-4 h-4 ml-4 cursor-pointer;
+    
+  }
+}
+
+.chart-indicator-set-pop {
+  @apply relative w-full h-full p-4 box-border text-text_color_02;
+
+  .title {
+    @apply h-6 leading-6 text-base font-medium text-text_color_01;
+  }
+
+  .checked-wrap {
+    @apply absolute top-4 right-4 h-6 flex items-center;
+
+    .rv-checkbox__icon {
+      @apply h-3 w-3;
+
+      svg {
+        @apply h-3 w-3;
+      }
+    }
+
+    .rv-checkbox__label {
+      @apply text-xs;
+
+      line-height: 18px;
+    }
+  }
+
+  .set-wrap {
+    height: 58px;
+    @apply flex mt-4 text-xs;
+
+    .indicator {
+      @apply flex flex-col items-center gap-2;
+
+      .icon {
+        @apply w-8 h-8;
+
+        svg {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .time {
+      @apply flex flex-col items-center gap-2;
+
+      margin-left: 54px;
+
+      .icon {
+        @apply w-8 h-8;
+
+        svg {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .chart-height {
+    @apply mt-6 text-sm;
+  }
+
+  .slider {
+    @apply mt-2;
+  }
+
+  .slider-notice {
+    font-size: 10px;
+    @apply flex justify-between mt-1;
+  }
+
+  .divide {
+    @apply h-1 w-full mt-4 box-border bg-card_bg_color_02;
+  }
+
+  .cancel {
+    width: calc(100% - 16px);
+    font-size: 15px;
+    @apply absolute  bottom-4 flex justify-center mt-4;
+  }
+}
+
+.chart-time-set-pop {
+  @apply relative w-full h-full p-4 box-border text-text_color_02;
+
+  .icon {
+    @apply absolute;
+
+    svg {
+      @apply text-lg;
+    }
+  }
+
+  .title {
+    @apply w-full text-center text-lg font-medium text-text_color_01;
+
+    height: 18px;
+    line-height: 18px;
+  }
+
+  .divide {
+    height: 0.5px;
+    @apply w-full mt-3 box-border bg-card_bg_color_02;
+  }
+
+  .show-cycle {
+    @apply text-sm mt-4;
+  }
+
+  .time-select {
+    @apply grid grid-cols-3 mt-4 gap-2;
+
+    .button {
+      border: 1px solid var(--line_color_01);
+
+      @apply h-9 rounded font-normal;
+    }
+
+    .button-border {
+      border: 0.5px solid var(--brand_color);
+    }
+  }
+
+  .oper {
+    width: calc(100% - 32px);
+    height: 42px;
+    @apply fixed bottom-4 flex justify-between gap-4;
+
+    .button {
+      @apply flex-1 rounded;
+    }
+  }
+}
+
+.chart-ind-set-pop {
+  @apply relative w-full h-full p-4 box-border text-text_color_02 bg-bg_color;
+
+  .icon {
+    @apply absolute;
+
+    svg {
+      @apply text-lg;
+    }
+  }
+
+  .title {
+    @apply w-full text-center text-lg font-bold text-text_color_01;
+
+    height: 18px;
+    line-height: 18px;
+  }
+
+  .main-chart {
+    @apply text-sm mt-4;
+  }
+
+  .secondary-chart {
+    @apply mt-6;
+  }
+
+  .expand-wrap {
+    width: 100vw;
+    margin-left: -16px;
+    @apply bg-card_bg_color_01;
+  }
+
+  .input {
+    height: 30px;
+    @apply bg-bg_sr_color rounded;
+
+    padding-right: 6px;
+
+    input {
+      height: 30px;
+      @apply bg-bg_sr_color rounded;
+
+      padding-right: 6px;
+    }
+  }
+
+  .reset-wrap {
+    /* @apply w-14 px-4 box-content; */
+    @apply px-4 box-content pb-2;
+
+    border-bottom: 0.5px solid var(--line_color_02);
+
+    .reset {
+      @apply ml-2 text-sm;
+    }
+  }
+  
+
+  .describe {
+    @apply text-xs p-4;
+
+    line-height: 21px;
+  }
+
+  .common-title-wrap {
+    height: 54px;
+    @apply flex justify-between items-center;
+
+    .common-title {
+      @apply flex items-center text-text_color_01 font-bold;
+    }
+
+    .common {
+      @apply flex items-center text-xs;
+
+      .ind-icon {
+        @apply ml-2;
+
+        svg {
+          @apply text-base;
+        }
+      }
+    }
+  }
+
+  .common-wrap {
+    .common-set {
+      @apply grid grid-cols-2 gap-4 p-4 bg-card_bg_color_01;
+      
+      .common-row {
+        height: 30px;
+
+        @apply relative flex items-center justify-between gap-2;
+
+        .color {
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          @apply absolute top-3 left-7;
+        }
+
+        .notice {
+          top: 6px;
+          left: 37px;
+          font-size: 12px;
+          @apply absolute text-xs;
+        }
+
+        .select-icon {
+          svg {
+            @apply text-xs;
+          }
+        }
+      }
+    }
+  }
+
+  .boll-wrap {
+    .boll-set {
+      @apply grid grid-cols-2 gap-4 p-4;
+
+      .boll-row {
+        height: 30px;
+        @apply relative flex items-center justify-between gap-2;
+
+        .boll-notice {
+          top: 6px;
+          font-size: 12px;
+          @apply absolute left-2 text-xs;
+        }
+      }
+    }
+  }
+
+  .macd-wrap {
+    .macd-set {
+      @apply grid grid-cols-3 gap-4 p-4;
+      
+      .macd-row {
+        height: 30px;
+        @apply relative flex items-center justify-between gap-2;
+
+        .macd-notice {
+          top: 6px;
+          font-size: 12px;
+          @apply absolute left-2 text-xs;
+        }
+      }
+    }
+  }
+
+  .kdj-wrap {
+    .kdj-set {
+      @apply grid grid-cols-3 gap-4 p-4;
+
+      .kdj-row {
+        height: 30px;
+        @apply relative flex flex-1 items-center justify-between gap-2;
+
+        .kdj-notice {
+          top: 6px;
+          font-size: 12px;
+          @apply absolute left-2 text-xs;
+        }
+      }
+    }
+  }
+
+  .divide {
+    height: 0.5px;
+    @apply w-full box-border bg-card_bg_color_02;
+  }
+}

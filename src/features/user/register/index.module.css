@@ -1,0 +1,73 @@
+:local(.scoped) {
+  @apply relative;
+
+  .close-icon {
+    @apply w-5 h-5;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  .background-gradient {
+    height: 260px;
+    background: linear-gradient(180deg, rgb(241 174 61 / 10%) 0%, rgb(241 174 61 / 0%) 100%);
+    @apply absolute top-0 left-0 right-0;
+  }
+
+  .rv-nav-bar {
+    @apply bg-transparent;
+  }
+
+  .register-wrap {
+    @apply px-4 py-4 flex flex-col min-h-screen;
+
+    .logo {
+      @apply flex justify-center mt-3 mb-8;
+
+      img {
+        width: 205px;
+        height: 156px;
+      }
+    }
+
+    .title {
+      @apply text-2xl font-semibold mb-8 text-text_color_01;
+    }
+
+    .login {
+      margin-top: 18px;
+      @apply text-sm text-text_color_03;
+
+      a {
+        @apply ml-1 text-brand_color;
+      }
+
+      .register-tips {
+        @apply mb-4;
+      }
+
+      .trial-play {
+        label {
+          @apply mr-1;
+        }
+      }
+    }
+
+    .tips {
+      @apply break-all flex-1 flex justify-center items-end mb-5;
+
+      label {
+        @apply text-xs font-normal text-text_color_03;
+      }
+
+      a {
+        @apply text-brand_color;
+      }
+    }
+
+    .rv-button {
+      @apply rounded-lg w-full;
+    }
+  }
+}

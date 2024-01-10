@@ -1,0 +1,35 @@
+:local(.scoped) {
+  border-bottom: 0.5px solid var(--line_color_02);
+  @apply flex px-4 py-2;
+
+  .buy, .sell {
+    height: 20px;
+    @apply flex-1 leading-none;
+
+    label {
+      font-size: 12px;
+      @apply text-text_color_03 leading-5;
+    }
+  }
+
+  .buy {
+    @apply text-left;
+  }
+
+  .sell {
+    @apply flex;
+
+    label {
+      @apply flex-1;
+    }
+
+    & > div {
+      width: 72px;
+      @apply bg-bg_sr_color rounded-sm px-2 flex items-center;
+
+      & > div {
+        @apply w-full;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply w-full h-screen flex items-center;
+
+  img {
+    max-height: 30vh;
+    @apply object-contain;
+  }
+
+  .social-media-grid {
+    max-width: 180px;
+    @apply grid grid-cols-5 gap-5;
+  }
+}

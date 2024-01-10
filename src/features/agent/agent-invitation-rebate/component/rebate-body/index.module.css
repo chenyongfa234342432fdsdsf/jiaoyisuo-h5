@@ -1,0 +1,222 @@
+:local(.rebate-body-wrap) {
+  @apply px-4 pb-6;
+
+  .pyramid-rebate {
+    .pyramid-rebate-header {
+      @apply mb-4 flex items-center justify-between;
+
+      .pyramid-rebate-select {
+        @apply w-44;
+
+        .rv-dropdown-menu {
+          @apply rounded-lg overflow-hidden;
+        }
+      }
+
+      .pyramid-rebate-header-text {
+        @apply ml-1 flex-1 text-right text-sm text-brand_color overflow-hidden;
+
+        span {
+          @apply inline-block max-w-full truncate;
+        }
+      }
+    }
+
+    .pyramid-rebate-body {
+      .header {
+        @apply mb-2;
+
+        label {
+          @apply text-sm font-medium;
+        }
+
+        .header-icon {
+          @apply w-3.5 h-3.5 ml-2;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+
+      .main {
+        border-bottom: 1px solid var(--line_color_02);
+        @apply mb-3 flex justify-between;
+
+        .main-wrap {
+          @apply flex-1 duration-200 overflow-hidden;
+
+          .item {
+            @apply mb-3 flex items-center justify-between;
+
+            label {
+              @apply text-xs text-text_color_02;
+            }
+
+            span {
+              @apply text-sm font-medium;
+            }
+          }
+        }
+
+        .main-icon {
+          @apply ml-2 mt-1 w-3 h-3;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+    }
+  }
+
+  .regional-rebate {
+    @apply mb-4;
+
+    .regional-rebate-header {
+      @apply flex items-center justify-between;
+
+      .regional-rebate-header-text {
+        @apply text-sm font-medium;
+      }
+
+      .regional-rebate-header-right {
+        @apply flex items-center;
+
+        .agent-icon {
+          width: 22px;
+          @apply h-4;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        .msg-icon {
+          @apply ml-2 w-3 h-3;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+    }
+
+    .regional-rebate-body {
+      @apply mt-2.5 flex items-center;
+
+      .regional-rebate-body-left {
+        @apply flex-1 text-xs text-text_color_02;
+      }
+
+      .regional-rebate-body-right {
+        @apply ml-2 text-sm font-medium;
+      }
+    }
+  }
+
+  .level-three-rebate {
+    .wrap-header {
+      @apply mb-2.5 flex items-center justify-between;
+
+      .wrap-header-text {
+        @apply text-sm font-medium;
+      }
+
+      .wrap-header-right {
+        @apply flex items-center;
+
+        .agent-icon {
+          width: 22px;
+          @apply h-4;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        .msg-icon {
+          @apply ml-2 w-3 h-3;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+    }
+
+    .wrap-body-content {
+      @apply flex;
+
+      .wrap-body-main {
+        @apply flex-1 duration-200 overflow-hidden;
+      }
+
+      .main-icon {
+        @apply ml-2 mt-1 w-3 h-3;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .wrap-body {
+      @apply mt-3 flex items-center;
+
+      &:first-child {
+        @apply mt-0;
+      }
+
+      .wrap-body-left {
+        @apply flex-1 text-xs text-text_color_02;
+      }
+
+      .wrap-body-right {
+        @apply ml-2 text-sm font-medium;
+      }
+    }
+  }
+
+  .rebate-body-invite {
+    .common-icon {
+      @apply w-3 h-3;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .rebate-body-invite-header {
+      @apply flex items-center;
+
+      .qr-wrap {
+        @apply w-9 h-9 mr-2 rounded-lg bg-bg_sr_color flex items-center justify-center box-border;
+
+        .qr-icon {
+          @apply w-6 h-6 mt-px;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+
+      .input-row {
+        @apply flex-1 flex items-center bg-bg_sr_color rounded-lg py-2 px-3;
+
+        .input-row-text {
+          @apply flex-1 items-center text-text_color_02 text-sm truncate;
+        }
+      }
+    }
+  }
+
+  .rebate-body-invite-link {
+    @apply mt-2 flex items-center py-2 px-3 rounded-lg bg-bg_sr_color;
+
+    .text {
+      @apply flex-1 text-sm text-text_color_02;
+    }
+  }
+}

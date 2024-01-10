@@ -1,0 +1,41 @@
+:local(.rebate-warn-popup-wrap) {
+  z-index: 9998;
+  padding: 22px;
+  @apply w-80 rounded-lg overflow-hidden;
+
+  p {
+    @apply mb-4 text-base text-center font-medium;
+  }
+
+  label {
+    @apply font-normal;
+  }
+
+  span {
+    @apply mb-2 block font-normal;
+  }
+
+  .rv-checkbox {
+    @apply mb-4 mt-2 items-center;
+
+    .checkbox-login-icon {
+      @apply mb-1 w-3.5 h-3.5;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .rv-checkbox__label {
+      @apply mb-0 text-xs text-text_color_03;
+    }
+  }
+
+  .rv-button {
+    @apply w-full rounded-lg;
+
+    .rv-button__text {
+      @apply mb-0.5;
+    }
+  }
+}

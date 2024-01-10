@@ -1,0 +1,94 @@
+:local(.scoped) {
+  .generate {
+    @apply px-4 pb-8 bg-bg_color;
+
+    button {
+      @apply w-full;
+    }
+  }
+
+  .future-fundrecord-container {
+    @apply p-0;
+
+    div {
+      @apply text-xs !important;
+
+      span {
+        @apply text-xs !important;
+      }
+    }
+  }
+  
+  .future-record-list {
+    @apply p-0 text-xs !important;
+
+    span {
+      @apply text-xs !important;
+    }
+  }
+  
+  .save-image > div:first-child {
+    @apply w-full;
+  }
+  
+  .save-image > div:nth-child(2) {
+    @apply w-full;
+  }
+  
+  .rv-toast.rv-popup {
+    z-index: 90;
+  }
+  
+  .save-image {
+    width: 320px;
+    @apply flex flex-col px-8 pt-8 justify-center items-center bg-bg_color;
+    
+    .rv-nav-bar__title {
+      @apply text-sm;
+    }
+    
+    .rv-nav-bar__right {
+      span {
+        @apply text-xs;
+      }
+    }
+    
+    .future-record-tip {
+      @apply h-12;
+
+      img {
+        width: 50px;
+        @apply h-12;
+      }
+    }
+    
+    .future-record-detail:last-child {
+      @apply ml-8 !important;
+    }
+    
+    .rv-nav-bar__arrow {
+      img {
+        @apply w-4 h-4;
+      }
+    }
+
+    .image-wrap {
+      width: 280px;
+      margin: 36px auto;
+      margin-bottom: 20px;
+
+      img {
+        @apply h-full;
+      }
+    }
+    
+    .save-image-content {
+      @apply px-3 pb-3;
+    }
+  }
+  
+  .rv-overlay {
+    z-index: 80;
+    @apply flex  justify-center items-center;
+  }
+}

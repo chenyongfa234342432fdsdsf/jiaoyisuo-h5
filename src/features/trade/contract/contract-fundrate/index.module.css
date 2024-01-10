@@ -1,0 +1,24 @@
+:local(.scope) { 
+  @apply py-4;
+
+  .contract-fundrate-list {
+    @apply border-line_color_02;
+
+    margin-bottom: 22px;
+    border-bottom-width: 0.5px;
+    @apply w-full;
+
+    .contract-fundrate-label {
+      @apply flex justify-between items-center mb-3;
+
+      span:first-child {
+        @apply text-sm font-normal text-text_color_02;
+      }
+      
+      span:last-child {
+        @apply text-sm font-normal text-text_color_01;
+      }
+    }
+  }
+ 
+}

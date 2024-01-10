@@ -1,0 +1,69 @@
+:local(.scoped) {
+  @apply relative;
+
+  .security-item-wrap {
+    @apply px-5 py-4;
+
+    .header {
+      @apply flex items-center mb-2;
+
+      .icon {
+        svg {
+          @apply w-8 h-8;
+        }
+      }
+    }
+
+    .footer {
+      @apply flex justify-between;
+
+      .text {
+        @apply text-sm leading-6 text-text_color_01;
+      }
+
+      .icon {
+        svg {
+          @apply w-4 h-4 text-text_color_01;
+        }
+      }
+    }
+
+    .tag {
+      @apply absolute right-0 top-0;
+
+      .on, .off {
+        @apply flex items-center px-1 rounded-bl-lg;
+
+        .security-image {
+          @apply h-3 w-3;
+
+          img {
+            @apply h-3 w-3 align-middle;
+          }
+        }
+
+        .text {
+          @apply ml-1 leading-4 transform scale-90;
+
+          height: 18px;
+          line-height: 14px;
+
+          label {
+            @apply text-xs;
+          }
+        }
+
+      }
+
+      .on {
+        background: rgb(80 177 108 / 20%);
+        @apply text-success_color;
+      }
+
+      .off {
+        background: rgb(241 174 61 / 20%);
+        @apply text-tips_color;
+      }
+    }
+  }
+}

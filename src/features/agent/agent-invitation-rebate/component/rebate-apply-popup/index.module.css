@@ -1,0 +1,57 @@
+:local(.rebate-apply-wrap) {
+  z-index: 9998;
+  @apply w-80 bg-transparent !important;
+
+  .apply-content-wrap {
+    @apply w-full pt-14;
+
+    .popup-wrap {
+      @apply pt-20 w-full rounded-2xl bg-card_bg_color_03 relative;
+
+      .popup-header-background {
+        background: linear-gradient(357deg, #FFFFFF 31.48%, #FFECCE 101.92%);
+        @apply h-20 absolute top-0 left-0 right-0 rounded-2xl;
+
+        p {
+          @apply text-base font-medium absolute top-14 left-1/2 -translate-x-1/2;
+        }
+      }
+
+      .popup-header-image {
+        z-index: 9999;
+        width: 116px;
+        height: 110px;
+        @apply absolute -top-16 left-1/2 -translate-x-1/2;
+      }
+
+      .popup-header-content {
+        padding: 0 22px 22px;
+        @apply pt-4 text-sm font-normal;
+
+        span {
+          @apply mb-3 block;
+        }
+
+        .rv-button {
+          @apply w-full rounded-lg;
+
+          .rv-button__text {
+            @apply mb-0.5;
+          }
+        }
+      }
+    }
+
+    .popup-icon {
+      @apply flex justify-center;
+
+      .wrap-icon {
+        @apply mt-8 w-8 h-8;
+    
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+  }
+}

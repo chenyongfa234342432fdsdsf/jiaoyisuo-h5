@@ -1,0 +1,18 @@
+:local(.scoped) {
+  margin-bottom: 5px;
+  @apply flex;
+
+  .price, .amount {
+    @apply flex flex-col flex-1;
+  }
+
+  .amount {
+    @apply text-right;
+  }
+
+  label {
+    color: rgb(112 122 138);
+    font-size: 12px;
+    @apply text-text_color_02 leading-none mb-1;
+  }
+}

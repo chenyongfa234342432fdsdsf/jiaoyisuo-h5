@@ -1,0 +1,29 @@
+:local(.history-position-filter-root) {
+  @apply !rounded-tl-lg !rounded-tr-lg;
+
+  .modal-warp {
+    @apply bg-card_bg_color_03 flex flex-col p-4;
+
+    .modal-header {
+      @apply flex items-center justify-between text-base text-text_color_01 font-medium mb-6;
+
+      .close-icon {
+        svg {
+          @apply w-5 h-5;
+        }
+      }
+    }
+
+    .modal-bottom {
+      @apply flex items-center mt-3.5;
+
+      .btn {
+        @apply flex-1 h-10 rounded mr-4;
+      }
+
+      .reset-btn {
+        @apply bg-bg_sr_color border-bg_sr_color text-text_color_01;
+      }
+    }
+  }
+}

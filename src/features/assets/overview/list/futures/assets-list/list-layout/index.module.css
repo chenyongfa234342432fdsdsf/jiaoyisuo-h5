@@ -1,0 +1,3 @@
+:local(.futures-assets-list-root) {
+  @apply flex flex-col;
+}

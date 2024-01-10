@@ -1,0 +1,119 @@
+:local(.scoped) {
+  @apply relative whitespace-nowrap;
+
+  .rv-dropdown-menu {
+    @apply h-full;
+
+    .rv-dropdown-menu__bar {
+      @apply bg-bg_sr_color text-text_color_01 h-full;
+
+      box-shadow: none;
+    }
+
+    .rv-dropdown-menu__item {
+      @apply justify-start;
+    }
+
+    .rv-dropdown-menu__bar--opened {
+      /* 加这个限制条件是为了解决高度动画显示和阴影不协调的问题 */
+      &+ .rv-dropdown-item.rv-dropdown-item--down {
+        @apply rounded-lg;
+        /* stylelint-disable-next-line color-function-notation */
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 10%)
+      }
+    }
+
+  
+    .rv-dropdown-item.rv-dropdown-item--down {
+      @apply block absolute w-full left-0 rounded;
+
+      top: var(--dropdown_top) !important;
+      bottom: unset;
+      left: var(--dropdown_left) !important;
+    }
+
+    .rv-dropdown-item__option {
+      @apply text-text_color_01 py-2 last:pb-3 first:pt-3;
+
+      &.rv-dropdown-item__option--active {
+        @apply text-brand_color;
+      }
+
+      .rv-cell__title {
+        @apply text-left font-medium;
+      }
+    }
+
+    .rv-popup--top {
+      @apply static;
+
+      .rv-cell__value {
+        @apply hidden;
+      }
+    }
+
+    .order-type-item {
+      @apply flex items-center justify-center
+    }
+
+    .rv-dropdown-menu__title {
+      @apply text-xs text-text_color_01;
+
+      padding-right: var(--title_padding_right);
+      padding-left: var(--title_padding_left);
+
+      &::after {
+        @apply hidden;
+      }
+    }
+
+  }
+
+  .arrow-icon {
+    @apply absolute right-2 top-1/2 -translate-y-1/2 flex items-center;
+    
+    z-index: calc(var(--rv-dropdown-item-z-index) - 1);
+    font-size: 8px;
+    transition: all .3s;
+
+  }
+
+  .prefix {
+    @apply absolute left-2 top-1/2 -translate-y-1/2 flex items-center z-10;
+
+    +.rv-dropdown-menu {
+      .rv-dropdown-menu__title {
+        padding-left: calc(var(--title_padding_left) + 20px);
+      }
+    }
+  }
+
+  .rv-dropdown-menu__bar--opened {
+    @apply z-10;
+  }
+
+  &.is-transparent {
+    .rv-dropdown-menu {
+      .rv-dropdown-menu__bar {
+        @apply bg-transparent;
+      }
+  
+    }
+  }
+
+  &.sm-text {
+    .arrow-icon {
+      @apply right-3;
+    }
+
+    .rv-dropdown-menu {
+      .rv-dropdown-item__option {
+        @apply py-2 first:pt-3 last:pb-3;
+      }
+
+      .rv-dropdown-menu__title {
+        @apply text-sm font-medium;
+      }
+    }
+  }
+}

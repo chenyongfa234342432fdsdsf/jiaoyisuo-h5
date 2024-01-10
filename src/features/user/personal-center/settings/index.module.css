@@ -1,0 +1,63 @@
+:local(.scoped) {
+  .settins-wrap {
+    @apply mt-4;
+
+    .cell {
+      .checked {
+        svg {
+          @apply w-5;
+        }
+      }
+    }
+
+    .rv-cell {
+      @apply p-4;
+
+      .rv-cell__title {
+        @apply text-sm font-normal text-text_color_01;
+      }
+
+      .rv-cell__value {
+        font-size: 12px;
+        @apply font-normal text-text_color_03;
+
+        span {
+          @apply leading-6;
+        }
+      }
+    }
+  }
+
+  .login-out {
+    @apply mt-8 px-4;
+
+    .rv-button {
+      @apply bg-bg_color;
+
+      &:first-child {
+        @apply mb-4 text-text_color_01 border border-solid border-line_color_01 ;
+
+        border-radius: 20px;
+
+      }
+
+      &:last-child {
+        color: var(--rd-05);
+      }
+    }
+
+    button {
+      @apply w-full border-none;
+
+
+      &:active {
+        @apply text-text_color_04;
+      }
+    }
+  }
+
+  .divider {
+    height: 1px;
+    border-bottom: 4px solid var(--line_color_02);
+  }
+}

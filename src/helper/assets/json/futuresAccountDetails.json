@@ -1,0 +1,33 @@
+{
+  "code": 200,
+  "isOk": true,
+  "message": "success",
+  "data": {
+    "positionAsset": [
+      {
+        "sideInd": "long",
+        "coinName": "BTC",
+        "nominalValue": "605.5300"
+      }
+    ],
+    "isAutoAdd": "no",
+    "marginAvailableScale": "100%",
+    "groupId": "461570615740395520",
+    "accountType": "immobilization",
+    "marginCoin": [
+      {
+        "coinName": "USDT",
+        "coinConvert": "1010.3112481"
+      }
+    ],
+    "marginAvailable": "979.9201981",
+    "groupName": "定投账户",
+    "groupCount": 7,
+    "openLockAsset": "0",
+    "marginAssets": "1000",
+    "unrealizedProfit": "600",
+    "groupAsset": "4600",
+    "positionMargin": "3000",
+    "baseCoin": "USD"
+  }
+}

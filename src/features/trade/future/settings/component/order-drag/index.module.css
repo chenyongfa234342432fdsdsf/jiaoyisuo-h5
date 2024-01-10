@@ -1,0 +1,12 @@
+:local(.order-drag-item) {
+  border-bottom: 0.5px solid var(--line_color_02);
+  @apply w-full p-4 flex items-center justify-between;
+  
+  .check-icon {
+    @apply w-4 h-4 pb-px;
+  
+    svg {
+      @apply w-4 h-4; 
+    }
+  }
+}

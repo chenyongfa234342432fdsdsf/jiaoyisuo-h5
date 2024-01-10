@@ -1,0 +1,57 @@
+:local(.card-radio-wrapper) {
+  @apply flex-1 px-4 mb-4;
+  
+  .main-content {
+    @apply p-4 bg-bg_color mb-2 rounded-lg border border-card_bg_color_01 border-solid;
+  }
+  
+  .card-radio-label {
+    @apply text-center font-medium text-sm text-text_color_01;
+  }
+  
+  .card-radio-desc {
+    @apply text-xs my-3 text-text_color_02;
+  }
+
+  .card-radio-image {
+    height: calc(23.38 * var(--vh));
+  }
+  
+  &.is-checked {
+    .main-content {
+      @apply relative overflow-hidden border border-brand_color border-solid;
+  
+      .select-wrap-icon {
+        @apply absolute top-0 right-0 w-5 h-4;
+    
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+  }
+}
+
+:local(.retrieval-method-wrapper) {
+  @apply h-screen flex flex-col bg-card_bg_color_01 pb-36;
+
+  .retrieval-method-wrapper-bottom {
+    @apply fixed bottom-0 left-0 right-0 z-10 px-4 pt-12 pb-10 bg-bg_color;
+  }
+
+  .record-text-box {
+    @apply flex px-4 mb-2;
+
+    .footer-list-icon {
+      @apply w-1.5 h-1.5 mt-1;
+
+      svg {
+        @apply w-1.5 h-1.5;
+      }
+    }
+
+    .footer-list-text {
+      @apply ml-1 text-xs font-normal text-text_color_03;
+    }
+  }
+}

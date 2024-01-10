@@ -1,0 +1,24 @@
+:local(.scoped) {
+  @apply flex flex-col;
+
+  .info-popover {
+    bottom: 32px;
+    height: 72px;
+    @apply flex flex-row absolute justify-between left-1 right-1 rounded z-10 bg-card_bg_color_01 px-4 mx-4;
+
+    > * {
+      @apply my-auto mx-auto;
+
+      > div > span {
+        @apply text-text_color_02;
+      }
+    }
+  }
+
+  .info-popover-triangle {
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid;
+    border-left: 10px solid transparent;
+    @apply w-0 h-0 left-1/2 absolute -translate-x-1/2 border-b-card_bg_color_01;
+  }
+}

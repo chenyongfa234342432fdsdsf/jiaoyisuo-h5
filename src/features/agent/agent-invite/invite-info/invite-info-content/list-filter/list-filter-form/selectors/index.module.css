@@ -1,0 +1,5 @@
+:local(.scoped) {
+  > * {
+    @apply text-xs font-normal py-1 px-4;
+  }
+}

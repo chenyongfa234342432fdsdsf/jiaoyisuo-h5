@@ -1,0 +1,45 @@
+:local(.exchange-center) {
+  @apply w-full;
+
+  .task-item {
+    @apply border-line_color_02 py-4 px-4 bg-bg_color;
+
+    border-bottom-width: 5px;
+    
+    &:last-child {
+      @apply border-0;
+    }
+
+    &:first-child {
+      @apply border-0;
+    }
+
+    .Task {
+      @apply flex justify-between ;
+  
+  
+      h3 {
+        @apply text-sm font-medium text-text_color_01;
+      }
+  
+      span {
+        padding: 2px 8px;
+        color: #2EBD85;
+        background: rgb(46 189 133 / 10%);
+        border-radius: 21px;
+        @apply text-xs;
+
+
+      }
+
+      &.dark {
+        span {
+          background: #2EBD851A;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+
+}

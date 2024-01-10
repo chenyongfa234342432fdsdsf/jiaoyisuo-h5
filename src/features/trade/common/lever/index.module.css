@@ -1,0 +1,5 @@
+:local(.lever-modal-wrapper) {
+  .name {
+    @apply px-4 text-sm pb-5 -mt-2;
+  }
+}

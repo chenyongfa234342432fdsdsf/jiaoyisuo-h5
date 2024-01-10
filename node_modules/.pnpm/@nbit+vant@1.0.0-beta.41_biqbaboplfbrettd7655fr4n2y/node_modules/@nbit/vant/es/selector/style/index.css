@@ -1,0 +1,69 @@
+:root {
+  --rv-selector-color: var(--nc-10);
+  --rv-selector-checked-color: var(--or-11);
+  --rv-selector-text-color: var(--nc-06);
+  --rv-selector-checked-text-color: var(--rv-primary-color);
+  --rv-selector-border: 1px solid var(--nc-10);
+  --rv-selector-checkedborder: none;
+  --rv-selector-border-radius: 4px;
+  --rv-selector-margin: 0 var(--rv-padding-xs) 0 0;
+  --rv-selector-padding: 8px 16px;
+}
+.rv-selector {
+  overflow: hidden;
+  font-size: var(--rv-font-size-md);
+  line-height: 1.4;
+}
+.rv-selector .rv-space.rv-space {
+  --gap: 12px;
+}
+.rv-selector__item {
+  margin: var(--rv-selector-margin);
+  padding: var(--rv-selector-padding);
+  position: relative;
+  background-color: var(--nc-10);
+  border: 1px solid var(--nc-10);
+  border-radius: var(--rv-selector-border-radius);
+  color: var(--nc-06);
+  opacity: 1;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: top;
+}
+.rv-selector__item:last-child {
+  margin-right: 0;
+}
+.rv-selector__item-description {
+  font-size: var(--rv-font-size-sm);
+  color: var(--rv-text-color-weak);
+}
+.rv-selector__item--active,
+.rv-selector__item--multiple-active {
+  color: var(--rv-selector-checked-text-color);
+  background-color: var(--or-11);
+  border: solid var(--or-05) 1px;
+}
+.rv-selector__item .rv-selector__check-mark-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 8px transparent;
+  border-bottom: solid 8px var(--rv-primary-color);
+  border-left: solid 10px transparent;
+  border-right: solid 10px var(--rv-primary-color);
+}
+.rv-selector__item .rv-selector__check-mark-wrapper > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 6px;
+  width: 8px;
+}
+.rv-selector__item--disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}

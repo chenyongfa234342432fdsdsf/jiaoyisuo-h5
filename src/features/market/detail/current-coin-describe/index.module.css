@@ -1,0 +1,73 @@
+:local(.scoped) {
+  @apply text-sm;
+
+  .quote-pop-wrap {
+          
+    @apply text-base w-full;
+        
+    .coin-name {
+      @apply mt-6 px-4 flex items-center;
+
+      .en-name {
+        @apply leading-6;
+      }
+
+      .img {
+        @apply w-6 h-6 mr-2 rounded-3xl;
+      }
+    }
+
+    .info {
+      @apply px-4 pt-4 pb-6 relative;
+
+      .des {
+        @apply w-full mt-4 break-all;
+      }
+
+      .oper {
+        @apply absolute right-4 bottom-0 text-brand_color;
+      }
+    }
+        
+    .title {
+      @apply text-text_color_01 font-bold;
+    }
+
+    .sub-title {
+      @apply text-text_color_03;
+    }
+
+    .pop-row {
+      @apply mt-4 px-4 flex items-center justify-between;
+
+      .is-link {
+        @apply text-brand_color cursor-pointer;
+      }
+        
+      .not-link {
+        @apply text-text_color_01;
+      }
+        
+      .copy {
+        @apply ml-2;
+      }
+    }
+        
+    /* .row-line {
+      border-bottom: 1px solid var(--line_color_02);
+    } */
+
+    .website-icon {
+      svg {
+        @apply text-2xl;
+      }
+    }
+
+    .expand-icon {
+      svg {
+        @apply w-2 h-2;
+      }
+    }
+  }
+
+}

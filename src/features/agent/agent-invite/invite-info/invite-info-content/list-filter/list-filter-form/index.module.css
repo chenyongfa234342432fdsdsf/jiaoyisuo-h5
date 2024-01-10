@@ -1,0 +1,116 @@
+:local(.scoped) {
+  .rv-field__suffix,
+  .rv-selector__item {
+    @apply text-text_color_01;
+  }
+
+  .rv-field__suffix {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .rv-field__value {
+    > * {
+      max-height: 36px;
+    }
+  }
+
+  .rv-field__body {
+    @apply bg-bg_color !important;
+
+    .rv-field__children {
+      > * {
+      
+        @apply w-full;
+      }
+    }
+  }
+
+  .form-num-range {
+    @apply flex flex-row items-center;
+
+    > * {
+      @apply mr-3;
+    }
+  
+    > :last-child {
+      @apply mr-0;
+    }
+  }
+
+  .date-type-list {
+    @apply hidden !important;
+  }
+
+  .rv-field__label {
+    @apply text-text_color_02;
+  }
+
+  .rv-field__error-message {
+    @apply text-xs pt-2;
+  }
+
+  .rv-input__control,
+  .rv-field {
+    > * {
+      max-height: 34px !important;
+    }
+
+    input {
+      border-radius: 4px !important;
+    }
+  }
+
+
+}
+
+:local(.form-btn-footer) {
+  @apply flex flex-row mx-4 my-6;
+
+  > * {
+    @apply mr-4;
+  }
+
+  > :last-child {
+    @apply mr-0;
+  }
+
+  > * {
+    @apply flex-1;
+  }
+
+  .rv-button:first-of-type {
+    border: 1px solid var(--line_color_01);
+    @apply bg-card_bg_color_03;
+
+    .rv-button__text {
+      @apply text-text_color_02;
+    }
+  }
+}
+
+:local(.filter-form-popup) {
+  @apply text-left;
+
+  @apply bg-bg_color !important;
+
+  .rv-field__body {
+    @apply bg-bg_color !important;
+    @apply flex items-center;
+
+    .rv-field__children {
+      > * {
+        @apply w-full;
+      }
+    }
+  }
+
+  .rv-popup__title {
+    @apply m-4;
+    @apply text-left text-text_color_01;
+  }
+
+  .rv-popup__close-icon {
+    @apply flex;
+  }
+}

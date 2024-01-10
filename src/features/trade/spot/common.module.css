@@ -1,0 +1,37 @@
+:local(.exchange-order-modal-title-wrapper) {
+  @apply flex items-center;
+
+  .tag {
+    @apply px-2 py-1 mr-2 rounded flex items-center justify-between;
+  }
+}
+
+:local(.exchange-order-modal-wrapper) {
+  @apply pb-14;
+
+  .tag {
+    @apply px-2 py-1 mr-2 rounded flex items-center justify-between text-xs;
+  }
+  
+  .list-item {
+    @apply flex items-center justify-between px-4 py-1 first:pt-2;
+
+    .list-item__label {
+      @apply text-text_color_02;
+    }
+    
+    .list-item__content {
+      @apply font-medium;
+    }
+  }
+}
+
+:local(.not-available-wrapper) {
+  .countdown-tag {
+    @apply flex items-center justify-center bg-brand_color rounded w-6 py-1;
+  }
+
+  .subscribe-button {
+    width: 188px;
+  }
+}

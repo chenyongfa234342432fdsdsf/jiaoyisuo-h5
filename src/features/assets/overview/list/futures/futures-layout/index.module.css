@@ -1,0 +1,17 @@
+:local(.futures-layout-root) {
+  .rv-tabs__nav {
+    @apply bg-bg_color;
+  }
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b !important;
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-line_color_02
+  }
+
+  .rv-tabs__nav {
+    @apply !bg-bg_color;
+  }
+}

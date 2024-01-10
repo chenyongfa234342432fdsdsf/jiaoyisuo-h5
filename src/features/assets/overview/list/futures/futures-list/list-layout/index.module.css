@@ -1,0 +1,3 @@
+:local(.futures-list-root) {
+  @apply flex flex-col bg-bg_color;
+}

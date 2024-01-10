@@ -1,0 +1,45 @@
+:local(.withdraw-type-root) {
+  @apply rounded-tl-lg rounded-tr-lg bg-card_bg_color_03;
+  
+  .withdraw-type-wrap {
+    @apply flex flex-col;
+  
+    .type-title {
+      @apply text-base text-text_color_01 font-medium m-4 mb-2;
+    }
+  
+    .type-cell {
+      @apply flex flex-col items-center justify-center border-b border-line_color_02 last:border-b-0;
+  
+      height: 78px;
+  
+      .type-info {
+        @apply flex items-center;
+  
+        .type-icon {
+          @apply mr-2;
+  
+          svg {
+            @apply w-5 h-5;
+          }
+        }
+  
+        .type-name {
+          @apply text-sm text-text_color_01 font-medium;
+        }
+  
+        .type-name-active {
+          @apply text-brand_color;
+        }
+      }
+  
+      .type-desc {
+        @apply text-xs text-text_color_02 mt-1;
+      }
+    }
+  
+    .cancel-cell {
+      @apply py-4 flex justify-center border-t-4 border-line_color_02 text-sm text-text_color_02;
+    }
+  }
+}

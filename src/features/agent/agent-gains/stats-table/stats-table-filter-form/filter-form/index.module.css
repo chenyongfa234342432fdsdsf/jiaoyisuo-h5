@@ -1,0 +1,103 @@
+:local(.scoped) {
+  @apply grow flex flex-col justify-between;
+
+  > div {
+    padding-bottom: 14px;
+  }
+
+  button {
+    height: 40px;
+  }
+
+  .reset-btn {
+    @apply border-none bg-bg_sr_color text-text_color_01 !important;
+  }
+
+  .reset-btn::before {
+    @apply !bg-bg_sr_color;
+  }
+
+  .rv-field__body {
+    @apply bg-bg_color !important;
+    
+    .rv-field__children {
+      > * {
+        @apply w-full;
+      }
+    }
+
+    .rv-field__label {
+      @apply text-text_color_02 text-sm;
+    }
+
+    .rv-input, input, .date-item {
+      height: 34px;
+    }
+  }
+
+  .rv-selector {
+    > * {
+      @apply mr-4;
+    }
+
+    >:last-child {
+      @apply mr-0;
+    }
+
+    .rv-selector__item {
+      @apply !bg-bg_sr_color !text-text_color_01;
+    }
+
+    .rv-selector__item--active {
+      border: 0.5px transparent solid !important;
+      @apply !text-brand_color !bg-brand_color_special_02 !border-brand_color;
+    }
+  }
+
+  .form-num-range {
+    @apply flex flex-row items-center;
+
+    > * {
+      @apply mr-3;
+    }
+  
+    > :last-child {
+      @apply mr-0;
+    }
+  }
+
+  .date-type-list {
+    @apply hidden;
+  }
+
+}
+
+:local(.form-btn-footer) {
+  margin-top: 14px;
+  @apply flex flex-row mx-4 mb-6;
+
+  > * {
+    @apply mr-4;
+  }
+
+  > :last-child {
+    @apply mr-0;
+  }
+
+  > * {
+    @apply flex-1;
+  }
+
+  .rv-button:first-of-type {
+    border: 1px solid var(--line_color_01);
+    @apply bg-card_bg_color_03;
+
+    .rv-button__text {
+      @apply text-text_color_02;
+    }
+  }
+
+  .rv-button {
+    @apply rounded;
+  }
+}

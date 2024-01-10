@@ -1,0 +1,26 @@
+:local(.scoped) {
+  .div {
+    @apply block;
+  }
+
+  .detail-control-height {
+    height: fit-content;
+  }
+
+
+  .rv-selector {
+    .rv-selector__item {
+      height: 30px;
+      @apply !bg-transparent border-none;
+    }
+  
+    > * {
+      @apply text-sm text-text_color_01 font-normal py-1 px-2 !important;
+    }
+  
+    .rv-selector__item--active {
+      @apply text-text_color_01 font-medium bg-bg_sr_color !important;
+    }
+  }
+  
+}

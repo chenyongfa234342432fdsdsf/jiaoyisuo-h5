@@ -1,0 +1,77 @@
+:local(.scoped) {
+  min-height: var(--vh100);
+  @apply w-full relative overflow-y-scroll box-border bg-card_bg_color_03;
+
+  .rank-title-wrap {
+    height: 200px;
+    padding: 37px 0 0 31px;
+    @apply w-full;
+
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+      @apply font-semibold text-button_text_01;
+    }
+
+    p {
+      @apply mt-1 text-base text-button_text_01;
+
+      line-height: 22px;
+
+    }
+
+    .guide {
+      @apply mt-2 text-brand_color text-sm; 
+    }
+  }
+
+  .rank-wrap {
+    margin-top: -32px;
+    border-radius: 22px 22px 0 0;
+    @apply w-full py-6 px-4 box-border bg-card_bg_color_03 flex flex-col;
+
+    .rank-row {
+      @apply flex justify-between items-center h-6;
+
+      .rank-img {
+        width: 21.41px;
+        height: 15.56px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .common-step-text {
+    @apply text-sm text-text_color_01;
+
+    line-height: 22px;
+  }
+
+}
+
+:local(.notice) {
+  padding: 30px;
+  @apply box-border rounded-lg;
+
+  .title {
+    @apply font-medium text-base text-center text-text_color_01;
+
+    line-height: 24px;
+  }
+
+  .content {
+    @apply w-full text-sm text-text_color_01;
+
+    line-height: 22px;
+  }
+
+  .button-wrap {
+
+    @apply flex h-10 w-full mt-5;
+
+
+    .confirm-button {
+      @apply h-10 flex-1 bg-brand_color flex justify-center items-center font-medium text-button_text_02 text-sm rounded;
+    }
+  }
+}

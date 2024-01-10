@@ -1,0 +1,193 @@
+import { t } from '@lingui/macro'
+import Icon from '@/components/icon'
+import { link } from '@/helper/link'
+import NavBar from '@/components/navbar'
+import { Notify, Toast } from '@nbit/vant'
+import { formatDate } from '@/helper/date'
+import { useCreation } from 'ahooks'
+import { useState } from 'react'
+import { useHelpCenterStore } from '@/store/help-center'
+import { getSupportArticle } from '@/apis/support'
+import { handleVideo } from '@/helper/help-center'
+import { usePageContext } from '@/hooks/use-page-context'
+import HelpCenterHeader from '@/features/help-center/header'
+import SupportBreadcrumb from '@/features/help-center/support/component/support-breadcrumb'
+import {
+  CenterDateType,
+  HelpCenterSearchArticle,
+  HelpCenterSupportArticle,
+  HelpCenterQuestionListHomePage,
+} from '@/typings/api/help-center'
+import styles from './index.module.css'
+
+function HelpCenterSupportSearch() {
+  const userState = useHelpCenterStore()
+  const pageContext = usePageContext()
+  const [loading, setLoading] = useState<boolean>(true)
+  const [article, setArticle] = useState<HelpCenterSearchArticle>()
+  const [relatedArticles, setRelatedArticles] = useState<Array<HelpCenterSupportArticle>>([])
+  const [menuData, setMenuData] = useState<Array<HelpCenterQuestionListHomePage>>([])
+
+  const getCurrentArticleList = async id => {
+    if (id) {
+      setLoading(true)
+      const res = await getSupportArticle({ contentId: id })
+      const dom = document.querySelector('#article') as HTMLDivElement
+      const helpData = res.data?.helpCenterText?.content?.replace(/padding-left: 80px/g, 'padding-left: 40px')
+      dom.innerHTML = helpData || ''
+      const video = dom.getElementsByTagName('video')
+      if (video?.length) {
+        const num = Array(video.length).fill(1)
+        num.forEach((_, index) => {
+          let videoEle = video[index]
+          videoEle = handleVideo(videoEle)
+        })
+      }
+      setArticle(res.data?.helpCenterText)
+      setMenuData(res.data?.catelogList)
+      setRelatedArticles(res.data?.articleList?.slice(0, 5))
+    }
+  }
+
+  const anyNameFunction = () => {
+    const articleId = pageContext?.routeParams?.id
+    getCurrentArticleList(articleId)
+  }
+
+  const initialHandleMenu = (data, id) => {
+    let arrRes = []
+    let forFn = function (arr, id) {
+      arr.forEach(v => {
+        let item = v
+        if (item.id === id) {
+          arrRes.unshift(item as never)
+          forFn(data, item.parentId)
+        } else {
+          if (item.catalogVOList) {
+            // 向下查找到 id
+            forFn(item.catalogVOList, id)
+          }
+        }
+      })
+    }
+    forFn(data, id)
+    return arrRes
+  }
+
+  /** 处理面包屑* */
+  const onBreadcrumb = v => {
+    userState.addBreadcrumb(v)
+  }
+
+  /** 处理面包屑* */
+  const onChangeBread = data => {
+    if (data?.length >= 2) {
+      const parentPath = `/support/navigation?subMenuId=${data[0]?.id}`
+      const currentPath = `/support/navigation?subMenuId=${data[1]?.id}`
+      const newMenuData = [
+        { ...data[0], path: parentPath },
+        { ...data[1], path: currentPath },
+      ]
+      onBreadcrumb(newMenuData)
+    }
+  }
+
+  const getMenuId = () => {
+    const id = pageContext?.routeParams?.id
+    const host = pageContext?.host
+    const locale = pageContext?.locale
+    let path = pageContext?.path
+    return { path, host, locale, id }
+  }
+
+  /** 搜索* */
+  const onChangeSearch = v => {
+    v && link(`/support/search?type=1&searchName=${v}#1`)
+  }
+
+  const onArticleChange = v => {
+    link(`/support/article/${v.id}`, { keepScrollPosition: true })
+  }
+
+  /** 分享当前文章* */
+  const shareCurrentArticle = () => {
+    const { host, locale, path } = getMenuId()
+    // 创建 text area
+    const currentRouter = `${host}/${locale}${path}`
+    const textArea = document.createElement('textarea')
+    textArea.value = `${currentRouter}`
+    // 隐藏文本框，同时防止屏幕抖动
+    textArea.style.position = 'fixed'
+    textArea.style.left = '0'
+    textArea.style.top = '0'
+    textArea.style.opacity = '0'
+    document.body.appendChild(textArea)
+    textArea.focus()
+    textArea.select() // 选中文本
+    const successful = document.execCommand('copy') // 执行 copy 操作
+    if (successful) {
+      Notify.show({ type: 'success', message: t`features_announcement_article_index_5101103` })
+    } else {
+      Notify.show({ type: 'danger', message: t`features_announcement_article_index_5101104` })
+    }
+    textArea.remove()
+  }
+
+  useCreation(() => {
+    anyNameFunction()
+  }, [pageContext.urlOriginal])
+
+  useCreation(() => {
+    loading
+      ? Toast.loading({
+          duration: 0,
+          message: t`features_assets_coin_details_coin_details_510157`,
+        })
+      : Toast.clear()
+  }, [loading])
+
+  useCreation(() => {
+    if (menuData?.length) {
+      const { id } = getMenuId()
+      const data = initialHandleMenu(menuData, id) as any
+      setLoading(false)
+      onChangeBread(data)
+    }
+  }, [menuData])
+
+  return (
+    <div className={styles.scoped}>
+      <div className="help-center-support-article">
+        <NavBar title={t`user.personal_center_06`} left={<Icon name="back" hasTheme className="header-back" />} />
+        <HelpCenterHeader onSearch={onChangeSearch} placeholder={t`features_help_center_support_index_5101232`} />
+        <div className="article-content-body">
+          <SupportBreadcrumb data={userState.breadcrumbList} type={'1'} />
+          <div className="article-body-header">{article?.name}</div>
+          <div className="article-body-time">{formatDate(article?.pushTimeStramp, CenterDateType.MinDate)}</div>
+          <div id="article" className="article-body-title" />
+          <div className="article-share-button" onClick={shareCurrentArticle}>
+            <Icon name="share" hasTheme className="mt-px object-contain h-4.5" />
+            <span className="share-button-text">{t`features_help_center_support_article_index_5101083`}</span>
+          </div>
+        </div>
+        <div className="article-content-right">
+          <div className="content-right-header">
+            <Icon name="latest_articles" className="header-icon" />
+            <label>{t`features_help_center_support_article_index_5101084`}</label>
+          </div>
+          <div className="content-right-body">
+            {relatedArticles?.map(v => {
+              return (
+                <div key={v?.id} className="new-article-text" onClick={() => onArticleChange(v)}>
+                  <div className="new-article-content">{v?.name}</div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default HelpCenterSupportSearch

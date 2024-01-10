@@ -1,0 +1,41 @@
+:local(.adjust-leverage-modal-root) {
+  @apply flex flex-col !rounded-tl-lg !rounded-tr-lg !bg-card_bg_color_03;
+
+  .adjust-leverage-modal-wrapper {
+    @apply px-4 flex flex-col;
+
+    .position-info {
+      @apply bg-card_bg_color_01 rounded px-3 py-2 flex flex-col mt-6;
+
+      .info-cell {
+        @apply flex items-center mb-1 last:mb-0;
+
+        .info-point {
+          @apply w-1.5 h-1.5 bg-brand_color rotate-45 mr-1;
+
+          border-radius: 1px;
+        }
+
+        .info-label {
+          @apply text-sm text-text_color_02;
+
+          line-height: 22px;
+        }
+
+        .info-value {
+          @apply text-sm text-text_color_01;
+
+          line-height: 22px;
+        }
+      }
+    }
+
+    .lever-hint {
+      @apply text-xs text-warning_color mt-2;
+    }
+
+    .modal-btn {
+      @apply w-full h-10 rounded mt-8 mb-7;
+    }
+  }
+}

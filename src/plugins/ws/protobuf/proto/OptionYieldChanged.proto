@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.newbit.common.proto.option";
+option java_outer_classname = "OptionYieldChangedProto";
+
+message OptionYieldChanged{
+
+  int64 time = 1;
+  int64 optionId = 2;
+  int64 periodId = 3;
+
+}

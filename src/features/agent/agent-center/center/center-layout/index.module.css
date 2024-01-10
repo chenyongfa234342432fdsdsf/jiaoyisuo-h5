@@ -1,0 +1,31 @@
+:local(.agent-center-layout) {
+  @apply flex flex-col;
+
+  .more {
+    @apply text-sm text-brand_color;
+
+    line-height: 22px;
+  }
+
+  .center-content {
+    @apply flex flex-col w-full flex-1;
+
+    .details-wrap {
+      @apply flex flex-col border-t-8 border-line_color_02;
+
+      margin-top: 11.5px
+    }
+  }
+
+  .rv-tab {
+    @apply flex-none px-4;
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-b-0;
+  }
+
+  .rv-hairline--top-bottom::after {
+    @apply border-t-0;
+  }
+}

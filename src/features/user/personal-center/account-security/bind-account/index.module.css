@@ -1,0 +1,85 @@
+:local(.bind-account-wrap) {
+  .bind-account-notice-bar {
+    @apply mb-6;
+  }
+
+  .rv-notice-bar {
+    @apply bg-brand_color_special_02;
+
+    label {
+      @apply ml-1 text-xs text-brand_color;
+    }
+
+    .bind-account-icon {
+      @apply mt-px w-3 h-3;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  .rv-notice-bar__content {
+    @apply flex;
+  }
+
+  .rv-cell {
+    @apply py-0 mb-8;
+
+    .rv-cell__left-icon {
+      @apply w-4 h-4 mt-1;
+    
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .rv-cell__title {
+      @apply text-text_color_01;
+
+      .rv-cell__label {
+        @apply mt-0 text-text_color_03;
+      }
+    }
+
+    .bind-account-button {
+      min-width: 82px;
+      @apply flex items-center box-border;
+
+      .rv-button {
+        height: 30px;
+        @apply w-full px-3;
+
+        .rv-button__text {
+          @apply font-normal;
+        }
+      }
+    }
+  }
+}
+
+:local(.bind-account-popup) {
+  .popup-wrap {
+    padding: 22px;
+  
+    .popup-icon {
+      @apply mb-5;
+      
+      .bind-account-popup-icon {
+        @apply w-9 h-9;
+          
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+  
+    .popup-tips {
+      @apply mb-2 text-center;
+  
+      .bind-account-popup-content {
+        @apply mb-5 text-text_color_01;
+      }
+    }
+  }
+}

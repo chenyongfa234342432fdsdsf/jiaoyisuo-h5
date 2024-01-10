@@ -1,0 +1,20 @@
+:local(.scoped) {
+  .title {
+    @apply text-center mb-6 capitalize;
+
+    label {
+      font-size: 24px;
+      @apply text-text_color_01 font-semibold;
+    }
+  }
+
+  .subtitle {
+    @apply text-center mb-6 capitalize;
+
+    label {
+      font-size: 14px;
+      line-height: 22px;
+      @apply text-text_color_02 font-normal;
+    }
+  }
+}

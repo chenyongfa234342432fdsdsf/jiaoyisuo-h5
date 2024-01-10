@@ -1,0 +1,30 @@
+:local(.scoped) {
+  @apply flex flex-col;
+
+  .rv-selector {
+    @apply mx-auto mb-6;
+
+    > * {
+      @apply rounded-2xl ml-4;
+    }
+  }
+
+  .rv-divider {
+    @apply border-line_color_02 border-4 bg-line_color_02;
+  }
+
+  .rv-selector {
+    @apply flex-nowrap;
+  }
+
+  .custom-divider {
+    border-width: 2px;
+  }
+
+}
+
+:local(.gains-detail-popup) {
+  .rv-picker__toolbar {
+    @apply mb-4;
+  }
+}

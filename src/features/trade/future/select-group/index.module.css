@@ -1,0 +1,223 @@
+/* stylelint-disable color-function-notation */
+:local(.group-select-modal-wrapper) {
+  max-height: calc(80 * var(--vh));
+
+  /* padding-bottom: 80px; */
+  background-color: transparent !important;
+  @apply w-full overflow-y-auto relative;
+  
+  .rv-action-sheet__header {
+    
+    @apply flex justify-between items-center text-text_color_01 font-medium text-base p-4 border-b border-line_color_02;
+  }
+  
+  .new-group-selected {
+    @apply border-brand_color !important;
+  }
+
+  .new-group-last {
+    margin-bottom: 86px !important;
+  }
+
+  .new-group {
+    height: 38px;
+    @apply my-4 rounded-lg px-4 py-3 text-brand_color text-base relative border border-line_color_01 flex items-center justify-between;
+
+    .new-group-item {
+      @apply flex justify-between w-full items-center;
+
+      .name {
+        @apply text-sm font-medium;
+
+        line-height: 22px;
+      }
+
+      .name {
+        @apply text-sm;
+      }
+
+      span {
+        @apply relative z-1;
+      }
+    }
+    
+
+
+    
+    .contract-group-img {
+      @apply absolute left-0 top-0 w-full;
+
+      img {
+        height: 50px;
+        @apply w-full;
+      }
+    }
+  }
+  
+  .new-group-bottom-button {
+    z-index: 2001;
+    height: 83px;
+    @apply bg-card_bg_color_03 w-full absolute left-0 bottom-0 flex justify-center;
+    
+    .new-group-button {
+      margin-top: 11px;
+      @apply bg-brand_color mx-4 w-full h-10 flex justify-center items-center rounded text-button_text_02;
+    }
+    
+    .new-group-button-disable {
+      @apply bg-bg_button_disabled text-text_color_04 !important;
+    }
+  }
+}
+
+:local(.group-item):last-child {
+  margin-bottom: 86px;
+}
+
+:local(.group-item) {
+  height: 112px;
+  @apply rounded-lg mb-4 overflow-hidden text-sm border border-line_color_01 relative p-3;
+
+  .group-item-icon {
+    @apply absolute right-3 top-3;
+  }
+  
+  .group-item-type {
+    @apply h-4 absolute left-0 top-0 text-xs flex items-center;
+
+    span {
+      border-radius: 8px 0;
+      transform: scale(0.8);
+      transform-origin: top left;
+      @apply px-1;
+    }
+  }
+  
+  .group-item-detail {
+    @apply mt-3 flex justify-between;
+  }
+  
+  &.expanded {
+    @apply border border-brand_color bg-brand_color_special_02;
+  }
+  
+  /* .profit-top {
+    height: 86px !important;
+  }
+
+  .top {
+    height: 70px;
+    @apply text-white rounded-lg px-4 py-5 relative ;
+    
+    .profit-loss-img {
+      @apply absolute w-full left-0 top-0 h-full;
+    }
+
+    .selected-group-show {
+      .group-name-icon {
+        @apply absolute h-full w-12 top-0 right-0 flex justify-center items-center;
+      }
+      
+      .selected-container:first-child {
+        @apply mt-1.5;
+      }
+
+      .selected-container {
+        @apply w-10/12 mt-1;
+        
+        .profit-tag {
+          @apply relative -right-1;
+        }
+    
+      }
+    }
+
+
+    .left-tag {
+      @apply absolute z-1 flex items-center pl-2 pr-3 py-0.5 rounded-br-lg rounded-tl-lg text-xs scale-90 bg-buy_up_color;
+
+      top: -1px;
+      left: -3px;
+    }
+    
+    .left-tag-red {
+      @apply bg-sell_down_color;
+    }
+
+    .group-name {
+      @apply px-3 py-0.5 mr-8 rounded text-xs text-buy_up_color z-1;
+
+      background-color: rgba(255, 255, 255, 80%);
+    }
+    
+    .group-name-red {
+      @apply text-sell_down_color;
+    }
+    
+    .group-name-icon {
+      @apply mt-0.5;
+    }
+    
+    .contract-group-icon-line {
+      top: 0;
+      right: 49px;
+      width: 0.5px;
+      background-color: var(--buy_up_color_special_03);
+      box-shadow: 0.5px 0 0  var(--buy_up_color_special_03);
+      @apply absolute h-full;
+    }
+
+  }
+
+  .rv-collapse-item__title {
+    @apply hidden;
+  }
+
+  .rv-collapse-item__content {
+    @apply p-0;
+  }
+
+  .bottom {
+    @apply bg-bg_color;
+
+    transition: all 0.5s ease-in-out;
+
+    .prop-item:first-child {
+      @apply pt-4;
+    }
+    
+    .prop-item {
+      @apply px-4 py-2 flex justify-between items-center;
+    }
+    
+    .prop-item:last-child {
+      @apply pb-4;
+    }
+  }
+
+  &.expanded {
+    .top {
+      @apply rounded-b-none;
+    }
+
+    .bottom {
+      @apply h-auto;
+
+      max-height: 180px;
+    }
+  }
+
+  &.is-profit {
+    .top {
+      background-image: var(--buy_bg_gradient);
+
+      .group-name {
+        @apply text-buy_up_color;
+      }
+
+      .left-tag {
+        @apply bg-buy_up_color;
+      }
+    }
+  } */
+}

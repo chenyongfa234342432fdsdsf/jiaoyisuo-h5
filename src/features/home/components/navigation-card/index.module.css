@@ -1,0 +1,76 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 flex flex-row items-center rounded-lg h-20 box-content;
+
+  .navigation-icon {
+    svg { 
+      @apply w-10 h-10;
+    }
+  }
+
+  svg {
+    @apply w-4 h-4;
+  }
+
+  img {
+    @apply w-11 h-11;
+  }
+
+  > :last-child {
+    @apply ml-auto mr-4;
+  }
+
+  > :first-child {
+    @apply mx-4;
+  }
+
+  .title {
+    font-size: 14px;
+    @apply font-semibold;
+  }
+
+  .sub-title {
+    @apply text-text_color_02 text-xs;
+  }
+}
+
+:local(.merchant-trial-qualification) {
+  @apply bg-card_bg_color_01 flex !important;
+
+  .item {
+    @apply flex-1 bg-bg_color flex flex-row items-center p-4 rounded-lg;
+
+    &:first-child {
+      @apply mr-1;
+    }
+
+    &:last-child {
+      @apply ml-1;
+    }
+
+    .navigation-icon {
+      @apply mr-2;
+
+      svg { 
+        @apply w-7 h-7;
+      }
+    }
+
+    .content {
+      @apply flex flex-col h-full items-start;
+
+      .title {
+        font-size: 14px;
+        @apply text-text_color_01 font-medium;
+      }
+    
+      .sub-title {  
+        span {
+          font-size: 12px;
+          transform: scale(0.83, 0.83);
+          @apply text-text_color_02 break-all -ml-3 -mr-3 block;
+        }
+      }
+    }
+
+  }
+}

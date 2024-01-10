@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_package = "com.newbit.common.proto.option";
+option java_outer_classname = "OptionYieldsProto";
+
+message OptionYields{
+
+  int64 time = 1;
+  repeated Yield list = 2;
+
+  message Yield{
+    int64 optionId = 1;
+    int64 periodId = 2;
+    string sideInd = 3;
+    string amplitude = 4;
+    string yieldRate = 5;
+  }
+
+}

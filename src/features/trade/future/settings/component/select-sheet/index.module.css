@@ -1,0 +1,46 @@
+:local(.setting-popup-sheet) {
+  .setting-popup-sheet-content {
+    @apply px-4 pt-4 pb-6 bg-bg_color;
+
+    .sheet-title {
+      @apply text-base font-medium text-text_color_01;
+    }
+
+    .sheet-wrap {
+      @apply flex justify-around;
+
+      .sheet-wrap-item {
+        @apply text-center;
+
+        .content {
+          width: 100px;
+          height: 130px;
+          @apply overflow-hidden bg-card_bg_color_01 relative;
+
+          .content-radio {
+            transform: translateX(-50%);
+            @apply absolute left-1/2 bottom-1.5;
+          }
+
+          .select-icon {
+            @apply w-4 h-4;
+        
+            svg {
+              @apply w-full h-full;
+            }
+          }
+        }
+
+        .text {
+          @apply mt-2 text-text_color_02;
+        }
+      }
+    }
+  }
+
+  .setting-popup-sheet-cancel {
+    border-top: 4px solid var(--line_color_02);
+    @apply pt-4 pb-10 text-center text-text_color_02 bg-bg_color;
+  }
+
+}

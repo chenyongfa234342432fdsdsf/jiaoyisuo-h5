@@ -1,0 +1,17 @@
+:local(.future-settings-popup) {
+  @apply !rounded-lg;
+
+  .future-settings-wrap {
+    width: calc(44.67 * var(--vh));
+    height: calc(62.96 * var(--vh));
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    @apply pt-6 bg-card_bg_color_03;
+
+    .settings-wrap-video {
+      height: calc(46.47 * var(--vh));
+      @apply w-full;
+    }
+  }
+}

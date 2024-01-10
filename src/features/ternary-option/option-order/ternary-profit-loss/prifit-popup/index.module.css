@@ -1,0 +1,30 @@
+:local(.stats-popup) {
+  width: 298px;
+  padding: 22px;
+  @apply flex flex-col items-center bg-card_bg_color_03 rounded-lg;
+
+  .stats-popup-title {
+    @apply font-medium text-base text-text_color_01;
+  }
+
+  .stats-popup-body {
+    @apply font-normal text-sm text-text_color_01;
+  }
+
+  .actions {
+    height: 36px;
+    @apply w-full;
+  }
+
+  .rv-button {
+    @apply w-full rounded;
+  }
+
+  > * {
+    @apply mb-4;
+  }
+
+  > :last-child {
+    @apply mb-0;
+  }
+}

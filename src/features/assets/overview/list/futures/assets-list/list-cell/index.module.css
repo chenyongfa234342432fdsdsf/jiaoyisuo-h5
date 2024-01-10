@@ -1,0 +1,57 @@
+:local(.futures-assets-list-cell-root) {
+  @apply flex flex-col;
+
+  .cell-parent {
+    @apply w-full flex items-center justify-between border-b border-line_color_02 px-4;
+
+    height: 74px;
+
+    .coin-info {
+      @apply flex items-center;
+
+      .coin-name {
+        @apply text-base text-text_color_01 font-medium ml-2;
+      }
+    }
+
+    .coin-right {
+      @apply w-3/5 flex items-center justify-end;
+
+      .coin-assets {
+        @apply flex flex-col flex-1 text-end;
+
+        .quantity {
+          @apply text-base text-text_color_01 font-medium;
+        }
+
+        .assets {
+          @apply text-xs text-text_color_02;
+        }
+      }
+
+      .coin-icon {
+        @apply text-base ml-4;
+      }
+    }
+  }
+
+  .cell-detail {
+    @apply flex flex-col border-line_color_02;
+    
+    .futures-margin-position-cell {
+      @apply pl-4;
+
+      .rv-popover__wrapper {
+        @apply w-full;
+      }
+    }
+
+    .coin-out-btn {
+      @apply h-full border border-brand_color bg-card_bg_color_03 text-sm text-text_color_01 rounded-none;
+    }
+
+    .coin-into-btn {
+      @apply h-full border-brand_color bg-brand_color text-sm text-button_text_02 rounded-none;
+    }
+  }
+}

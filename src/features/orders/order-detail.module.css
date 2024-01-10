@@ -1,0 +1,15 @@
+:local(.order-status-wrapper) {
+  @apply flex flex-col items-center py-4 bg-card_bg_color_01;
+
+  .order-no {
+    @apply flex items-center justify-between px-3 py-1.5 rounded bg-bg_sr_color text-text_color_03;
+  }
+}
+
+:local(.order-detail-page-layout-wrapper) {
+  @apply text-sm;
+}
+
+:local(.prop-list-item-wrapper) {
+  @apply text-xs flex justify-between py-2 first:pt-4;
+}

@@ -1,0 +1,321 @@
+:local(.scoped) {
+  .navbar {
+    @apply flex justify-between leading-5;
+  
+    .navbar-left, .navbar-right {
+      @apply flex flex-1;
+    }
+  
+    .navbar-left {
+      @apply flex items-center;
+  
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  
+    .navbar-right {
+      @apply flex justify-end;
+    }
+  
+    .theme, .customer-service {
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  
+    .theme {
+      @apply mr-6;
+    }
+  
+  }
+
+  .personal-center-wrap {
+    @apply py-4;
+
+
+    .info {
+      @apply pl-4;
+
+      .info-wrap {
+        @apply flex items-center;
+
+        .avatar {
+          @apply w-11 h-11 rounded-full overflow-hidden;
+        }
+
+        .icon {
+          @apply mr-2 ;
+
+          svg {
+            @apply w-11 h-11;
+          }
+        }
+
+        .name {
+          @apply flex-1 flex flex-col;
+
+          .text {
+
+            @apply flex items-center;
+
+            .name-label {
+              @apply text-xl font-medium text-text_color_01 mr-2;
+
+              span {
+                svg {
+                  @apply w-4 h-4 align-text-bottom;
+                }
+              }
+            }
+          }
+
+          .number {
+            label {
+              @apply text-xs text-text_color_02;
+            }
+          }
+        }
+
+        .status {
+          @apply flex justify-center items-center;
+
+          .kyc-tag {
+            @apply text-xs px-1.5 rounded-full font-medium flex items-center;
+
+            border: 0.5px solid var(--gr-05);
+
+            label {
+              color: var(--gr-05);
+              font-size: 10px;
+              line-height: 18px
+            }
+
+            .kyc-icon {
+              @apply m-0
+            }
+          }
+
+          .kyc-tag.none {
+            border: 0.5px solid var(--rd-05);
+
+            label {
+              color: var(--rd-05)
+            }
+          }
+
+          .kyc-tag.enter {
+            border: 0.5px solid var(--or-05);
+
+            label {
+              color: var(--or-05)
+            }
+          }
+        }
+
+        .next-arrow {
+          @apply mr-4 py-4 pl-4;
+        }
+      }
+
+      .login-wrap {
+        .login {
+          label {
+            @apply text-xl leading-7 text-text_color_01;
+          }
+        }
+
+        .text {
+          label {
+            @apply text-xs text-text_color_03;
+          }
+        }
+      }
+    }
+
+    .popup {
+      @apply bg-card_bg_color_01 rounded-lg mx-4 mt-6 flex justify-between p-3 items-center relative;
+
+      .row1 {
+        @apply text-sm text-text_color_01 flex items-center;
+
+        .msg-icon {
+          @apply mr-2 mt-0;
+        }
+      }
+
+      .row2 {
+        @apply text-xs text-text_color_02;
+      }
+
+      .btn {
+        @apply bg-brand_color rounded-full text-button_text_02 px-3 py-1 text-xs;
+
+        line-height: 18px;
+      }
+
+      .close-icon {
+        @apply absolute right-1.5 top-1.5 text-xs;
+
+        font-size: 8px;
+      }
+
+      &::before { 
+        position: absolute;
+        top: -7px;
+        left: 15px;
+        width: 0;
+        height: 0;  
+        border-right: 7px solid transparent;  
+        border-bottom: 7px solid var(--card_bg_color_01);
+        border-left: 7px solid transparent;
+        content: '';
+      }
+    }
+
+    .invitation-and-help {
+      @apply mt-8 flex px-4;
+
+      .item {
+        @apply flex-1 flex justify-center rounded-lg items-center;
+
+        .item-wrap {
+          @apply flex flex-col items-center;
+
+          .icon {
+            .icon-wrap {
+              @apply rounded-full flex items-center justify-center;
+
+              width: 44px;
+              height: 44px;
+              border: 0.5px solid var(--line_color_01);
+            }
+
+            svg {
+              width: 22px;
+              height: 22px;
+            }
+          }
+  
+          .text {
+            label {
+              @apply font-normal text-sm  text-text_color_01;
+
+              line-height: 22px;
+            }
+          }
+        }
+
+      }
+
+    
+    }
+
+    .cell-item-wrap {
+      @apply mt-4;
+
+      .cell-item {
+        @apply px-4 pb-6;
+  
+        .rv-cell {
+          @apply px-0 py-4;
+  
+          svg {
+            @apply text-text_color_01;
+          }
+
+          .rv-cell__left-icon {
+            @apply text-xl -mt-px;
+          }
+      
+          .rv-cell__title {
+            @apply text-sm font-medium text-text_color_01;
+
+            word-break: break-all;
+          }
+      
+          .rv-cell__value {
+            @apply text-xs font-normal text-text_color_04;
+      
+            span {
+              @apply leading-6;
+            }
+          }
+        }
+  
+        .version {
+          @apply flex justify-end;
+  
+          .punctuation-wrap {
+            @apply flex justify-center items-center mr-1;
+  
+            .punctuation {
+              width: 6px;
+              height: 6px;
+              @apply block rounded-3xl bg-warning_color;
+            }
+          }
+        }
+
+        &:last-child {
+          @apply border-none ;
+        }
+      }
+
+      .divider {
+        height: 1px;
+        border-bottom: 0.5px solid var(--line_color_02);
+      }
+    }
+
+    .login-out {
+      @apply mt-8 px-4;
+
+      .rv-button {
+        &:first-child {
+          @apply mb-4 text-text_color_01;
+        }
+
+        &:last-child {
+          color: var(--rd-05);
+        }
+      }
+
+      button {
+        @apply w-full bg-bg_sr_color border-none;
+
+        &:active {
+          @apply text-text_color_04;
+        }
+      }
+    }
+  }
+}
+
+:local(.personal-center-action-sheet) {
+  .rv-action-sheet__description {
+    padding-bottom: 10px;
+    font-size: 12px;
+    @apply bg-card_bg_color_03 text-text_color_02;
+
+    &::after {
+      @apply border-none;
+    }
+  }
+
+  .rv-action-sheet__content {
+    button {
+      color: var(--rd-05);
+      font-size: 14px;
+    }
+  }
+
+  .rv-action-sheet__gap {
+    @apply h-1 bg-line_color_02;
+  }
+
+  .rv-action-sheet__cancel {
+    font-size: 14px;
+    @apply text-text_color_02 pb-10 pt-4;
+  }
+}

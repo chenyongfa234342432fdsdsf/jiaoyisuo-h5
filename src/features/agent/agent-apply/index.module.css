@@ -1,0 +1,369 @@
+:local(.scoped) {
+  @apply w-full relative  box-border bg-card_bg_color_01;
+
+  .over-hid {
+    max-width: 100%;
+    @apply overflow-hidden whitespace-nowrap text-ellipsis;
+  }
+
+  .over-hid-two {
+    display: --webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    @apply overflow-hidden text-ellipsis;
+  }
+
+  .over-hid-three {
+    display: --webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    @apply overflow-hidden text-ellipsis;
+  }
+
+  .apply-wrap {
+    height: 226px;
+    padding: 26px 30px;
+    @apply w-full box-border;
+
+    h1 {
+      font-size: 26px;
+      @apply font-semibold leading-10;
+    }
+
+    p {
+      width: 224px;
+      @apply mt-2 text-text_color_01 text-sm;
+
+      line-height: 22px;
+    }
+
+    .join-button {
+      width: 130px;
+      @apply mt-4 rounded-2xl h-8;
+
+    }
+  }
+
+  .pro-warp {
+    width: calc(100% - 32px);
+    margin-top: -16px;
+
+    @apply flex flex-col items-center pb-4 mx-auto bg-card_bg_color_03 rounded-2xl;
+
+    .pro-row {
+      width: calc(100% - 64px);
+      @apply relative flex flex-col items-center pt-8 box-border;
+
+      .pro-img {
+        width: 51px;
+        height: 50px;
+      }
+
+      .step {
+        left: calc((100% / 2) + 7px);
+        border-radius: 10px 2px;
+        @apply absolute flex justify-center items-center py-1 px-2 text-xs text-text_color_01 h-5 bg-bg_button_disabled;
+      }
+
+      .first {
+        top: 24px;
+      }
+
+      .second {
+        top: 24px;
+      }
+
+      .third {
+        top: 24px;
+      }
+    }
+  }
+
+  .welfare-wrap {
+    width: calc(100% - 32px);
+
+    @apply relative mt-4 flex flex-col p-6 box-border items-center mx-auto bg-card_bg_color_03 rounded-2xl;
+
+
+    .welfare-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 26px;
+      @apply mt-4 leading-10 font-semibold;
+    }
+
+    .welfare-row {
+      @apply w-full mt-6 flex items-center;
+
+      .row-img {
+        width: 40px;
+        height: 40px;
+        @apply bg-card_bg_color_02 rounded-full flex justify-center items-center;
+
+        svg {
+          @apply w-5 h-5;
+        }
+      }
+
+      .welfare-col {
+        @apply flex flex-col justify-center;
+      }
+
+
+    }
+
+    .common-welfare-text {
+      @apply text-base text-text_color_01 font-medium mb-2;
+
+      line-height: 22px;
+    }
+
+    .common-02-text {
+      @apply text-xs text-text_color_02;
+
+      line-height: 18px;
+    }
+
+
+  }
+
+  .common-earn-text {
+    @apply text-sm text-text_color_02;
+
+    line-height: 22px;
+  }
+
+  .earn-wrap {
+    width: calc(100% - 32px);
+
+    @apply relative mt-4 flex flex-col py-6 px-4 box-border items-center mx-auto bg-card_bg_color_03 rounded-2xl;
+
+
+    .earn-wrap-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .second {
+      margin-top: 16px;
+
+    }
+
+    h1 {
+      font-size: 26px;
+      @apply mt-4 leading-10 font-semibold;
+    }
+
+    .rate-wrap {
+      width: 270px;
+
+      @apply mt-4 flex justify-between;
+
+      .center-icon {
+        width: 100px;
+        height: 100px;
+        @apply flex justify-center items-center;
+
+        .add-img {
+          width: 44px;
+          height: 45px;
+          transform: scale(0.5);
+        }
+      }
+
+      .rate-col {
+        width: 126px;
+
+        /* height: 130px; */
+
+        @apply flex flex-col items-center;
+
+        .common-view {
+          width: 100px;
+          height: 100px;
+          font-size: 32px;
+          border-radius: 50%;
+          @apply flex justify-center  items-center font-semibold;
+        }
+
+        .my-scale {
+          @apply bg-brand_color_hover text-button_text_02 ;
+        }
+
+        .friend-scale {
+          @apply text-text_color_01 bg-card_bg_color_02;
+        }
+      }
+    }
+
+
+    .pro-people {
+      @apply w-full;
+
+      .earn-row {
+        height: 90px;
+        @apply flex justify-center;
+      }
+
+      .absolute-02 {
+        top: -4px;
+        @apply right-4;
+      }
+
+      .absolute-03 {
+        top: 145.5px;
+        @apply left-4;
+      }
+
+      .absolute-04 {
+        top: 145.5px;
+        @apply right-4;
+      }
+    }
+
+
+    .line-01 {
+      width: 0;
+      @apply h-6 border border-dashed border-line_color_02 w-0;
+    }
+
+    .line-02 {
+      width: 86px;
+      @apply h-5 border border-dashed border-line_color_02 border-b-0;
+    }
+
+    .line-wrap {
+      width: 86px;
+      @apply flex flex-col items-end;
+    }
+
+    .line-03 {
+      @apply h-5  border border-dashed border-line_color_02 w-0;
+    }
+
+    .line-04 {
+      width: 43px;
+      @apply h-5 border-2 border-dashed border-line_color_02 border-b-0 border-r-0;
+    }
+
+    .line-05 {
+      width: 86px;
+      @apply h-5 border-2 border-dashed border-line_color_02 border-b-0;
+    }
+
+    .weekly-rebate-wrap {
+      width: calc(100% - 32px);
+
+      /* height: 480px; */
+      @apply relative mt-4 flex flex-col py-6 px-4 box-border items-center mx-auto bg-card_bg_color_03 rounded-2xl;
+
+      .weekly-img {
+        width: 127px;
+        height: 116px;
+      }
+
+      h1 {
+        font-size: 26px;
+        @apply mt-4 leading-10 font-semibold;
+      }
+
+      .rank-wrap {
+        @apply w-full flex flex-col mt-4;
+
+        .rank-row {
+          @apply flex justify-between items-center h-6;
+
+          .rank-img {
+            width: 21.41px;
+            height: 15.56px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+
+
+    .common-brand-text {
+      @apply text-sm text-brand_color;
+
+      line-height: 22px;
+    }
+
+
+
+    .banner-title {
+      @apply font-semibold text-text_color_01 leading-10;
+
+      width: 180px;
+      font-size: 26px;
+    }
+
+    .banner-title + p {
+      width: 224px !important;
+      @apply text-sm font-normal text-text_color_01;
+    }
+
+
+
+
+  }
+
+  .button-wrap {
+    height: 83px;
+    @apply w-full p-4 box-border flex justify-center  bg-bg_color mt-6;
+
+    .apply-button {
+      @apply h-10 w-full bg-brand_color font-medium text-sm text-button_text_02 rounded-lg;
+    }
+  }
+
+  .join-wrap {
+    width: calc(100% - 32px);
+    height: 162px;
+    @apply relative mt-4 mb-6 flex flex-col p-6  box-border items-center mx-auto bg-card_bg_color_03 rounded-2xl;
+
+    h1 {
+      font-size: 26px;
+      @apply leading-10 font-semibold text-text_color_01;
+    }
+
+    div {
+      @apply flex text-center mt-2 text-sm font-normal text-text_color_02;
+    }
+  }
+
+  .common-step-text {
+    @apply text-sm text-text_color_01 font-normal;
+
+    line-height: 22px;
+  }
+
+  .ratio {
+    @apply font-medium;
+  }
+
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    @apply bg-card_bg_color_02 rounded-full flex justify-center items-center ;
+
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .common-icon {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+

@@ -1,0 +1,79 @@
+:local(.scoped) {
+  .table-layout-wrapper {
+    min-height: 0;
+
+    table {
+      table-layout: fixed;
+    }
+
+    .table-body {
+      tr {
+        .display-quote {
+          .base-symbol-name {
+            @apply text-base font-medium text-text_color_01;
+          }
+
+          .quote-symbol-name {
+            @apply text-xs font-medium text-text_color_02;
+          }
+        }
+
+        .fiat-price-vol {
+          >:first-child {
+            @apply text-base font-medium;
+          }
+
+          >:last-child {
+            @apply font-normal;
+          }
+        }
+
+        td {
+          @apply py-4;
+        }
+
+        > :nth-child(2) {
+          @apply pl-8;
+        }
+
+        > :last-child {
+          @apply text-right text-text_color_01 font-medium;
+        }
+      }
+    }
+
+    thead {
+      tr {
+        @apply text-xs text-text_color_03;
+
+        span {
+          @apply !font-normal;
+        }
+
+        > :nth-child(2) {
+          @apply pl-8 whitespace-nowrap;
+        }
+
+        > :last-child {
+          span {
+            @apply justify-end;
+          }
+        }
+      }
+    }
+  }
+
+  .rv-swiper__indicator {
+    @apply bottom-0;
+  }
+
+  .rv-indicator__dot {
+    width: 3px;
+    height: 3px;
+    @apply bg-bg_button_disabled;
+  }
+
+  .rv-indicator__dot--active {
+    @apply bg-brand_color w-2 rounded-md;
+  }
+}

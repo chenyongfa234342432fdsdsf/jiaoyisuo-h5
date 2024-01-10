@@ -1,0 +1,75 @@
+:local(.scoped) {
+  @apply w-full relative overflow-y-scroll box-border bg-bg_color;
+  
+  .rv-tabs__wrap {
+    @apply px-4 font-semibold;  
+  }
+
+  .content-wrap {
+    .price-async-center {
+      height: 102px;
+      @apply flex items-center justify-center w-full;
+    }
+
+    .coin-detail-wrap {
+      /* @apply max-h-60 overflow-y-scroll; */
+
+      .market-order-book {
+        height: 400px;
+      }
+
+      .detail-control-height {
+        height: 368px;
+        @apply overflow-y-scroll;
+      }
+
+      .trade-deal-table {
+        height: 368px;
+      }
+
+      .tab-name {
+        @apply text-base;
+      }
+    }
+  }
+
+  .detail-chart-wrap {
+    min-height: 390px;
+    @apply flex items-center justify-center w-full;
+  }
+
+  .footer-wrap {
+    height: 106px;
+    box-shadow: 0 -1px 2px 0 rgb(0 0 0 / 10%);
+    @apply absolute w-full flex items-center bottom-0 px-4 box-border z-10 bg-bg_color;
+
+    .button {
+      @apply h-11 flex-1 text-text_color_05 text-base;
+    }
+
+    .buy {
+      @apply bg-buy_up_color;
+    }
+
+    .sell {
+      @apply bg-sell_down_color ml-6;
+    }
+  }
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b;
+  }
+
+  .rv-tabs__nav--line, .rv-tabs__nav--capsule, .rv-tabs__nav--jumbo {
+    @apply overflow-x-scroll;
+
+    .rv-tab {
+      @apply m-0 p-0 mr-8 flex-none;
+    }
+  }
+
+  .footer-operation {
+    height: 74px;
+    @apply box-border fixed bottom-0 w-full bg-bg_color;
+  }
+}

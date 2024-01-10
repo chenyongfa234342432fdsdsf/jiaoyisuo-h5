@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.newbit.common.proto.push";
+option java_outer_classname = "OptionOrderProto";
+
+message OptionOrder {
+  repeated Body optionOrder = 1;
+
+  message Body{
+    sint64 uid = 1;
+    sint64 orderId = 2;
+    sint64 businessId = 3;
+    string orderState = 4;
+    sint64 optionId = 5;
+    string symbol = 6;
+        int32 profitable=7;
+        string profitValue = 8;
+    string coinSymbol = 9;
+  }
+}

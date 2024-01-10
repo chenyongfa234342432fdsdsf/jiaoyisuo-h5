@@ -1,0 +1,30 @@
+:local(.scoped) {
+  @apply inline-flex align-middle;
+
+  margin-top: -0.15em;
+
+  &.hidden-mt {
+    margin-top: 0;
+  }
+
+  svg , .nb-icon {
+    @apply align-middle fill-current;
+
+    width: 1em;
+    height: 1em;
+  }
+
+  svg.rv-icon, .nb-icon.rv-icon {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+  }
+
+  .nb-icon {
+    @apply w-full h-full;
+  }
+
+  .svg-icon {
+    fill: currentcolor;
+  }
+}

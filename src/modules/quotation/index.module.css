@@ -1,0 +1,6 @@
+:local(.scoped) {
+  .test {
+    background: red;
+  }
+}
+

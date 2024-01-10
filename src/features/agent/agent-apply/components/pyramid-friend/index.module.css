@@ -1,0 +1,37 @@
+:local(.earn-col) {
+  /* .friend-icon-bg { */
+  @apply flex flex-col relative;
+
+  .friend-icon-bg {
+    @apply bg-card_bg_color_02 rounded-full flex justify-center items-center;
+
+    width: 60px;
+    height: 60px;
+
+    .peo-icon {
+      svg {
+        width: 23px;
+        height: 26px;
+      }
+    }
+  }
+
+  .common-pop {
+    width: 86.5px;
+    height: 50px;
+    line-height: 18px;
+    @apply absolute flex flex-col justify-center items-center text-xs text-text_color_01 bg-bg_button_disabled;
+  }
+
+  .common-left-pop {
+    top: -34px;
+    left: -65px;
+    border-radius: 25px 25px 0;
+  }
+
+  .common-right-pop {
+    top: -34px;
+    right: -65px;
+    border-radius: 25px 25px 25px 0;
+  }
+}

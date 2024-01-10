@@ -1,0 +1,10 @@
+:local(.scoped) {
+
+  @apply relative;
+
+  .vip-border {
+    @apply absolute left-0 top-0;
+
+    transform: scale(1.4);
+  }
+}

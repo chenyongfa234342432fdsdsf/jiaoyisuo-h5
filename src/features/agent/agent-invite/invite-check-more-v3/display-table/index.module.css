@@ -1,0 +1,204 @@
+:local(.scoped) {
+  .table-wrapper {
+    /* height: calc(80 * var(--vh)); */
+    @apply px-4 py-4 overflow-auto pt-0;
+  }
+
+  .load-finished-text {
+    @apply flex justify-center items-center text-text_color_03 text-sm py-8 mx-auto;
+  }
+
+  .loading-wrapper, .loading-more-wrapper {
+    @apply flex justify-center items-center mt-10 text-sm text-text_color_04;
+
+    .rv-loading {
+      @apply w-4 h-4;
+    }
+  }
+
+  .no-data-box {
+    .offset-no-data {
+      /* transform: translateY(calc(-65 * var(--vh))); */
+      @apply h-52 w-full;
+  
+
+    }
+
+    .no-data-image .no-data {
+      width: 217px !importantr;
+      height: 261px !importantr;
+    }
+  }
+
+
+  table {
+
+    @apply text-xs flex flex-col;
+
+    tr {
+      height: 32px !important;
+    }
+
+    tr {
+      th:not(:first-child) {
+        > * {
+          @apply flex justify-end ml-auto;
+        }
+      }
+    }
+
+    td:not(:first-child) {
+      text-align: right;
+    }
+    
+    td,
+    th {
+      @apply overflow-hidden whitespace-nowrap pr-5;
+    }
+
+    td:nth-child(1),
+    th:nth-child(1), {
+      @apply pl-2;
+    }
+
+    td:last-child,
+    th:last-child, {
+      @apply pr-2;
+    }
+
+  }
+
+  thead {
+    @apply whitespace-nowrap;
+
+    tr {
+      height: 36px;
+      @apply text-text_color_02 bg-card_bg_color_01 flex items-center;
+
+      th {
+        @apply w-1/4;
+
+        font-weight: 400;
+
+      }
+    }
+  }
+
+  tbody {
+    @apply text-text_color_01;
+
+    tr {
+      @apply !flex;
+
+      td {
+        @apply w-1/4;
+      }
+    }
+
+    tr:nth-child(1) {
+      @apply mt-4;
+    }
+
+  }
+
+  .uid-wrapper {
+    @apply text-brand_color cursor-pointer;
+  }
+
+  .no-click {
+    @apply text-text_color_01;
+  }
+
+  .parent-uid-hide-icon {
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+    @apply pl-1;
+  }
+
+  .table-common {
+    @apply px-2 text-xs;
+  }
+
+  .tab-header {
+    @apply px-2 text-text_color_02 bg-card_bg_color_01 py-2;
+
+    .table-header-col {
+      &:first-child {
+        width: 20% !important;
+        padding: 0;
+      }
+
+      &:nth-child(2) {
+        width: 22% !important;
+        margin-right: 8px;
+        padding: 0; 
+      }
+
+      &:nth-child(3) {
+        width: 35% !important;
+        padding: 0; 
+      }
+
+      &:last-child {
+        width: 25% !important;
+        padding: 0; 
+      }
+    }
+  }
+
+  .table-cell {
+    .col-cell {
+      &:nth-child(2) {
+        .parentUid {
+          @apply pr-3;
+
+        }
+      }
+
+      &:last-child {
+        @apply pr-0;
+      }
+    }
+  }
+
+
+
+
+
+ 
+
+}
+
+:local(.detail) {
+  @apply bg-card_bg_color_03 text-base font-medium text-text_color_01 ;
+  
+  height: 612px;
+  border-radius: 16px 16px 0 0 !important;
+  
+  .detail-content {
+    @apply m-4 mb-10;
+
+    .detail-cell {
+      @apply flex justify-between text-sm font-medium text-text_color_01 mt-4;
+
+      .cell-label {
+        @apply text-text_color_02 font-normal;
+      }
+    }
+
+    .detail-cell:first-child {
+      @apply mt-0;
+    }
+  }
+  
+  .rv-popup__title {
+    @apply text-left ml-4;
+  }
+
+  .level-icon {
+    @apply mr-2 text-lg;
+  }
+
+}

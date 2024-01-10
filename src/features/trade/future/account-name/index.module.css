@@ -1,0 +1,17 @@
+/* stylelint-disable color-function-notation */
+:local(.newaccount-container) {
+  /* @apply px-4 pt-4 pb-10; */
+    
+  .newaccount-name {
+    @apply bg-bg_sr_color w-full h-10 pl-3 rounded-sm mt-2 mb-3;
+  }
+
+  .newaccount-name-item {
+    width: 30%;
+    @apply h-6 bg-bg_sr_color flex justify-center items-center text-xs rounded mt-3;
+  }
+  
+  .newaccount-name-item-selected {
+    @apply border border-brand_color bg-brand_color_special_02 text-brand_color;
+  }
+}

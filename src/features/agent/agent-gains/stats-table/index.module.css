@@ -1,0 +1,29 @@
+:local(.scoped) {
+  thead {
+    @apply hidden;
+  }
+
+  .table-body {
+    tr {
+      height: 76px !important;
+      border-bottom-width: 0.5px;
+      @apply border-line_color_02;
+
+      >:first-child {
+        @apply text-left;
+
+        > * {
+          @apply ml-4;
+        }
+      }
+
+      >:last-child {
+        @apply text-right;
+
+        >* {
+          @apply mr-4;
+        }
+      }
+    }
+  }
+}

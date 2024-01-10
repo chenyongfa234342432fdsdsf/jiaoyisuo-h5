@@ -1,0 +1,132 @@
+:local(.scoped) {
+  .rv-overlay {
+    z-index: 99999;
+  }
+
+  .overlay-container {
+    @apply h-full flex justify-center items-center;
+    
+    .contract-group-container {
+      .contract-group-container-content {
+        height: 394px;
+        @apply overflow-y-scroll;
+      }
+    }
+  }
+  
+  .new-contract-group {
+    width: 343px;
+    height: 50px;
+    @apply relative mb-2 rounded-lg overflow-hidden;
+
+    img {
+      width: 343px;
+      height: 50px;
+      @apply absolute left-0 top-0;
+    }
+    
+    .contract-group-label {
+      @apply absolute left-4 top-3 text-button_text_01 z-1 text-base;
+    }
+    
+    .contract-group-icon {
+      @apply absolute right-4 top-3;
+    }
+  }
+  
+  .profit-contract-group {
+    width: 343px;
+    min-height: 70px;
+    @apply relative mb-2 bg-bg_color rounded-lg overflow-hidden;
+    
+    .profit-total-income {
+      width: 48px;
+      height: 18px;
+
+
+      @apply absolute bg-buy_up_color text-button_text_01 flex justify-center items-center rounded-br-xl left-0 top-0 z-1;
+      
+      span {
+        /* stylelint-disable-next-line number-max-precision */
+        font-size: 10px; transform: scale(0.83333); transform-origin: 0 0;
+        @apply pt-1 pl-1;
+      }
+      
+    }
+
+    img {
+      width: 343px;
+      height: 70px;
+      @apply absolute  left-0 top-0;
+    }
+    
+    .contract-group-label {
+      top: 22px;
+      @apply absolute left-4 text-button_text_01 z-1 text-base;
+
+
+      span {
+        @apply text-sm;
+      }
+    }
+    
+    .contract-group {
+      @apply absolute rounded text-buy_up_color bg-bg_color flex justify-center text-xs items-center;
+
+      top: 26px;
+      right: 65px;
+      width: 32px;
+      height: 18px;
+    }
+    
+    .contract-group-icon-line {
+      right: 49px;
+      width: 0.5px;
+      height: 70px;
+      background-color: rgb(255 255 255 / 25%);
+      box-shadow: 0.5px 0 0  rgb(51 152 83 / 50%);
+      @apply absolute;
+    }
+    
+    .contract-group-icon-line-red {
+      right: 49px;
+      width: 0.5px;
+      height: 70px;
+      background-color: rgb(255 255 255 / 25%);
+      box-shadow: 0.5px 0 0  rgb(233 90 92 / 50%);
+      @apply absolute;
+    }
+    
+    
+    .contract-group-icon {
+      width: 48.5px;
+      height: 70px;
+      @apply flex justify-center items-center absolute right-0 top-0;
+    }
+    
+    .contract-group-content {
+      margin-top: 70px;
+      @apply p-4;
+      
+      .group-content-item {
+        @apply flex justify-between mb-4;
+        
+        span:first-child {
+          @apply text-sm text-text_color_02;
+        }
+        
+        span:last-child {
+          @apply text-sm text-button_text_02;
+        }
+        
+        .group-content-rate-green {
+          @apply text-buy_up_color !important;
+        }
+      }
+      
+      .group-content-item:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+}

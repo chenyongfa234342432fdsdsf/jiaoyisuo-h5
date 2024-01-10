@@ -1,0 +1,54 @@
+:local(.table-wrapper) {
+  .table-header {
+    div {
+      @apply bg-card_bg_color_01 text-text_color_02 text-sm px-4 py-2 font-normal;
+    }
+  }
+
+  .table-tr {
+    div {
+      @apply text-xs px-4 py-3;
+    }
+  }
+
+  .table-header,
+  .table-tr {
+    @apply flex;
+
+    div {
+      @apply text-center;
+      
+      flex: 1;
+
+      &:first-child {
+        @apply text-left;
+
+        flex: 2;
+      }
+
+      &:last-child {
+        @apply text-right;
+      }
+    }
+  }
+
+
+  .rv-pagination__item {
+    @apply text-text_color_04;
+
+    &.rv-pagination__item--active {
+      @apply text-text_color_01;
+    }
+
+    &.rv-pagination__prev,
+    &.rv-pagination__next {
+      @apply bg-transparent;
+    }
+  }
+}
+
+:local(.selector-wrapper) {
+  .rv-selector__item {
+    @apply mr-2 mb-2 h-9;
+  }
+}

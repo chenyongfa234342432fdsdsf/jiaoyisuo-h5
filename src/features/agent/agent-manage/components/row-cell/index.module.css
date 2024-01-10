@@ -1,0 +1,44 @@
+:local(.manage-row) {
+  @apply flex justify-between mb-4;
+
+  &:last-child {
+    @apply mb-0;
+  }
+    
+  .default {
+    height: 22px;
+    @apply px-2 flex justify-center items-center rounded-sm text-brand_color bg-brand_color_special_02 text-xs rounded-sm;
+  }
+    
+  .set-default-wrap {
+    @apply flex items-center;
+    
+    .set-default {
+      min-width: 64px;
+      height: 22px;
+      @apply px-2 bg-bg_sr_color mr-2 flex justify-center items-center text-xs text-text_color_01 rounded-sm;
+    }
+            
+  }
+
+  .manage-label-text {    
+    @apply text-sm text-text_color_02;
+    
+    line-height: 22px;
+  }
+    
+  .manage-content-text {    
+    @apply text-sm text-text_color_01 flex justify-end;
+    
+    line-height: 22px;
+  }
+
+  .icon {
+    /* @apply text-base; */
+    @apply flex items-center h-4;
+
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+}

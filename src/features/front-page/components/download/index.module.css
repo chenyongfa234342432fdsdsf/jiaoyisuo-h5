@@ -1,0 +1,21 @@
+:local(.scoped) {
+  .image {
+    @apply mt-6 mb-8;
+  }
+
+  .btn {
+    @apply flex;
+
+    .rv-button {
+      @apply flex-1 rounded-full;
+
+      &:first-child {
+        @apply mr-3 border-text_color_01 text-text_color_01;
+      }
+
+      &:last-child {
+        @apply ml-3;
+      }
+    }
+  }
+}

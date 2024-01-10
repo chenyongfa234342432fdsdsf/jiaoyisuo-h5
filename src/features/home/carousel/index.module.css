@@ -1,0 +1,86 @@
+:local(.scoped) {
+  @apply !bg-card_bg_color_01 flex space-x-2;
+
+  min-height: 180px;
+
+  .fast-buy {
+    @apply bg-bg_color mb-2 p-3 rounded-lg relative;
+
+    min-height: 72px;
+  }
+
+  .item {
+    @apply h-full p-4 bg-bg_color rounded-lg;
+
+    background-repeat: no-repeat;
+    background-position: bottom 16px right 16px;
+    background-size: 96px auto;
+  }
+
+  .title {
+    @apply text-sm font-medium text-text_color_01 whitespace-nowrap overflow-hidden text-ellipsis;
+  }
+
+  .remarks {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    display: -webkit-box;
+    padding-right: 52px;
+    overflow: hidden;
+    color: #7F7F81; 
+    text-overflow: ellipsis; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    @apply text-xs font-medium mt-2; 
+  }
+
+  .rv-swiper__slide {
+    @apply h-full;
+  }
+
+  .rv-swiper__indicator {
+    @apply left-4 bottom-4 translate-x-0;
+  }
+
+  .rv-indicator__dot {
+    width: 3px;
+    height: 3px;
+    @apply bg-bg_button_disabled;
+  }
+
+  .rv-indicator__dot--active {
+    @apply bg-brand_color w-2;
+  }
+
+  .bold-title {
+    @apply text-sm font-semibold relative z-1;
+
+    line-height: 22px;
+  }
+
+  .sub-title {
+    @apply text-[10px] font-medium text-text_color_02 mt-1 relative z-1;
+
+    line-height: 18px;
+  }
+
+  .app-only {
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom 16px right 16px;
+    background-size: 40px auto;
+
+    @apply p-3;
+  }
+
+  .check-btn {
+    height: unset;
+    padding: 4px 6px;
+    font-size: 8px;
+    border-radius: 100px;
+  }
+
+  .fast-buy-img {
+    @apply absolute w-full h-full left-0 top-0;
+  }
+}

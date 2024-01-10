@@ -1,0 +1,13 @@
+:local(.position-price-root) {
+  @apply flex flex-col pb-3 border-b border-line_color_02;
+
+  .price-item {
+    @apply w-full flex items-center justify-between text-sm text-text_color_02 mb-2 last:mb-0;
+
+    line-height: 22px;
+
+    .value {
+      @apply text-text_color_01;
+    }
+  }
+}

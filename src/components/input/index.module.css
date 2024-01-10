@@ -1,0 +1,98 @@
+:local(.only-input-wrapper) {
+  @apply text-sm rounded-lg flex items-center;
+  
+  --price-input-height: 40px;
+
+  height: var(--price-input-height);
+
+  --rv-input-disabled-text-color: var(--text_color_04);
+
+  @apply bg-bg_sr_color rounded-lg;
+
+  /** 不做细边框缩放，就按正常展示 */
+  &.with-border {
+    @apply border-bg_sr_color border border-solid
+  }
+
+  &::after {
+    @apply border-bg_sr_color rounded-lg;
+  }
+
+  .rv-input {
+    height: var(--price-input-height) flex-1;
+    
+    .rv-input__control {
+      @apply text-text_color_01 font-medium;
+    }
+  }
+  
+  
+
+  &.is-white {
+    @apply bg-card_bg_color_03 border border-solid border-line_color_01;
+  }
+
+  &.h-26 {
+    --price-input-height: 26px;
+  }
+
+  &.disabled {
+    @apply bg-bg_button_disabled;
+
+    .rv-input__prefix {
+      @apply text-text_color_04;
+    }
+  }
+
+  &.is-focused {
+    &:not(.focused-not-transparent) {
+      @apply bg-transparent
+    }
+    @apply border-brand_color;
+    
+    &::after {
+      @apply border-brand_color rounded-lg;
+    }
+  }
+
+  &.with-label {
+    @apply relative;
+
+    @keyframes label {
+      0% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(0.833);
+      }
+    }
+
+    .input-label {
+      @apply text-text_color_02 text-xs absolute top-1 hidden;
+
+      transform-origin: left top;
+    }
+  
+
+    &.has-value {
+      .input-label {
+        @apply block;
+
+        transform: scale(0.833);
+        animation: label 0.2s ease-in-out;
+      }
+
+      .rv-input__control {
+        @apply pl-0.5;
+        
+        transform: translateY(6px);
+
+        /** 出现的时候才有动效 */
+        transition: all 0.2s ease-in-out;
+
+      }
+    }
+  }
+
+}

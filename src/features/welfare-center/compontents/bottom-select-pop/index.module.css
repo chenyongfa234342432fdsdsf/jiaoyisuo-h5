@@ -1,0 +1,23 @@
+:local(.bottom-select-popup-style) {
+  .bottom-select-popup-wrap {
+    .title {
+      @apply px-8 py-4 text-text_color_01 font-semibold;
+    }
+
+    .item {
+      border-bottom: 0.5px solid var(--line_color_02);
+      @apply flex items-center justify-center py-3 text-text_color_01 text-sm;
+    }
+
+    .cancel {
+      @apply flex items-center justify-center;
+
+      border-top: 3px solid var(--line_color_02);
+
+      .cancel-text {
+        font-size: 16px;
+        @apply py-3 text-text_color_03 mb-5;
+      }
+    }
+  }
+}

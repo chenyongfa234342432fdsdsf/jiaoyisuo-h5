@@ -1,0 +1,21 @@
+:local(.group-detail-overview-wrapper) {
+  @apply p-4 relative;
+
+  .bedeck-img {
+    @apply w-24 h-44 absolute right-0 top-0;
+
+    img {
+      @apply w-24 h-44
+    }
+  }
+}
+
+:local(.group-detail-records-wrapper) {
+  .record-item {
+    @apply p-4 flex justify-between;
+  }
+
+  .sub-text {
+    @apply text-xs text-text_color_03 mt-1;
+  }
+}

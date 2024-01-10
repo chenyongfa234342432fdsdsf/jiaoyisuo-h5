@@ -1,0 +1,25 @@
+:local(.order-status-wrapper) {
+  @apply flex flex-col items-center pt-4 pb-6 bg-card_bg_color_01;
+
+  .order-no {
+    @apply flex items-center justify-between px-3 py-1.5 rounded bg-bg_sr_color text-text_color_03;
+    
+    .copy-icon {
+      @apply w-4 h-4;
+    }
+  }
+}
+
+:local(.order-detail-page-layout-wrapper) {
+  @apply text-sm;
+  
+  .fund-tab {
+    .rv-tabs__line {
+      @apply hidden !important;
+    }
+  }
+}
+
+:local(.prop-list-item-wrapper) {
+  @apply text-xs flex justify-between py-2 first:pt-4 last:pb-4;
+}

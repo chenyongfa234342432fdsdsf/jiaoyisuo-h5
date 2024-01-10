@@ -1,0 +1,126 @@
+:local(.stop-limit-modal-root) {
+  height: 75%;
+  @apply rounded-tl-lg rounded-tr-lg bg-card_bg_color_03 !important;
+
+  .modal-tabs {
+    @apply w-full p-4 bg-card_bg_color_03 fixed z-1;
+
+    margin-top: 96px;
+
+    .tabs-cell {
+      @apply w-full bg-card_bg_color_01 p-0.5 rounded flex items-center;
+
+      .tab-cell {
+        @apply w-1/2 flex items-center justify-center text-sm text-text_color_02;
+
+        height: 26px;
+        line-height: 22px;
+      }
+
+      .active-tab-cell {
+        @apply bg-card_bg_color_03 rounded text-text_color_01;
+      }
+    }
+  }
+
+  .modal-content {
+    @apply px-4 flex flex-col;
+
+    padding-top: 162px;
+    padding-bottom: 100px;
+
+    .price-content {
+      @apply flex items-center mt-4;
+    }
+
+    .form-item {
+      @apply flex flex-col mt-4;
+    }
+
+    .position-coupon-select {
+      @apply mt-4 py-1.5 top-0;
+    }
+
+    .price-select-item {
+      @apply flex flex-col ml-1 w-36;
+    }
+
+    .form-input {
+      @apply w-full h-10 rounded-lg text-sm px-3;
+
+      &.is-focused {
+        @apply !bg-bg_color;
+      }
+
+      .rv-input__control {
+        @apply font-medium placeholder-text_color_04 placeholder:font-normal;
+      }
+    }
+
+    .input-disabled {
+      @apply bg-bg_button_disabled text-text_color_04 !important
+      }
+
+    .form-slider {
+      @apply mt-5 mb-9;
+
+      .rv-slider {
+        @apply h-1 bg-line_color_02;
+      }
+    }
+
+    .form-info {
+      @apply flex items-center justify-between text-sm text-text_color_02 mb-2 last:mb-0;
+
+      .info-value {
+        @apply text-text_color_01 flex-1 flex justify-end;
+      }
+
+      .msg-icon {
+        @apply px-1;
+
+        svg {
+          @apply text-xs;
+        }
+      }
+    }
+
+    .price-hint {
+      @apply mt-2 text-xs text-text_color_03;
+
+      .hint-name {
+        @apply text-text_color_01;
+      }
+    }
+
+    .profit-disabled-content {
+      @apply flex flex-col text-sm;
+
+      .profit-disabled-labels {
+        @apply flex items-center justify-between mt-3.5 text-text_color_02 mb-2;
+
+        .revoke {
+          @apply text-brand_color;
+        }
+      }
+
+      .disabled-input {
+        @apply w-full h-10 bg-bg_button_disabled rounded px-3 text-sm text-text_color_04 leading-10;
+      }
+    }
+  }
+
+  .modal-bottom {
+    @apply w-full px-4 pb-7 pt-8 flex justify-between fixed bottom-0 bg-card_bg_color_03 z-10;
+
+    .revoke-btn {
+      width: 48%;
+
+      @apply h-10 rounded bg-bg_sr_color border-bg_sr_color text-text_color_01;
+    }
+
+    .modal-btn {
+      @apply h-10 rounded-lg;
+    }
+  }
+}

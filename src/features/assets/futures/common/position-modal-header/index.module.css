@@ -1,0 +1,15 @@
+:local(.position-modal-header-root) {
+  @apply w-full flex flex-col border-b border-line_color_02 p-4 pb-3 bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg;
+
+  .position-modal-header-title {
+    @apply flex items-center justify-between text-base text-text_color_01 font-medium;
+  }
+
+  .name-cell {
+    @apply flex items-center mt-1;
+
+    .name {
+      @apply text-sm text-text_color_01 mr-1 -mt-0.5;
+    }
+  }
+}

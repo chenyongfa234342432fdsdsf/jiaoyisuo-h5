@@ -1,0 +1,36 @@
+:local(.scoped) {
+  @apply text-sm;
+  
+  .content {
+    @apply px-4;
+
+    .trade-orderbook-wrapper {
+      @apply flex-1 w-0;
+    }
+
+    .trade-exchange-wrapper {
+      width: calc((100% - 16px) * 0.6)
+    }
+  }
+
+  .rv-checkbox {
+    .rv-checkbox__icon {
+      @apply -translate-y-px;
+    }
+  }
+}
+
+/** 自动定位的不对，手动给它重置一下 */
+:local(.intro-tooltip-account) {
+  @apply -right-1  !important;
+
+  left: unset !important;
+  width: 284px;
+
+  .introjs-arrow {
+    @apply right-10 !important;
+
+    left: unset !important;
+  }
+
+}

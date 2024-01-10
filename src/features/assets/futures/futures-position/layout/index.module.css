@@ -1,0 +1,36 @@
+:local(.futures-position-root) {
+  @apply flex flex-col w-full h-full;
+
+  .header {
+    @apply flex items-center;
+
+    .header-cell {
+      @apply flex flex-col mr-8 last:mr-0 items-center;
+
+      .header-cell-title {
+        @apply text-text_color_02 font-medium;
+
+        font-size: 17px;
+        line-height: 26px;
+      }
+
+      .header-cell-title-active {
+        @apply text-text_color_01;
+      }
+
+      .header-cell-line {
+        @apply h-0.5 w-5 rounded bg-brand_color;
+
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .rv-nav-bar__title {
+    @apply flex self-end;
+  }
+
+  .empty {
+    @apply !py-40;
+  }
+}

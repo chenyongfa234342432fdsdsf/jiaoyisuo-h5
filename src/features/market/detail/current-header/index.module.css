@@ -1,0 +1,136 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .trade-header {
+    @apply w-full flex justify-between px-4 box-border py-2.5;
+
+    .left-wrap {
+      @apply flex items-center;
+
+      .nav-wrapper {
+        @apply flex;
+
+        .common-icon {
+          @apply flex justify-center items-center;
+        }
+
+        .nav-divider {
+          width: 1px;
+          height: 16px;
+          @apply bg-line_color_01 mx-1;
+        }
+
+      }
+      
+
+      .coin {
+        @apply h-4 leading-4 font-medium text-xl ml-2 mr-1 flex items-center;
+
+        .pair-name,
+        .pair-name-futures {
+          font-weight: 600;
+          font-size: 20px;
+          font-style: normal;
+          line-height: 30px; 
+        }
+
+        .quote-badge {
+          @apply mx-1 ;
+
+          bottom: 12px;
+          height: 18px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px; 
+        }
+      }
+
+      .chg-tag {
+        @apply text-sm font-medium;
+
+        height: 22px;
+      }
+
+      .group {
+        height: 22px;
+        @apply px-1 py-0.5 text-sm bg-brand_color_special_02 rounded-sm font-semibold text-brand_color ml-1;
+      }
+
+      .ws-delay-time {
+        @apply bg-buy_up_color_special_02 text-buy_up_color; 
+      }
+    }
+
+    .right-wrap {
+      @apply flex items-center ml-1;
+
+      .screen {
+        @apply ml-2;
+
+        svg {
+          @apply text-base leading-4;
+        }
+      }
+
+      .star {
+        @apply text-[18px] leading-4 mr-3;
+      }
+
+      .extra-wrap {
+        svg {
+          @apply text-[18px];
+        }
+      }
+    }
+  }
+
+  .kline-header {
+    @apply h-11 w-full flex justify-between px-4 box-border;
+
+    .left-wrap {
+      @apply h-11 flex items-center;
+
+      .back {
+        svg {
+          @apply text-base leading-4;
+        }
+      }
+    }
+
+    .center-wrap {
+      @apply h-11 flex items-center;
+
+      .coin {
+        @apply h-4 leading-4 font-medium text-base ml-2;
+      }
+
+      .contract-coin {
+        @apply h-11 flex leading-4 ml-2 justify-center items-center;
+
+        .pair-name-futures {
+          @apply font-medium text-lg;
+        }
+
+        .quote-badge {
+          @apply block text-xs;
+        }
+      }
+    }
+
+    .right-wrap {
+      height: 45px;
+
+      @apply flex items-center;
+
+      .star {
+        @apply text-[18px] leading-4 ml-4;
+      }
+    }
+  }
+
+  .common-icon {
+    svg {
+      @apply text-[18px] leading-4;
+    }
+  }
+}

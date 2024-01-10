@@ -1,0 +1,335 @@
+:local(.scoped) {
+  /* padding-bottom: 106px; */
+  @apply w-full absolute bottom-0 top-0  box-border bg-card_bg_color_01;
+
+  /* @apply w-full relative  box-border bg-bg_color; */
+
+  .bg-wrap {
+    height: 180px;
+    @apply w-full bg-card_bg_color_01 z-100 relative;
+
+    .banner-text-position {
+      @apply absolute top-0;
+
+    }
+
+    .bg-box {
+      height: 180px;
+    }
+
+    .title {
+      margin-left: 29px;
+      padding-top: 35px;
+      @apply font-semibold text-2xl text-text_color_01;
+
+      line-height: 34px;
+    }
+  
+    .content {
+      width: 63%;
+      margin-left: 29px;
+      @apply mt-3 text-sm font-normal text-text_color_01;
+  
+      line-height: 22px;
+    }
+  }
+
+  .bg-form-wrap {
+
+    @apply flex flex-col h-full;
+  }
+
+  .form-wrap {
+    border-radius: 16px 16px 0 0;
+
+    @apply w-full pt-0 flex-1 bg-bg_color;
+
+    .rv-field__value {
+      @apply h-10;
+    }
+
+    .rv-field__body {
+      @apply rounded-lg;
+
+      input {
+        @apply h-10 !important;
+      }
+    }
+
+    .rv-cell {
+      /* @apply bg-card_bg_color_03; */
+    }
+
+    .rv-field__label {
+      @apply text-text_color_02;
+    }
+
+    .rv-field__error-message {
+      @apply mt-1;
+    }
+
+    .rv-cell__value {
+      @apply rounded-lg;
+    }
+
+    .rv-textarea__word-limit {
+      @apply text-text_color_04 text-sm text-text_color_03;
+    }
+
+    .drop-icon {
+      @apply absolute right-6;
+
+      top: 61px;
+
+      svg {
+        height: 5px;
+        @apply w-2 h-2;
+      }
+    }
+
+    .text-area {
+      @apply p-3;
+
+      textarea {
+        @apply text-text_color_01;
+      }
+    }
+
+    .rv-input {
+      svg {
+        @apply mr-1;
+      }
+
+      input {
+        @apply bg-bg_sr_color !important;
+      }
+    }
+
+    .phone-form-field {
+      .rv-input__control {
+        @apply pl-3 font-medium;
+
+        &::placeholder {
+          @apply text-text_color_04 font-normal;
+        }
+      }
+
+      .rv-cell {
+        padding: 0 !important;
+      }
+
+      .rv-field__prefix {
+        @apply pr-0;
+      }
+    }
+
+    .media-form {
+      /* height: 46px; */
+
+      /* @apply bg-bg_sr_color flex items-center; */
+
+      .rv-field__body {
+        width: calc(100% - 140px);
+        margin-left: 140px;
+      }
+      
+      input {
+        padding-left: 0;
+      }
+    }
+
+    .mobile-left {
+      /* top: 114px;
+      left: 16px;
+      width: 120px;
+      height: 46px; */
+      height: 40px;
+
+      /* @apply absolute flex text-sm flex-row justify-center items-center bg-bg_sr_color; */
+      @apply flex flex-row items-center;
+
+      .down-area {
+        @apply w-2 h-2;
+
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+
+      img {
+        @apply rounded-lg w-4 h-4 mr-2;
+      }
+    }
+
+    .media-left {
+      top: 42px;
+      left: 16px;
+      z-index: 1;
+      width: 140px;
+      height: 40px;
+      @apply absolute flex text-sm flex-row justify-center items-center bg-bg_sr_color;
+
+      .down-area {
+        @apply w-2 h-1;
+
+        svg {
+          @apply w-2 h-1;
+        }
+      }
+
+      img {
+        @apply rounded-lg w-4 h-4 mr-2;
+      }
+    }
+  
+    .mobile-line {
+      @apply h-10 bg-line_color_01 ml-2 scale-50;
+  
+      width: 1px;
+    }
+  }
+
+  .contact-wrap {
+    @apply pt-4;
+
+    border-radius: 16px 16px 0 0;
+
+    .rv-field__value {
+      @apply h-10;
+    }
+
+    .rv-field__body {
+      @apply h-10 pl-3 text-text_color_01;
+
+      .rv-field__children {
+        @apply justify-between  mr-4 items-center;
+      }
+    }
+
+    /* svg {
+      display: none;
+    } */
+  }
+  
+  .content-wrap {
+    .price-async-center {
+      height: 102px;
+      @apply flex items-center justify-center w-full;
+    }
+
+    .coin-detail-wrap {
+      /* @apply max-h-60 overflow-y-scroll; */
+
+      .market-order-book {
+        height: 400px;
+      }
+
+      .detail-control-height {
+        height: 368px;
+        @apply overflow-y-scroll;
+      }
+
+      .trade-deal-table {
+        height: 368px;
+      }
+
+      .tab-name {
+        @apply text-base;
+      }
+    }
+  }
+
+  .detail-chart-wrap {
+    min-height: 390px;
+    @apply flex items-center justify-center w-full;
+  }
+
+  .footer-wrap {
+    
+
+    @apply w-full flex items-center  mb-8 px-4 box-border;
+
+    margin-top: 66px;
+
+    .button {
+      @apply h-11 flex-1 text-text_color_05 text-base rounded;
+    }
+
+  }
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b;
+  }
+
+  .rv-tabs__nav--line, .rv-tabs__nav--capsule, .rv-tabs__nav--jumbo {
+    @apply overflow-x-scroll;
+
+    .rv-tab {
+      @apply m-0 p-0 mr-8 flex-none;
+    }
+  }
+}
+
+
+:local(.notice) {
+  padding: 30px;
+  @apply box-border rounded-2xl;
+
+  .title {
+    @apply font-medium text-base text-center text-text_color_01;
+
+    line-height: 24px;
+  }
+
+  .content {
+    @apply w-full mt-5 text-sm text-text_color_01;
+
+    line-height: 22px;
+  }
+
+  .button-wrap {
+
+    @apply flex h-10 w-full mt-5 justify-between;
+
+    .cancel-button {
+      /* border: 0.5px solid var(--line_color_01); */
+      @apply h-10 flex-1 bg-bg_sr_color mr-4 flex justify-center items-center font-medium text-text_color_02 text-sm rounded-lg;
+    }
+
+    .confirm-button {
+      @apply h-10 flex-1 bg-brand_color flex justify-center items-center font-medium text-button_text_02 text-sm rounded-lg;
+    }
+  }
+}
+
+
+.agent-picker-select-account {
+  @apply bg-card_bg_color_03;
+
+  .rv-picker__mask {
+    display: none;
+  }
+
+  .rv-hairline-unset--top-bottom {
+    display: none;
+  }
+
+  .rv-picker-column__item {
+    @apply text-text_color_01;
+  }
+
+  .rv-picker-column__item--selected {
+    @apply text-auxiliary_color_01;
+  }
+
+  .rv-picker-column__wrapper li:first-child {
+    display: none;
+  }
+}
+
+:local(.contact) {
+  button {
+    border: none!important;
+  }
+
+}

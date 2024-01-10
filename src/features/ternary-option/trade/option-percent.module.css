@@ -1,0 +1,77 @@
+:local(.percent-wrapper) {
+  .bar-wrapper {
+    @apply flex relative;
+
+    .bar {
+      @apply h-2;
+
+      position: relative;
+
+      &::after {
+        content: "";
+
+        @apply absolute left-0 top-0 right-0 bottom-0;
+     
+      }
+
+      &::before {
+        @apply absolute top-0 rounded-full h-2;
+
+        
+        width: 40%;
+        content: "";
+      }
+
+
+      &.up {
+        @apply rounded-r-full;
+
+        &::after,
+        &::before {
+          @apply bg-buy_up_color;
+        }
+
+        &::after {
+          @apply rounded-b-sm;
+
+          border-top-left-radius: 1px;
+          border-top-right-radius: 1px;
+          transform: skewX(-30deg);
+        }
+
+        &::before {
+          right: -8px;
+        }
+      }
+
+      &.down {
+        @apply rounded-l-full;
+
+        &::after,
+        &::before {
+          @apply bg-sell_down_color;
+        }
+
+        &::before {
+          @apply rounded-t-sm;
+
+          right: -8px;
+          border-bottom-right-radius: 1px;
+          border-bottom-left-radius: 1px;
+          transform: skewX(-30deg);
+        }
+
+        &::after {
+          @apply rounded-full;
+        }
+      }
+    }
+
+    .white-clip {
+      @apply absolute top-0 w-2 h-4 bg-bg_color;
+
+      /* 变为平行四边形 */
+      transform: skew(-20deg);
+    }
+  }
+}

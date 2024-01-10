@@ -1,0 +1,40 @@
+:local(.scoped) {
+  @apply flex justify-between mt-2;
+
+  .brand {
+    @apply flex;
+
+    .logo {
+      @apply mr-2;
+
+      img {
+        width: 30px;
+        height: 30px;
+        @apply rounded-full;
+      }
+    }
+
+    .name {
+      label {
+        font-size: 16px;
+        @apply text-brand_color font-medium;
+      }
+    }
+  }
+
+  .menu {
+    @apply flex;
+
+    .icon {
+      @apply mr-4;
+
+      &:last-child {
+        @apply mr-0;
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}

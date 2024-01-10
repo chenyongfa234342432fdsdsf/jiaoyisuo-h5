@@ -1,0 +1,128 @@
+:local(.rebates-overview-root) {
+  @apply flex flex-col w-full px-4;
+
+  .overview-cell {
+    @apply flex flex-col;
+
+    .label-wrap {
+      @apply flex items-center;
+
+      .label {
+        @apply text-xs text-text_color_02;
+
+        line-height: 18px;
+      }
+
+      .amount-hide-icon {
+        @apply ml-1 mt-0;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      .msg-icon {
+        @apply ml-1 mt-0;
+
+        svg {
+          @apply w-3 h-3;
+        }
+      }
+    }
+
+    .rebates-amount-wrap {
+      @apply flex items-baseline;
+
+      .lump-sum {
+        @apply text-xl font-semibold text-text_color_01;
+
+        line-height: 30px;
+      }
+
+      .unit-switch {
+        @apply flex items-baseline;
+
+        .unit {
+          @apply text-sm text-text_color_01 font-semibold mx-1;
+
+          line-height: 22px;
+        }
+
+        .drop-icon {
+          svg {
+            @apply w-2 h-2;
+          }
+        }
+      }
+    }
+
+    .ladder-wrap {
+      @apply flex items-center;
+
+      .level-icon {
+        @apply mr-2 mt-0;
+
+        svg {
+          @apply h-4;
+
+          width: 22px;
+        }
+      }
+
+      .rebate-ratio {
+        @apply text-base text-text_color_01 font-medium;
+      }
+
+      .ratio-cell {
+        @apply flex items-center mr-4;
+
+        .ratio-label {
+          @apply text-xs text-text_color_02 mr-1;
+
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+:local(.unit-popover-wrapper) {
+  @apply flex flex-col !z-1;
+
+  .unit-cell {
+    @apply text-sm text-text_color_01 font-medium mb-4 last:mb-0;
+
+    line-height: 22px;
+
+    &.active {
+      @apply text-brand_color;
+    }
+  }
+
+  .unit-more {
+    @apply flex items-center mt-4;
+
+    .more-text {
+      @apply text-sm text-text_color_01 font-medium mr-1;
+
+      line-height: 22px;
+    }
+
+    .more-icon {
+      @apply mt-0;
+
+      svg {
+        @apply w-2 h-2;
+      }
+    }
+  }
+
+  .rv-popover__content {
+    @apply py-3 px-4 bg-card_bg_color_03 -mt-1.5 ml-5;
+  }
+
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+}

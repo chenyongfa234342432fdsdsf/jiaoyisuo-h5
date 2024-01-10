@@ -1,0 +1,230 @@
+:local(.market-detail-trade-wrapper) {
+  @apply text-sm;
+
+  .trade-wrapper-icon {
+    @apply w-5 h-5;
+
+    svg {
+      @apply text-xl w-5 h-5;
+    }
+  }
+
+  .trade-wrapper-text {
+    @apply mt-1 text-xs font-normal tracking-tighter text-text_color_02;
+  }
+}
+
+:local(.trade-button) {
+  @apply rounded h-10 text-white !important;
+
+  &.is-buy {
+    @apply bg-buy_up_color;
+  }
+
+  &.is-sell {
+    @apply bg-sell_down_color;
+  }
+}
+
+:local(.trade-modal-wrapper) {
+  @apply text-sm px-4;
+
+
+  .header {
+    @apply flex justify-between items-center py-4;
+    
+    .rv-dropdown-menu {
+      .rv-dropdown-menu__title {
+        @apply py-1.5 pl-4 pr-8 font-semibold text-sm;
+      }
+    }
+
+    .group-select {
+      max-width: calc(100vw - 180px);
+    }
+    
+  }
+
+  .balance-number-value {
+    max-width: 240px;
+  }
+}
+
+:local(.trade-modal-wrapper-popup) {
+  @apply rounded-lg;
+
+  background-color: var(--trade-form-box-bg);
+
+  /* stylelint-disable-next-line color-function-notation */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 10%);
+}
+
+:local(.trade-form-item-box) {
+  @apply rounded border border-solid border-line_color_02;
+
+  &.market-price-input-box {
+    @apply px-4 py-2.5 rounded-t-none;
+  }
+  
+  &.with-input-box {
+    @apply flex justify-between items-center px-5 py-4 mb-2;
+
+    .rv-input {
+      .rv-input__prefix {
+        @apply text-text_color_04 text-sm;
+      }
+
+      .rv-input__control {
+        @apply font-semibold text-sm;
+      }
+    }
+  }
+
+  &.with-stepper-box {
+    @apply px-4 py-0.5 relative mb-2;
+
+    .rv-stepper {
+      @apply bg-transparent;
+
+      .rv-stepper__minus,
+      .rv-stepper__input,
+      .rv-stepper__plus {
+        @apply bg-transparent;
+      }
+
+      .rv-stepper__input {
+        @apply text-sm font-semibold translate-y-2.5;
+      }
+    }
+
+    .label {
+      @apply absolute left-1/2 top-1 text-text_color_04 text-xs;
+
+      transform: translateX(-50%);
+
+    }
+  }
+}
+
+:local(.exchange-amount-wrapper) {
+  .market-price-tip-box {
+    @apply mb-4 py-4 flex justify-center items-center text-text_color_04 h-10;
+  }
+
+  .rv-input.is-white {
+    .rv-input__prefix {
+      @apply text-text_color_04;
+    }
+  }
+}
+
+:local(.percent-buttons-wrapper) {
+  @apply rounded flex my-4;
+
+  .percent-button {
+    @apply text-text_color_02 flex-1 py-1 text-center;
+
+    &:not(:last-child) {
+      @apply mr-2
+    }
+
+    .bg-block {
+      @apply rounded-sm h-3 bg-bg_sr_color mb-1;
+    }
+
+    &.active {
+      @apply text-text_color_01;
+
+      .bg-block {
+        @apply bg-sell_down_color
+      }
+
+      &.is-buy {
+        .bg-block {
+          @apply bg-buy_up_color
+        }
+      }
+    }
+  }
+}
+
+:local(.price-input-only-bottom-radius) {
+  @apply rounded-t-none;
+}
+
+
+:local(.position-operation-guide-root) {
+  @apply flex flex-col items-center;
+
+  .content-text {
+    max-width: 143px;
+    
+    @apply text-xs text-text_color_01;
+  }
+
+  .know-button {
+    position: relative;
+    z-index: 999999991;
+    height: 30px;
+    @apply text-button_text_02 text-xs;
+  }
+}
+
+:local(.introjs-highlight-custom) {
+  background: none !important;
+  @apply p-0 !important;
+}
+
+/* :local(.introjs-tooltip-custom) {
+  @apply bg-card_bg_color_03 !important;
+
+  .introjs-tooltiptext {
+    
+    @apply bg-card_bg_color_03 !important;
+  }
+
+  .introjs-arrow.bottom {
+    border-top-color: var(--card_bg_color_03);
+  }
+} */
+
+:local(.introjs-tooltip-custom) {
+  /* width: 218px;
+  min-width: 218px;
+  transform: translate(-65px, -8px) !important;
+
+  .introjs-arrow.top-middle {
+    right: 13px;
+    @apply left-auto ml-0;
+  }
+
+  .introjs-tooltiptext {
+    @apply p-2.5;
+  } */
+  @apply bg-card_bg_color_03 !important;
+
+  .introjs-tooltiptext {
+    
+    @apply bg-card_bg_color_03 !important;
+  }
+
+  .introjs-arrow.bottom {
+    border-top-color: var(--card_bg_color_03);
+  }
+
+  .introjs-tooltipbuttons {
+    @apply fixed p-0 pt-2;
+
+    bottom: 80px;
+    left: 192px;
+
+    .introjs-button {
+      @apply rounded bg-brand_color border-brand_color text-xs text-button_text_02 text-center p-0 shadow-none;
+
+      width: 75px;
+      height: 30px;
+      line-height: 30px !important;
+      text-shadow: none;
+    }
+  }
+}

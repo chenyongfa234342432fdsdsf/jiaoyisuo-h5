@@ -1,0 +1,36 @@
+:local(.select-date-group) {
+  @apply w-full pb-10;
+
+  /* z-index: 3000; */
+
+  .date {
+    @apply mt-2 flex justify-between items-center mb-4 px-4;
+
+    .time {
+      @apply bg-card_bg_color_02 rounded flex-1 text-center;
+
+      padding: 6px 37px;
+
+      &.active {
+        @apply border border-brand_color text-brand_color text-sm;
+      }
+    }
+
+    .center {
+      @apply px-2;
+    }
+
+  }
+  
+  .header {
+    @apply flex justify-between mt-4 pb-4 border-b px-4;
+
+    .confirm {
+      @apply text-brand_color;
+    }
+  }
+
+  .err-text {
+    @apply text-warning_color_hover text-sm ml-4;
+  }
+}

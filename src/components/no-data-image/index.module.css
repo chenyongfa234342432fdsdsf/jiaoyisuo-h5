@@ -1,0 +1,30 @@
+:local(.scoped) {
+  .no-data {
+    @apply h-full flex flex-col justify-center items-center;
+
+    .no-data-text {
+      @apply text-sm font-normal text-text_color_03;
+    }
+    
+    .no-footer-text {
+      @apply text-sm font-normal text-text_color_03;
+    }
+
+    .no-data-image {
+      width: 68px !important;
+      height: 48px !important;
+    }
+
+    .main-icon {
+      @apply mt-16 w-20 h-20;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+}
+
+.no-data-content {
+  @apply h-full;
+}

@@ -1,0 +1,183 @@
+:local(.open-order-item-wrapper) {
+  @apply p-4 text-sm;
+
+  .number-item-normal {
+    @apply text-xs text-text_color_02;
+
+    .number-label {
+      @apply pr-4 py-1;
+    }
+
+    .number-value {
+      @apply text-right text-text_color_01 font-medium;
+    }
+  }
+  
+  .number-item {
+    @apply text-xs text-text_color_03 inline-block w-1/3;
+
+    .number-label {
+      @apply pr-4 py-1;
+    }
+
+    .number-value {
+      @apply text-left font-medium text-sm;
+    }
+  }
+  
+  .number-item:nth-child(3n) {
+    @apply text-xs text-text_color_03 inline-block w-1/3;
+
+    .number-label {
+      @apply text-right pr-0;
+    }
+
+    .number-value {
+      @apply text-right;
+    }
+  }
+  
+  .number-item:nth-child(3n-1) { 
+    .number-label {
+      @apply text-center pr-0;
+    }
+    
+    .number-value {
+      @apply text-center;
+    }
+  }
+
+  .rv-circle {
+    .rv-circle__text {
+      @apply text-xs;
+    }
+  }
+
+  .cancel-button {
+    @apply text-text_color_01;
+  }
+
+  .status-tag-container {
+    .status-tag {
+      @apply text-xs rounded py-0.5;
+    }
+
+    svg {
+      margin-bottom: 2px;
+      transform: scale(0.75);
+    }
+  }
+
+
+}
+
+:local(.spot-page-wrapper) {
+  .rv-tabs {
+    .rv-tabs__wrap {
+      @apply sticky top-11 bg-bg_color z-10;
+    }
+  }
+  
+  .rv-nav-bar__right {
+    @apply mt-0.5;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  .header {
+    @apply flex items-center;
+
+    .header-cell {
+      @apply flex flex-col mr-8 last:mr-0 items-center;
+
+      .header-cell-title {
+        @apply text-text_color_02 font-medium mt-3;
+
+        font-size: 17px;
+        line-height: 26px;
+      }
+
+      .header-cell-title-active {
+        @apply text-text_color_01;
+      }
+
+      .header-cell-line {
+        @apply h-0.5 w-5 rounded bg-brand_color;
+
+        margin-top: 6px;
+      }
+    }
+  }
+
+
+  .switch-wrapper {
+    @apply flex items-center p-4 text-xs;
+
+    .label {
+      @apply ml-2 text-text_color_03;
+    }
+  }
+}
+
+:local(.filters-modal-root) {
+  @apply flex flex-col px-4 text-sm;
+
+  .screen-header {
+    @apply flex flex-row items-center justify-between pt-4;
+
+    span {
+      @apply text-base text-text_color_01 font-semibold
+    }
+
+    .close-icon {
+      svg {
+        @apply w-5 h-5
+      }
+    }
+  }
+
+  .screen-title {
+    @apply text-sm text-text_color_03 mb-2 mt-4;
+  }
+
+  .screen-date {
+    @apply flex flex-row items-center justify-between;
+
+    .date {
+      @apply w-40 h-11 rounded bg-bg_sr_color flex items-center text-sm text-text_color_01 justify-center
+    }
+
+    .date-separate {
+      @apply text-sm text-text_color_03
+    }
+  }
+
+  .date-type {
+    @apply flex flex-row items-center justify-between flex-wrap;
+
+    .date-type-item {
+      @apply px-4 py-1.5 bg-bg_sr_color flex items-center justify-center text-xs text-text_color_01 mt-2 rounded;
+
+      &.active {
+        @apply bg-brand_color_special_02 border border-brand_color text-brand_color rounded
+      }
+    }
+  }
+
+  .gray-button {
+    @apply bg-card_bg_color_02 border-card_bg_color_02;
+  }
+
+}
+
+/* 为 0 的 cicrle 不展示任何进度条 */
+:local(.zero-circle) {
+  svg {
+    path {
+      @apply last:hidden;
+    }
+  }
+}

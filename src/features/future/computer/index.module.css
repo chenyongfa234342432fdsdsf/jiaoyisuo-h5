@@ -1,0 +1,5 @@
+:local(.hide-tab-nav) {
+  .rv-tabs__wrap {
+    @apply hidden;
+  }
+}

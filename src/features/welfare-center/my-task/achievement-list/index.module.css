@@ -1,0 +1,84 @@
+:local(.scoped) {
+  @apply w-full relative box-border bg-bg_color;
+  
+  .rv-tabs__wrap {
+    @apply px-4 font-semibold;  
+  }
+
+  .common-32-title {
+    color: #FFFFFF;
+    @apply text-[32px] font-medium leading-[48px];
+  }
+
+  .common-20-title {
+    
+    @apply text-xl text-text_color_01 leading-[30px];
+  }
+
+  .common-16-title {
+    
+    @apply text-text_color_01 text-base font-medium leading-[24px];
+  }
+
+  .common-16-content {
+    color: #FFFFFF;
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-16-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-14-content-02 {
+    color: rgb(224 224 224 / 100%);
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .common-14-title {
+    @apply text-text_color_01 text-sm font-medium leading-[22px];
+  }
+
+  .common-14-content {
+    color: #FFFFFF;
+    @apply text-sm font-normal leading-[18px];
+  }
+
+  .common-12-content {
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .common-12-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .answer {
+    @apply px-3 py-2 box-border w-full bg-card_bg_color_01 rounded;
+  }
+
+
+
+  .btn {
+    @apply px-4 py-1 bg-bg_sr_color text-sm leading-[18px] text-text_color_02 font-medium mr-3 cursor-pointer relative rounded-[18px];
+
+    
+
+    &.active {
+      @apply bg-brand_color text-button_text_02;
+    }
+
+    &.has-new::before {
+      top: -3px;
+      right: 6px;
+      background-color: #F6465D;
+      content: '';
+      @apply w-2 h-2 rounded-full absolute
+    }
+  }
+
+  .common-btn {
+    @apply px-4 py-1  text-sm  font-normal cursor-pointer bg-brand_color text-sm text-button_text_02;
+  }
+  
+}

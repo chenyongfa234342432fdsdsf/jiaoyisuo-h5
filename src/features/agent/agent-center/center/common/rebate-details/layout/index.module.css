@@ -1,0 +1,106 @@
+:local(.rebate-details-layout) {
+  @apply flex flex-col w-full mt-4;
+
+  .rebate-filter-wrap {
+    @apply flex items-center justify-between p-4 pt-0 border-line_color_02 bg-bg_color;
+
+    border-bottom-width: 0.5px;
+
+    .filter-cell {
+      @apply flex items-center;
+
+      .filter-label {
+        @apply text-xs text-text_color_03;
+
+        line-height: 18px;
+      }
+
+      .sort-icon {
+        @apply ml-1;
+
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+    }
+
+    .filter-icon {
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .date-text {
+    @apply text-xs text-text_color_03 m-4 mb-3;
+
+    line-height: 18px;
+  }
+
+  .rebate-cell-wrap {
+    @apply flex flex-col border-line_color_02 p-4 pt-0 mb-4 last:mb-0;
+
+    border-bottom-width: 0.5px;
+
+    .rebate-header {
+      @apply w-full flex items-center justify-between mb-2;
+
+      .rebate-coin {
+        @apply text-base text-text_color_01 font-medium;
+      }
+
+      .rebate-amount-wrap {
+        @apply flex items-center w-2/3 justify-end;
+
+
+        .rebate-amount {
+          @apply w-2/3 text-right;
+        }
+      }
+
+      .rebate-expand {
+        @apply ml-2 mt-0;
+
+        svg {
+          @apply w-3 h-3;
+        }
+      }
+    }
+
+    .rebate-info {
+      @apply flex items-center justify-between mb-1 text-sm text-text_color_02 last:mb-0;
+
+      line-height: 22px;
+
+      .msg-icon {
+        @apply mt-0 ml-1;
+
+        svg {
+          @apply w-3 h-3;
+        }
+      }
+    }
+  }
+}
+
+:local(.rebate-ratio-desc-root) {
+  @apply flex flex-col !bg-card_bg_color_03 !rounded-2xl;
+
+  width: 80%;
+  padding: 22px;
+
+  .modal-title {
+    @apply text-base text-text_color_01 font-medium mb-4 text-center;
+  }
+
+  .modal-content {
+    @apply text-sm text-text_color_01 mb-3 last:mb-0;
+
+    line-height: 22px;
+  }
+
+  .modal-btn {
+    @apply rounded-lg mt-4;
+  }
+}

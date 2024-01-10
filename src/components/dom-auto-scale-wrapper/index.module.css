@@ -1,0 +1,9 @@
+:local(.scoped) {
+  width: 0;
+}
+
+:local(.button-wrapper) {
+  .rv-button__text {
+    @apply flex w-full;
+  }
+}

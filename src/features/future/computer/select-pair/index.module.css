@@ -1,0 +1,33 @@
+:local(.select-trade-pair-wrapper) {
+  @apply mr-4;
+
+  .selected-label {
+    @apply flex items-center font-medium;
+  }
+}
+
+:local(.select-trade-pair-modal-wrapper) {
+  @apply caret-card_bg_color_03;
+
+  .title {
+    @apply text-base font-semibold p-4 pb-2;
+  }
+
+  .options-wrapper {
+    @apply overflow-y-auto;
+
+    height: 360px;
+  }
+
+  .option {
+    @apply p-4 text-sm;
+
+    &.active {
+      @apply text-brand_color;
+    }
+  }
+
+  .rv-search__field {
+    @apply items-center;
+  }
+}

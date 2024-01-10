@@ -1,0 +1,43 @@
+:local(.trade-direction-tag-root) {
+  @apply flex items-center text-xs font-normal;
+
+  .direction-tag {
+    @apply px-0.5 flex items-center justify-center rounded-sm;
+
+    height: 18px;
+
+    .direction-text {
+      @apply text-xs;
+
+      transform: scale(0.83);
+    }
+  }
+
+  .lever-tag {
+    @apply flex items-center bg-card_bg_color_02 rounded-sm mx-1 px-1 text-center text-xs text-text_color_02;
+
+    height: 18px;
+    line-height: 18px;
+
+    .lever-edit {
+      @apply ml-1;
+
+      svg {
+        @apply w-2.5 h-2.5;
+      }
+    }
+  }
+  
+  .futures-tag {
+    @apply px-1 rounded bg-brand_color_special_02 flex items-center justify-center;
+
+    height: 18px;
+    line-height: 18px;
+
+    .futures-tag-text {
+      @apply text-xs text-brand_color;
+
+      transform: scale(0.83);
+    }
+  }
+}

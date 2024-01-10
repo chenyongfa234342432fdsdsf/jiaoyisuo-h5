@@ -1,0 +1,65 @@
+:local(.scoped) {
+  .filter-row {
+    @apply flex items-center justify-between mx-4 pt-4 bg-bg_color;
+
+    padding-top: 17px;
+    padding-bottom: 16px;
+
+    
+    .rv-checkbox__label {
+      @apply text-text_color_02;
+    }
+    
+    .left-input {
+      @apply flex flex-1 mr-4;
+    
+      .common-search-bar {
+        width: 100%;
+    
+        .input-group {
+          .close-icon {
+            @apply px-2;
+          }
+        
+        }  
+      }
+    }
+
+    .right-filter-icon {
+      @apply flex items-center text-lg;
+    }
+    
+  }
+
+  .tab-switch {
+
+    @apply bg-bg_color;
+
+    .tab-title {
+      @apply text-base text-text_color_02 font-medium;
+
+      &.rv-tab--active {
+        @apply text-text_color_01;
+      }
+    }
+
+    .rv-tabs {
+      @apply border-solid border-line_color_02;
+
+      border-bottom-width: 0.5px;
+    }
+  }
+
+  .return-back-upper-level {
+    position: fixed;
+    right: 28px;
+    bottom: 64px;
+  }
+
+  .to-top {
+    position: fixed;
+    right: 28px;
+    bottom: 10px;
+  }
+
+}

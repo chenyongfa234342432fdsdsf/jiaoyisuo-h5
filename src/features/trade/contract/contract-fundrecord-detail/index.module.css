@@ -1,0 +1,37 @@
+:local(.scoped) {
+  .future-fundrecord-container {
+    @apply px-4;
+
+    .future-no {
+      @apply flex items-center justify-between px-3 text-sm  py-1.5 rounded bg-bg_sr_color text-text_color_03;
+    }
+
+    .future-record-tip {
+      @apply w-full flex items-center h-16 bg-buy_up_color_special_02 rounded-full;
+
+      img {
+        width: 68px;
+        @apply h-16;
+      }
+    
+      .future-record-detail {
+        @apply ml-4;
+
+        div:first-child {
+          @apply text-sm text-text_color_01;
+        }
+
+        div:last-child {
+          @apply text-sm text-buy_up_color;
+        }
+      }
+    
+
+      .future-record-detail:last-child {
+        margin-left: 71px;
+      }
+    }
+  
+  }
+  
+}

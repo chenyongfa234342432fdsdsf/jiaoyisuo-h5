@@ -1,0 +1,65 @@
+:local(.version-upgrade-content-wrapper) {
+  z-index: 2001;
+  @apply h-screen flex flex-col fixed top-0 left-0 right-0 bottom-0 bg-bg_color;
+
+  .version-upgrade-main {
+    @apply py-24 px-4 flex-1 overflow-hidden;
+
+    .version-upgrade-main-icon {
+      width: calc(11.69 * var(--vh));
+      height: calc(11.69 * var(--vh));
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .version-upgrade-title {
+      @apply mb-4 text-base font-medium text-center text-text_color_01;
+    }
+
+    .version-upgrade-desc {
+      @apply mb-4 text-text_color_02;
+
+      .version-upgrade-desc-item {
+        @apply text-center
+      }
+    }
+
+    .version-upgrade-price {
+      @apply py-4 mb-4 rounded-lg bg-card_bg_color_01;
+
+      .version-upgrade-price-title {
+        @apply mb-2 text-center text-text_color_02;
+      }
+
+      .version-upgrade-price-desc {
+        @apply text-base text-center font-medium text-text_color_01;
+      }
+    }
+
+    .version-upgrade-button {
+      @apply flex justify-between;
+
+      .button-items {
+        @apply flex-1 flex items-center justify-center text-sm mr-4 py-1.5 rounded text-center bg-bg_sr_color text-text_color_01 font-medium;
+
+        .button-items-icon {
+          @apply mr-2 w-5 h-5;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        &:last-child {
+          @apply mr-0;
+        }
+      }
+    }
+
+    .version-upgrade-footer {
+      @apply fixed bottom-0 left-0 right-0 pb-10 px-4;
+    }
+  }
+}

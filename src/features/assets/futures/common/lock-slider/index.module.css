@@ -1,0 +1,22 @@
+:local(.lock-slider-root) {
+  @apply flex w-full relative items-center mt-2;
+
+  .slider-top {
+    height: 30px;
+    @apply w-full bg-card_bg_color_02 rounded-3xl flex items-center justify-between;
+
+    .slider-top-dot {
+      @apply w-5 h-5 rounded-xl bg-card_bg_color_01 flex items-center justify-center text-xs text-text_color_03 mx-1.5;
+    }
+
+    .active-slider-top-dot {
+      box-shadow: 0 0 2px rgb(0 0 0 / 18%);
+      @apply w-7 h-7 rounded-2xl bg-card_bg_color_01 flex items-center justify-center text-xs text-buy_up_color font-semibold mx-px;
+    }
+  }
+
+  .slide-bottom {
+    padding: 0 13px;
+    @apply w-full absolute;
+  }
+}

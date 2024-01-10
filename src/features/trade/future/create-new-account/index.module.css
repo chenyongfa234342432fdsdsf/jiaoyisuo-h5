@@ -1,0 +1,38 @@
+/* stylelint-disable color-function-notation */
+:local(.newaccount-select-modal-wrapper) {
+  max-height: calc(80 * var(--vh));
+  @apply w-full overflow-y-auto relative bg-card_bg_color_03;
+  
+  .rv-action-sheet__header {
+    
+    @apply flex justify-between items-center text-text_color_01 font-medium text-base  p-4 border-b border-line_color_02;
+  }
+
+  .create-newaccount-container {
+    @apply px-4 pt-4 pb-10 overflow-hidden;
+  }
+  
+  .newaccount-margin-input {
+    @apply relative;
+
+    .newaccount-margin {
+      @apply bg-bg_sr_color w-full h-10 pl-3 rounded-sm mt-2 mb-3 pr-6;
+    }
+  }
+
+  .newaccount-slider {
+    width: calc(100% - 10px);
+    @apply mx-auto;
+
+    .slider-button {
+      transform: none !important;
+    }
+  }
+
+  .newaccount-name-button {
+    div {
+      width: 48%;
+      @apply h-10 rounded;
+    }
+  }
+}

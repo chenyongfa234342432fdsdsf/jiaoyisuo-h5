@@ -1,0 +1,76 @@
+:local(.coupon-cell-root) {
+  @apply flex items-center mb-4;
+
+  .coupon-info-wrap {
+    @apply flex flex-1 flex-col border bg-bg_color border-line_color_02 border-l-0 rounded-tr-lg rounded-br-lg;
+
+    height: 143px;
+
+    &.active {
+      @apply border-brand_color;
+    }
+
+    .coupon-info {
+      @apply flex-1 flex p-3 justify-between;
+
+      .icon-bg {
+        @apply w-11 h-11 bg-brand_color_special_02 rounded-full mt-1 flex items-center justify-center mr-2;
+
+        &.invalid {
+          @apply bg-card_bg_color_02;
+        }
+
+        .coupon-icon {
+          @apply mt-0;
+
+          svg {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+
+      .coupon-wrap {
+        @apply flex flex-col flex-1 mt-0.5;
+
+
+        &.invalid {
+          @apply text-text_color_04;
+        }
+
+        .coupon-amount {
+          @apply text-xl text-text_color_01 font-semibold;
+
+          line-height: 30px;
+        }
+
+        .coupon-desc {
+          @apply text-xs text-text_color_04 mt-1;
+
+          line-height: 18px;
+        }
+      }
+
+      .select-icon {
+        @apply mt-5 ml-2;
+
+        svg {
+          @apply w-4 h-4;
+        }
+      }
+    }
+
+    .coupon-bottom {
+      @apply border-t border-line_color_02 flex items-center justify-between p-3 text-xs text-text_color_03 border-dashed;
+
+      line-height: 18px;
+
+      .event-name {
+        @apply px-2 bg-bg_sr_color rounded-3xl;
+
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+    }
+  }
+}

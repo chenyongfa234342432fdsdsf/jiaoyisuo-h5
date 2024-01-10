@@ -1,0 +1,62 @@
+{
+  "code": 200,
+  "isOk": true,
+  "message": "success",
+  "data": {
+    "list": [
+      {
+        "symbol": "BTCUSD",
+        "sideInd": "long",
+        "lockSize": "0",
+        "createdByTime": 1687918504806,
+        "sellFeeRate": "0.0002",
+        "groupId": "461570615740395520",
+        "openPrice": "30391.05",
+        "profitLossEntrust": [
+          {
+            "triggerPrice": "32000",
+            "id": "462030110447706113",
+            "strategyTypeInd": "stop_profit",
+            "triggerPriceTypeInd": "new"
+          },
+          {
+            "triggerPrice": "20000",
+            "id": "462030110447706112",
+            "strategyTypeInd": "stop_loss",
+            "triggerPriceTypeInd": "new"
+          }
+        ],
+        "markPrice": "30138.22",
+        "realizedProfit": "0",
+        "unrealizedProfit": "600",
+        "entrustFrozenSize": "0",
+        "profit": "600",
+        "profitRatio": "0.20",
+        "latestPrice": "30276.50",
+        "symbolWassName": "BTC_USD",
+        "typeInd": "perpetual",
+        "lockPrice": "0",
+        "updatedByTime": 1687938198983,
+        "maintMarginRatio": "0.02500000000000000000",
+        "marginRatio": "1.6677",
+        "priceOffset": "2",
+        "liquidatePrice": "0",
+        "statusCd": "opened",
+        "lever": "20",
+        "groupName": "定投账户",
+        "quoteSymbolName": "USD",
+        "lockPercent": "",
+        "groupMargin": "1010.31124810000000000000",
+        "groupAvailableMargin": "979.92",
+        "baseSymbolName": "BTC",
+        "positionId": "461919529910374400",
+        "size": "1",
+        "amountOffset": "4",
+        "initMargin": "30.39",
+        "tradeId": 20,
+        "lockRecord": null,
+        "lockFees": "0"
+      }
+    ]
+  }
+}

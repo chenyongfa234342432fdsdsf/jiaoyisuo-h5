@@ -1,0 +1,48 @@
+:local(.scoped) {
+  .image {
+    /* width: 343px;
+    height: 160px; */
+    @apply my-6 relative rounded-2xl overflow-hidden;
+
+    .content {
+      @apply absolute left-6 top-9;
+
+      .name {
+        label {
+          font-size: 20px;
+          @apply mb-2 text-button_text_01 font-semibold;
+        }
+      }
+
+      p {
+        width: 126px;
+        font-size: 14px;
+        @apply font-normal text-button_text_01;
+      }
+    }
+  }
+
+  .community-group {
+    @apply flex flex-wrap;
+
+    .item {
+      width: 25%;
+      @apply flex flex-col items-center mb-6;
+
+      .icon {
+        @apply w-9 h-9 flex justify-center items-center mb-1 bg-bg_sr_color rounded-full;
+
+        img {
+          @apply w-5 h-5;
+        }
+      }
+
+      .name {
+        label {
+          font-size: 14px;
+          @apply text-text_color_01 font-normal;
+        }
+      }
+    }
+  }
+}

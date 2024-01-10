@@ -1,0 +1,125 @@
+:local(.futures-overview-assets-root) {
+  @apply flex flex-col;
+
+  .popover-wrap {
+    @apply self-end;
+
+    .popover-reference {
+      @apply flex items-center justify-between px-2 h-6 rounded bg-bg_sr_color;
+    
+      min-width: 128px;
+    
+      .popover-reference-text {
+        @apply text-xs;
+      }
+    
+      .popover-reference-icon {
+        @apply ml-2;
+    
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+    }
+  }
+
+  .assets-wrap {
+    @apply flex items-center mt-4 mb-3;
+
+    .empty {
+      @apply w-full flex items-center justify-center;
+
+      .empty-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .empty-text {
+        @apply text-xs text-text_color_03;
+
+        margin-left: 46px;
+        line-height: 18px;
+      }
+    }
+
+    .chart-wrap {
+      @apply flex h-32 flex-1;
+    }
+
+    .chart-info-wrap {
+      @apply flex flex-col;
+
+      width: 60%;
+
+      .legend-cell {
+        @apply flex items-center justify-between text-xs mb-2 last:mb-0;
+
+        .legend-header {
+          height: 18px;
+          @apply flex items-center;
+
+          .legend-icon {
+            @apply w-2.5 h-2.5;
+          }
+  
+          .legend-title {
+            @apply text-text_color_01 mx-1 font-medium;
+          }
+
+          .legend-tag {
+            height: 18px;
+            @apply px-2;
+          }
+        }
+
+        .legend-num {
+          @apply text-text_color_01 ml-3.5 mt-px;
+        }
+      }
+    }
+  }
+
+  .chart-hint {
+    @apply text-xs text-text_color_04 mb-3;
+  }
+}
+
+:local(.futures-overview-assets-popover-root) {
+  @apply -mt-1.5 !important;
+  
+  .rv-popover__content {
+    @apply bg-card_bg_color_03 rounded py-3 px-4;
+  }
+    
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+    
+  .rv-popover__action {
+    @apply w-auto h-auto mb-4 last:mb-0 px-2.5;
+  }
+    
+  .rv-popover__action:active {
+    background: none;
+  }
+    
+  .rv-popover__action-text {
+    @apply text-xs font-medium;
+  }
+    
+  .rv-hairline--bottom::after {
+    @apply border-0;
+  }
+  
+  .futures-overview-assets-popover-wrap {
+    @apply flex flex-col;
+  
+    .assets-popover-cell {
+      @apply text-xs text-text_color_01 mb-4 last:mb-0;
+    }
+  
+    .assets-popover-cell-active {
+      @apply text-brand_color;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+:local(.scoped) {
+  width: fit-content;
+  @apply h-[18px] px-[6px] py-[1px] bg-card_bg_color_02 flex items-center;
+
+  .time {
+    
+    @apply font-normal text-[10px] leading-4 text-text_color_03;
+  }
+}

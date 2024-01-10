@@ -1,0 +1,11 @@
+:local(.popup-header-wrapper) {
+  @apply p-4 flex items-center justify-between;
+
+  .title {
+    @apply text-base font-medium;
+  }
+
+  .icon {
+    @apply text-xl;
+  }
+}

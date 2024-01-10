@@ -1,0 +1,204 @@
+:local(.open-order-item-wrapper) {
+  @apply p-4 text-sm pt-0 pb-3;
+
+  .ternary-switch {
+    --rv-switch-width: 42px;
+    --rv-switch-height: 26px;
+    --rv-switch-node-size: 26px;
+
+    .rv-switch {
+      @apply border-bg_sr_color;
+    }
+  }
+  
+  .fold-icon {
+    @apply ml-3  flex items-center;
+
+    svg {
+      @apply w-3.5;
+    }
+  }
+  
+  .ternary-switch-selected {
+    .rv-switch {
+      @apply border-brand_color;
+    }
+  }
+  
+  .future-group-name {
+    max-width: 100px;
+    @apply px-2 rounded-sm py-1 ml-2 bg-brand_color_special_02 inline-flex justify-center text-brand_color text-xs items-center;
+  }
+  
+  .open-order-switch {
+    width: 42px;
+    height: 26px;
+  }
+  
+  .open-orde-scale {
+    width: 70%;
+  }
+  
+  .buy-circle-text {
+    .rv-circle__text {
+      transform: scale(0.8) translateY(-10px);
+      @apply text-buy_up_color text-xs;
+    }  
+  }      
+
+  .sell-circle-text {
+    .rv-circle__text {
+      transform: scale(0.8) translateY(-10px);
+      @apply text-sell_down_color text-xs;
+    }  
+  }
+  
+  .number-item {
+    @apply text-xs;
+
+    .number-label {
+      @apply pr-4 py-1 text-text_color_02;
+
+      div {
+        @apply break-all;
+      }
+    }
+
+    .number-value {
+      @apply justify-end flex items-start py-1 text-text_color_02;
+
+      span {
+        @apply break-all;
+      }
+      
+      
+      span:first-child {
+        @apply text-text_color_01;
+      }
+    }
+  }
+
+  .rv-circle {
+    .rv-circle__text {
+      @apply text-xs;
+    }
+  }
+
+  .cancel-button {
+    @apply text-text_color_01 rounded;
+  }
+
+  .inspect {
+    @apply text-brand_color text-right;
+  }
+
+  .adjustment-button {
+    @apply bg-brand_color text-text_color_01 rounded;
+    
+  }
+
+  .status-tag {
+    height: 22px;
+    @apply mt-1 flex items-center text-xs rounded px-2;
+  }
+}
+
+:local(.spot-page-wrapper) {
+  .rv-tabs {
+    .rv-tabs__wrap {
+      @apply sticky top-11 bg-bg_color z-10;
+
+    }
+  }
+
+  .switch-wrapper {
+    @apply flex items-center p-4 text-xs;
+
+    .label {
+      @apply ml-2 text-text_color_03;
+    }
+  }
+}
+
+:local(.filters-modal-root) {
+  @apply flex flex-col px-4 text-sm;
+
+  .screen-header {
+    @apply flex flex-row items-center justify-between pt-4;
+
+    span {
+      @apply text-base text-text_color_01 font-semibold
+    }
+
+    .close-icon {
+      svg {
+        @apply w-5 h-5
+      }
+    }
+  }
+
+  .screen-title {
+    @apply text-sm text-text_color_03 mb-2 mt-4;
+  }
+
+  .screen-date {
+    @apply flex flex-row items-center justify-between;
+
+    .date {
+      @apply w-40 h-11 rounded bg-bg_sr_color flex items-center text-sm text-text_color_01 justify-center
+    }
+
+    .date-separate {
+      @apply text-sm text-text_color_03
+    }
+  }
+
+  .date-type {
+    @apply flex flex-row items-center justify-between flex-wrap;
+
+    .date-type-item {
+      @apply px-4 py-1.5 bg-bg_sr_color flex items-center justify-center text-xs text-text_color_01 mt-2 rounded;
+
+      &.active {
+        @apply bg-brand_color_special_02 border border-brand_color text-brand_color rounded
+      }
+    }
+  }
+
+}/* 为 0 的 cicrle 不展示任何进度条 */
+:local(.zero-circle) {
+  svg {
+    path {
+      @apply last:hidden;
+    }
+  }
+}
+
+:local(.ternary-experience-gold-modal) { 
+  width: 292px !important;
+  @apply rounded-2xl !important;
+  
+  .ternary-experience-header {
+    margin-top: 22px  !important;
+    @apply text-text_color_01 text-base text-center font-medium mb-4;
+  }
+  
+  .rv-dialog__message {
+    margin: 0 22px  !important;
+    padding: 0  !important;
+  }
+  
+  .ternary-experience-content {
+    /* margin: 0 22px; */
+    @apply text-text_color_01 text-sm mb-4;
+  }
+  
+  .rv-button {
+    margin: 0 26px !important;
+    @apply rounded-lg !important;
+
+    .rv-button__text {
+      @apply text-text_color_01 !important;
+    }
+  }
+}

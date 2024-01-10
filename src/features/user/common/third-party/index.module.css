@@ -1,0 +1,19 @@
+:local(.scoped) {
+  .third-party {
+    .rv-button {
+      @apply h-12 mt-4 bg-bg_color border-text_color_01 text-text_color_01 rounded-lg;
+
+      .rv-button__text {
+        @apply text-sm;
+      }
+
+      svg {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .rv-divider {
+    @apply mb-2 mt-6;
+  }
+}

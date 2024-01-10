@@ -1,0 +1,79 @@
+:local(.scoped) {
+  &:last-child {
+    .item-divider {
+      display: none;
+    }
+  }
+
+  .item-wrapper {
+    @apply bg-bg_color;
+    @apply mx-4;
+
+    img {
+      @apply block;
+    }
+  }
+
+  .item-divider {
+    height: 4px;
+    @apply w-full bg-line_color_02;
+  }
+
+  .row {
+    @apply inline-flex justify-between w-full;
+    @apply text-sm;
+
+    .value {
+      @apply text-text_color_02 text-sm;
+    }
+  }
+
+  .header {
+    @apply mt-4 mb-2;
+
+    font-size: 16px;
+  }
+
+  .item-content {
+    border-bottom: 0.5px solid var(--line_color_02);
+    @apply pb-4 pt-2;
+
+    .title {
+      @apply text-text_color_02;
+    }
+
+    .value {
+      @apply text-text_color_01;
+    }
+
+    .row {
+      @apply mb-2;
+    }
+  }
+
+  .uid {
+    margin-bottom: 14px;
+
+    .value {
+      @apply inline-flex;
+
+      .copy-icon {
+        @apply ml-2;
+      }
+    }
+  }
+
+  .under-number {
+    margin-bottom: 11px;
+  }
+
+  .time-slot {
+    @apply my-3 text-text_color_03 text-sm font-normal;
+
+    .ta-activity-button {
+      height: 26px;
+      border-radius: 4px;
+      @apply w-fit bg-brand_color text-button_text_02 text-xs flex items-center justify-center;
+    }
+  }
+}

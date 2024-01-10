@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply grid grid-cols-3 px-4 text-text_color_02;
+
+  > * {
+    @apply mx-auto;
+  }
+}

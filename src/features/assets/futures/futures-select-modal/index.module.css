@@ -1,0 +1,26 @@
+:local(.futures-select-modal-root) {
+  @apply rounded-lg !important;
+
+  .futures-select-modal-content {
+    width: 298px;
+    padding: 30px;
+    @apply flex flex-col bg-card_bg_color_03;
+  
+    .popup-content {
+      @apply text-sm text-text_color_01
+    }
+  
+    .popup-bottom {
+      @apply w-full flex items-center justify-between mt-5;
+  
+      .popup-btn {
+        width: 48%;
+        @apply h-10 rounded text-button_text_02;
+      }
+  
+      .popup-cancel-btn {
+        @apply text-text_color_01 border-line_color_02 bg-bg_sr_color;
+      }
+    }
+  }
+}

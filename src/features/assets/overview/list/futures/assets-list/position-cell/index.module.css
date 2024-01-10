@@ -1,0 +1,37 @@
+:local(.futures-margin-position-cell-root) {
+  @apply pr-4 flex items-center justify-between border-b border-line_color_02;
+
+  height: 68px;
+
+  .position-name {
+    @apply text-sm text-text_color_01;
+
+    line-height: 22px;
+  }
+
+  .position-assets {
+    @apply flex flex-col w-3/5 text-end;
+
+    .quantity {
+      @apply text-sm text-text_color_01 mb-1;
+
+      line-height: 22px;
+    }
+
+    .assets {
+      @apply text-xs text-text_color_02;
+    }
+  }
+}
+
+:local(.popover-content-wrapper) {
+  @apply flex flex-row items-center;
+  
+  .popover-btn {
+    @apply text-sm font-medium text-button_text_01;
+  }
+  
+  .popover-line {
+    @apply w-px h-3.5 bg-button_text_01 mx-3;
+  }
+}

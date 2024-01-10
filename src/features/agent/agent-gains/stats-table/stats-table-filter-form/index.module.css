@@ -1,0 +1,34 @@
+:local(.scoped) {
+  svg {
+    @apply w-4 h-4;
+  }
+
+  .asset_record_filter {
+    font-size: 20px;
+  }
+}
+
+:local(.filter-form-popup) {
+  @apply bg-bg_color flex flex-col rounded-lg; 
+
+  .rv-form { 
+    >:first-child {
+      @apply pt-1;
+    }
+  }
+
+  .rv-field__body {
+    @apply bg-bg_color !important;
+
+    .rv-field__children {
+      > * {
+        @apply w-full;
+      }
+    }
+  }
+
+  .rv-popup__title {
+    height: 27px;
+    @apply text-left text-text_color_01 flex items-center;
+  }
+}

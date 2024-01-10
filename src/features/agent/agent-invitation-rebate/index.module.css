@@ -1,0 +1,85 @@
+:local(.agent-invitation-rebate-wrap) {
+  padding-bottom: 92px;
+
+  .common-icon {
+    @apply w-5 h-5;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  .agent-invitation-footer {
+    border-top: 4px solid var(--line_color_02);
+    @apply p-4 relative flex justify-between;
+
+    .left {
+      @apply pt-1 mr-14 flex-1;
+
+      p {
+        @apply mb-1 text-sm font-medium;
+      }
+
+      .mode-wrap {
+        @apply flex items-center;
+
+        .mode-wrap-icon {
+          @apply h-3.5 w-7 mt-px;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        span {
+          @apply mr-1 text-xs text-text_color_02;
+        }
+      }
+
+      .mode-tag {
+        border-radius: 29px;
+        @apply h-5 w-14 py-px mt-1 pt-0.5 text-xs text-center;
+      }
+
+      .pass-tag {
+        @apply text-brand_color bg-brand_color_special_02;
+      }
+
+      .no-pass-tag {
+        @apply text-sell_down_color bg-sell_down_color_special_02;
+      }
+    }
+
+    .footer-image {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .agent-invitation-button {
+    /* box-shadow: 0 0.5px 0 0 #EBEBEB inset; */
+    @apply px-4 pt-4 pb-9 fixed left-0 right-0 bottom-0 bg-bg_color;
+
+    .pending {
+      border: 1px solid transparent;
+      @apply bg-brand_color_special_02;
+
+      .rv-button__text {
+        @apply text-brand_color;
+      }
+    }
+
+    .noPass {
+      border: 1px solid transparent;
+      @apply bg-sell_down_color_special_02;
+
+      .rv-button__text {
+        @apply text-sell_down_color;
+      }
+    }
+
+    .rv-button {
+      @apply w-full rounded-lg;
+    }
+  }
+}

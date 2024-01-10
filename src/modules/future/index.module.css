@@ -1,0 +1,6 @@
+:local(.scoped) {
+  .rv-card {
+    @apply p-3 box-border;
+  }
+}
+

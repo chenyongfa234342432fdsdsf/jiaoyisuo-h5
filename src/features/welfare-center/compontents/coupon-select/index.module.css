@@ -1,0 +1,70 @@
+:local(.coupon-select-root) {
+  @apply flex pt-3.5 pb-1 px-3 bg-brand_color_light_bg rounded-lg w-full relative -top-2.5 z-0;
+
+  .coupon-select-cell {
+    @apply flex items-center justify-between w-full;
+
+    .coupon-info {
+      @apply flex-1 flex items-center justify-between text-xs;
+
+      line-height: 18px;
+
+      &.swiper {
+        width: 93%;
+      }
+
+      .coupon-name {
+        @apply whitespace-nowrap overflow-hidden text-ellipsis w-3/5;
+      }
+    }
+
+    .select-icon {
+      @apply ml-1 mt-0;
+    
+      svg {
+        @apply w-2 h-2;
+      }
+    }
+
+    .unselect-text {
+      @apply text-xs text-text_color_03;
+
+      line-height: 18px;
+    }
+  }
+
+  .rv-swiper__indicator--vertical {
+    @apply hidden;
+  }
+
+  .rv-swiper {
+    height: 18px;
+  }
+}
+
+:local(.coupon-select-modal) {
+  @apply flex flex-col w-full h-full bg-card_bg_color_03 overflow-y-hidden;
+
+  .coupon-content {
+    @apply flex flex-col px-4 pb-14 flex-1 overflow-y-scroll;
+
+    .coupon-area-title {
+      @apply text-base text-text_color_01 font-medium my-4;
+    }
+  }
+
+  .modal-bottom {
+    @apply w-full px-3 py-2 bg-card_bg_color_03 border-line_color_02 fixed bottom-0;
+
+    border-top-width: 0.5px;
+
+    .commit-btn {
+      @apply w-full h-10 rounded-lg;
+    }
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}

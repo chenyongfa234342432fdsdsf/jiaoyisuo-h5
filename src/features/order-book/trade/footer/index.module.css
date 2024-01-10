@@ -1,0 +1,61 @@
+:local(.scoped) {
+  @apply flex justify-between;
+
+  .handicap-btn {
+    @apply flex flex-1 mt-2 h-5;
+
+    .tick-btn {
+      @apply flex items-center flex-1 bg-bg_sr_color px-2 rounded font-medium;
+
+      & > div {
+        @apply w-full;
+
+        & > div {
+          @apply w-full;
+        }
+      }
+
+      button {
+        @apply w-full;
+      }
+    }
+
+    .icon-btn {
+      @apply ml-3;
+
+      & > div > div {
+        @apply mt-0;
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+
+    .tick-btn, .icon-btn {
+      @apply leading-none;
+    }
+
+  }
+}
+
+:local(.order-book-select-tips) {
+  @apply flex bg-brand_color_special_02 -mx-6 px-4 py-2;
+
+  & > div {
+    @apply mt-0;
+  }
+
+  svg {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    @apply text-brand_color font-normal ml-1 break-all leading-3;
+  }
+}
+
+:local(.order-book-select-header) {
+  @apply pb-0 !important;
+}

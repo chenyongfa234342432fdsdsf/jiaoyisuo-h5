@@ -1,0 +1,73 @@
+:local(.scoped) {
+  z-index: 101;
+  @apply fixed bottom-4 left-4 right-4 transition-all duration-1000;
+
+  .download-pop-up-wrap {
+    background-color: var(--customize-01);
+    @apply flex px-4 py-3 rounded relative;
+
+    .brand {
+      @apply flex flex-1;
+
+      .logo {
+        @apply w-9 h-9 mr-2;
+
+        img {
+          @apply w-full h-full;
+        }
+      }
+
+      .content {
+        @apply flex-1;
+
+        .name, .text {
+          label {
+            color: var(--customize-02);
+          }
+        }
+
+        .name {
+          @apply leading-none;
+
+          label {
+            font-size: 14px;
+            @apply font-medium;
+          }
+        }
+
+        .text {
+          label {
+            font-size: 12px;
+            @apply font-normal;
+          }
+        }
+      }
+    }
+
+    .btn {
+      min-width: 54px;
+      height: 26px;
+      margin-right: 10px;
+
+      .rv-button {
+        font-size: 12px;
+        line-height: 26px;
+        @apply font-medium p-0 w-full h-full bg-bg_color text-text_color_01 rounded-full;
+        
+        .rv-button__content {
+          @apply px-2;
+        }
+      }
+    }
+
+    .btn-close {
+      top: -2px;
+      @apply absolute right-1;
+
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

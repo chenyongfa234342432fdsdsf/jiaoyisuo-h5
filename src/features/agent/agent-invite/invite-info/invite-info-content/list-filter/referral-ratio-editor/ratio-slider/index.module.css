@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply w-full mt-2;
+
+  .arco-slider-marks-text {
+    @apply whitespace-nowrap text-xs;
+  }
+}

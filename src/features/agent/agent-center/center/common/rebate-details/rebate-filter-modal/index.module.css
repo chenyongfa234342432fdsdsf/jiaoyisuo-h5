@@ -1,0 +1,82 @@
+:local(.rebate-filter-modal-root) {
+  @apply flex flex-col !bg-card_bg_color_03 !rounded-tl-2xl !rounded-tr-2xl;
+  
+  max-height: 75%;
+  
+  .modal-header {
+    @apply flex items-center justify-between w-full bg-card_bg_color_03 p-4;
+  
+    .header-title {
+      @apply text-base text-text_color_01 font-medium;
+    }
+  
+    .close-icon {
+      @apply mt-0;
+  
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  }
+
+  .modal-content {
+    @apply flex flex-col px-4;
+
+    .filter-label {
+      @apply text-sm text-text_color_02 mb-2;
+
+      line-height: 22px;
+    }
+
+    .type-wrap {
+      @apply flex items-center flex-wrap mb-6;
+
+      .type-cell {
+        @apply px-4 py-1 mr-4 last:mr-0 bg-bg_sr_color border-bg_sr_color flex items-center text-xs text-text_color_01 rounded-lg;
+
+        border-width: 0.5px;
+
+        &.active {
+          @apply bg-brand_color_special_02 border-brand_color text-brand_color font-medium;
+        }
+      }
+    }
+
+    .amount-range-wrap {
+      @apply flex items-center;
+
+      .amount-cell {
+        @apply flex-1 border-bg_sr_color bg-bg_sr_color rounded-lg flex items-center justify-center placeholder:font-normal text-sm text-text_color_01;
+
+        height: 34px;
+        border-width: 0.5px;
+
+        &.active {
+          @apply border-brand_color;
+        }
+      }
+
+      .amount-interval {
+        @apply text-sm text-text_color_02 mx-2;
+        
+        line-height: 21px;
+      }
+    }
+
+    .err-text {
+      @apply text-xs text-warning_color absolute bottom-1;
+    }
+  }
+
+  .modal-bottom {
+    @apply flex items-center pb-8 px-4;
+
+    .modal-btn {
+      @apply flex-1 rounded-lg;
+    }
+  }
+
+  .rv-input__control {
+    @apply placeholder:font-normal placeholder:text-text_color_04 font-normal;
+  }
+}

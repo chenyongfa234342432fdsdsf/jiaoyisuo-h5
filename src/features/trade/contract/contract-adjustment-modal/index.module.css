@@ -1,0 +1,112 @@
+:local(.action-sheet-container) { 
+  @apply p-4;
+
+  height: 346px;
+
+  .adjustment-modal-title {
+    @apply flex justify-between;
+    
+    span:first-child {
+      @apply text-text_color_01 text-base;
+    }
+
+    span:last-child {
+      @apply text-text_color_02 text-sm;
+    }
+  }
+  
+  .tooltip {
+    @apply hidden !important;
+  }
+  
+  .rv-action-sheet__content {
+    @apply overflow-visible  divide-none border-none !important;
+  }
+
+  .adjustment-modal-slider {
+    /* @apply ml-1; */
+  }
+  
+  .adjustment-input-title {
+    @apply text-text_color_02 mb-2  text-sm;
+  }
+  
+  .adjustment-input-bond {
+    @apply text-text_color_02 my-3.5  text-sm;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 2px solid;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    @apply absolute -bottom-1 border-t-buy_up_color;
+  }
+  
+  .rv-slider__bar {
+    @apply bg-buy_up_color !important;
+  }
+  
+  .adjustment-modal-entrustmoney {
+    @apply flex justify-between my-3.5;
+    
+    div:first-child {
+      @apply text-text_color_02 text-sm flex items-center;
+
+      span:first-child {
+        @apply pr-1;
+      }
+    }
+
+    div:last-child {
+      @apply text-text_color_01 text-sm;
+    }
+  }
+  
+  .rv-slider {
+    @apply bg-bg_sr_color;
+  }
+  
+  .adjustment-input {
+    @apply relative;
+
+    .rv-input__control {
+      @apply pl-3 pr-8 h-10 bg-bg_sr_color rounded;
+    }
+
+    span {
+      @apply text-text_color_02 text-sm absolute right-2 top-2.5;
+    }
+  }
+
+  .adjustment-slider-num {
+    @apply mt-1 mb-8 text-text_color_01 text-xs flex justify-between;
+  }
+  
+  .adjustment-slider-button {
+    @apply w-full bg-brand_color h-10 rounded text-sm flex justify-center items-center;
+  }
+  
+  .rv-popover__wrapper {
+    @apply w-3 h-3 flex justify-center items-center;
+  }
+}
+
+:local(.action-sheet-popover) {
+  max-width: 343px;
+  @apply text-xs left-4 bg-toast_bg_color rounded !important;
+
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+
+  .rv-action-sheet__content {
+    @apply divide-none border-none !important;
+  }
+
+  .rv-popover__content {
+    @apply bg-toast_bg_color;
+  }
+}

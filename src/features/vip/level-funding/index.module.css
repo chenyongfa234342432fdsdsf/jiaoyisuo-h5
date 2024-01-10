@@ -1,0 +1,39 @@
+:local(.scoped) {
+  @apply w-full bg-bg_color pb-4;
+  
+  .content-wrap {
+    @apply w-full;
+
+    .rv-tabs__wrap {
+      border-bottom: 0.5px solid var(--line_color_02);
+    }
+
+    .rv-tabs__line {
+      margin-left: -10px!important;
+    }
+  }
+
+  .search-icon {
+    @apply !mt-0;
+  }
+
+  input::placeholder {
+    @apply !font-normal !text-text_color_04;
+  }
+
+}
+
+:local(.notice) {
+  padding: 22px;
+  @apply rounded-lg;
+
+  .common-12-content {
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .confirm-button {
+    @apply h-9 w-full bg-brand_color font-medium text-sm text-button_text_02 rounded-lg;
+  }
+
+}
+

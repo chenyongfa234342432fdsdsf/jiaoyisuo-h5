@@ -1,0 +1,123 @@
+:local(.scoped) {
+  @apply w-full bg-bg_color;
+  
+  .rv-nav-bar {
+    background: transparent!important;
+  }
+
+  .rv-nav-bar__title {
+    color: #FFFFFF!important;
+  }
+
+  .rv-hairline--bottom::after {
+    border-bottom: unset!important;
+  }
+
+  .content-wrap {
+    @apply w-full;
+  }
+
+  .common-12-content {
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .common-14-title {
+    @apply text-sm font-medium leading-[22px];
+  }
+
+  .common-14-content {
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .common-16-title {
+    
+    @apply text-text_color_01 text-base font-medium leading-6;
+  }
+
+  .confirm-button {
+    @apply h-9 w-full bg-brand_color font-medium text-sm text-button_text_02 rounded-lg;
+  }
+
+  .level-wrap {
+    @apply w-full p-4 box-border rounded-[16px] bg-bg_color;
+
+    .funding-block {
+      @apply rounded-lg flex flex-col px-3 py-2 box-border h-[60px] bg-card_bg_color_01;
+
+      .funding-tag {
+        @apply px-1 py-[1px] bg-card_bg_color_02 h-[18px] box-border;
+      }
+    }
+  }
+
+  .divide {
+    @apply w-full h-1;
+
+    background: var(--line_color_02);
+  }
+
+  .upgrade-wrap {
+    .upgrade-block {
+      @apply h-[52px] flex justify-between items-center;
+
+      .left {
+        @apply flex items-center;
+
+        .icon-wrap {
+          @apply w-9 h-9 bg-card_bg_color_02 rounded-[36px] flex items-center justify-center;
+        }
+
+        .step-wrap {
+          width: 158px;
+          @apply h-1 rounded bg-button_hover_01;
+
+          .step {
+            @apply h-1 rounded bg-brand_color_hover;
+          }
+        }
+      }
+
+      .right {
+        .button {
+          min-width: 76px;
+          @apply h-6 bg-brand_color font-medium text-xs text-button_text_02 rounded-[30px];
+        }
+      }
+    }
+
+    .upgrade-divide {
+      @apply flex items-center justify-center mt-2;
+    }
+    
+  }
+  
+
+}
+
+:local(.notice) {
+  padding: 22px;
+  @apply rounded-lg;
+
+  .common-12-content {
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .common-14-title {
+    @apply text-sm font-medium leading-[22px];
+  }
+
+  .common-14-content {
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .common-16-title {
+    
+    @apply text-text_color_01 text-base font-medium leading-6;
+  }
+
+  .confirm-button {
+    @apply h-9 w-full bg-brand_color font-medium text-sm text-button_text_02 rounded-lg;
+  }
+
+}
+

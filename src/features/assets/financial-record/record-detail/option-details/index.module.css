@@ -1,0 +1,15 @@
+:local(.option-details-root) {
+  @apply flex flex-col;
+
+  .details-cell {
+    @apply w-full flex items-center justify-between px-4 mb-4;
+
+    .info-label {
+      @apply text-sm text-text_color_02;
+    }
+
+    .info-content {
+      @apply text-sm text-text_color_01;
+    }
+  }
+}

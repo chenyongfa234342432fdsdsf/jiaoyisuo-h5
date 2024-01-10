@@ -1,0 +1,52 @@
+:local(.scoped) {
+  .chart-title {
+    @apply text-text_color_01 text-base font-medium ml-4 flex flex-row items-center pb-4;
+
+    .chart-title-icon {
+      @apply w-1 h-4 bg-brand_color mr-1;
+    }
+  }
+
+  .chart-wrap {
+    @apply flex justify-between;
+  }
+  
+  .pie-wrap {
+    width: 50%;
+    height: 140px;
+  }
+  
+  .pie-legend {
+    @apply flex flex-1 flex-col ml-4 justify-center;
+  
+    .legend {
+      @apply flex flex-col text-xs mb-2 last:mb-0;
+  
+      .legend-header {
+        height: 18px;
+        @apply flex items-center;
+  
+        .legend-icon {
+          @apply h-1.5 w-1.5 rounded-full;
+        }
+  
+        .legend-title {
+          min-width: 70px;
+          @apply text-text_color_02 mx-1 font-normal text-xs;
+        }
+  
+        .legend-tag {
+          height: 18px;
+          transform: scale(0.83);
+          @apply px-2;
+        }
+      }
+  
+      .legend-num {
+        @apply text-text_color_02 ml-3.5 mt-px;
+      }
+    }
+  }
+}
+  
+      

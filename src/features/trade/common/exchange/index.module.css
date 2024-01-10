@@ -1,0 +1,54 @@
+:local(.scoped) {
+  .order-type-item {
+    @apply text-text_color_01;
+  }
+
+  .exchange-item {
+    @apply mb-2.5;
+
+    .exchange-input {
+      @apply bg-bg_sr_color;
+
+      &.is-focused {
+        @apply !bg-bg_color;
+      }
+    }
+  }
+
+  .rv-dropdown-menu__bar {
+    @apply rounded;
+  }
+
+  .rv-dropdown-menu__bar2 {
+    @apply rounded;
+  }
+
+  .can-use {
+    @apply flex justify-between;
+
+    .right {
+      @apply flex justify-center items-center;
+    }
+
+    .rv-icon-warning {
+      @apply ml-4;
+
+      fill: var(--brand_color);
+    }
+  }
+
+  .btn-item {
+    @apply w-full rounded-lg text-center h-10 leading-10;
+
+    &.market-price {
+      @apply text-text_color_03 bg-bg_sr_color;
+    }
+
+    &.order-btn {
+      /* @apply text-button_text_01; */
+    }
+  }
+
+
+
+}

@@ -1,0 +1,88 @@
+:local(.scoped) {
+  @apply flex-1 overflow-hidden flex flex-col;
+
+  .action {
+    @apply pb-10 pt-2 w-full px-4 bg-bg_color;
+  }
+
+  .rv-radio-group {
+    @apply w-full;
+  }
+
+  .rv-radio {
+    border-bottom: 1px solid var(--line_color_02);
+    @apply w-full px-4;
+  }
+
+  .rv-radio__label {
+    @apply flex-1;
+  }
+
+  .rv-radio-group {
+    @apply mb-5;
+  }
+
+  .user-tips {
+    padding: 10px 16px;
+    @apply -mt-3;
+  }
+
+  .settlement-select-icon {
+    @apply w-4 h-4;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+}
+  
+:local(.settlement-currency-setting-checkbox) {
+  @apply flex justify-between items-center py-4;
+  
+  & > div {
+    @apply mt-0;
+  }
+  
+  svg {
+    font-size: 16px;
+  }
+  
+  .currency, .price {
+    label {
+      font-size: 14px;
+      @apply font-medium text-text_color_01;
+    }
+  }
+  
+  .currency {
+    @apply flex-1 ml-2;
+  }
+  
+  .price {
+    label {
+      &:first-child {
+        @apply mr-2;
+      }
+    }
+  }
+}
+
+.auto-add-modal {
+  .add-modal-wrap {
+    .modal-wrap-icon {
+      @apply mb-5 m-auto h-16 w-16;
+
+      svg {
+        @apply h-16 w-16;
+      }
+    }
+  }
+
+  .rv-button__text {
+    @apply text-text_color_01;
+  }
+}
+
+:local(.settlement-currency-wrapper) {
+  @apply h-screen flex flex-col overflow-hidden;
+}

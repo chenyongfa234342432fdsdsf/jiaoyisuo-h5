@@ -1,0 +1,67 @@
+:local(.lock-modal-root) {
+  @apply bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg !important;
+
+  .lock-modal-wrapper {
+    @apply flex flex-col p-4;
+
+    .info-item {
+      @apply text-sm text-text_color_01 mb-2 last:mb-0;
+    }
+
+    .setting {
+      @apply flex flex-col text-sm text-text_color_02;
+
+      .hint {
+        @apply text-brand_color;
+      }
+
+      .slider {
+        @apply mt-3;
+      }
+
+      .rv-slider {
+        @apply h-1 bg-card_bg_color_04;
+      }
+    }
+
+    .hint-item {
+      @apply flex items-start text-xs text-brand_color mt-5;
+    }
+
+    .modal-btn {
+      @apply rounded mt-8 mb-3;
+    }
+
+    .lifted-btn {
+      @apply border-bg_sr_color bg-bg_sr_color text-text_color_01;
+    }
+
+    .count-down-colon {
+      @apply inline-block mx-1 text-sm text-text_color_01;
+    }
+
+    .count-down-block {
+      width: 25px;
+      height: 26px;
+      line-height: 26px !important;
+      @apply inline-block bg-card_bg_color_02 rounded text-sm text-text_color_01 text-center;
+    }
+
+    .rv-count-down {
+      @apply text-text_color_01;
+    }
+  }
+}
+
+:local(.lock-hint-popover-root) {
+  line-height: 22px;
+  @apply px-3 text-sm left-0 !important;
+
+  .rv-popover__content {
+    @apply rounded px-4;
+  }
+  
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+}

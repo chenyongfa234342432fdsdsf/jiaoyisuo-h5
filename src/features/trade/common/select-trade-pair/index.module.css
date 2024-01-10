@@ -1,0 +1,31 @@
+:local(.select-trade-pair-wrapper) {
+  @apply mr-4;
+
+  .selected-label {
+    @apply text-text_color_03 flex items-center text-xs;
+  }
+}
+
+:local(.select-trade-pair-modal-wrapper) {
+  .title {
+    @apply text-base font-semibold p-4 bg-bg_color;
+  }
+
+  .options-wrapper {
+    @apply overflow-y-auto bg-bg_color;
+
+    height: calc(50 * var(--vh));
+  }
+
+  .option {
+    @apply p-4 text-sm font-semibold;
+
+    &.active {
+      @apply text-brand_color;
+    }
+  }
+
+  .rv-search__field {
+    @apply items-center;
+  }
+}

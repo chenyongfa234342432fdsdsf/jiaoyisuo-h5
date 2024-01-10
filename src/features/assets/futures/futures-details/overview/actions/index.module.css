@@ -1,0 +1,46 @@
+:local(.futures-overview-actions-root) {
+  @apply flex flex-col mb-6 px-4;
+
+  .futures-overview-actions-wrap {
+    @apply w-full flex items-center justify-between mt-3;
+    
+    .operate-btn {
+      @apply flex-1 h-8 rounded bg-bg_sr_color text-sm text-text_color_01 font-medium p-0 mr-2.5;
+    }
+          
+    .trade-btn {
+      @apply bg-brand_color text-button_text_02;
+    }
+          
+    .rv-button--disabled {
+      @apply !text-text_color_04 border-0;
+    }
+  }
+
+  .margin-cell {
+    @apply flex items-center justify-between mt-3;
+    
+    .margin-left {
+      @apply flex flex-col flex-1;
+    
+      .title-cell {
+        @apply flex items-center mb-2;
+    
+        .title {
+          @apply text-sm text-text_color_01 mr-1;
+        }
+      }
+    
+      .margin-hint {
+        @apply text-xs text-text_color_02;
+      }
+    }
+    
+    .margin-switch {
+      svg {
+        width: 42px;
+        height: 26px;
+      }
+    }
+  }
+}

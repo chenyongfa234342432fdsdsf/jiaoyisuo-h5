@@ -1,0 +1,43 @@
+:local(.friend) {
+  @apply bg-card_bg_color_03 !important;
+  
+  .rv-popup__title {
+    @apply text-left;
+  }
+  
+  .form-wrap {
+    @apply bg-card_bg_color_03;
+  }
+  
+  .rv-field__children {
+    @apply bg-card_bg_color_03;
+  }
+  
+  .rv-input {
+    @apply bg-bg_sr_color;
+  }
+  
+  .manage-form-text {
+    @apply text-xs text-text_color_01 bg-bg_color;
+  
+    line-height: 18px;
+  }
+  
+  .submit-button {
+    @apply h-10 w-full bg-brand_color font-medium text-sm text-button_text_02;
+  }
+
+  .loading-box {
+    @apply flex justify-center w-full h-full items-center pt-5;
+
+
+  }
+
+  .friend-info {
+    @apply flex justify-between items-center px-3 text-sm text-text_color_01 h-8 font-medium;
+  }
+
+  .empty {
+    @apply py-0 pt-10;
+  }
+}

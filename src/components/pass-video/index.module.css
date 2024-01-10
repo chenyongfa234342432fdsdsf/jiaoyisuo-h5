@@ -1,0 +1,54 @@
+:local(.pass-video-dialog) {
+  z-index: 9999!important;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  @apply px-3;
+
+  .rv-dialog__content {
+    .pass-video-content {
+      @apply px-2.5 mb-4 w-full relative;
+
+      .custom-video-button {
+        transform: translate(-50%, -50%);
+        @apply top-1/2 left-1/2 absolute;
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .pass-video-footer {
+      @apply flex justify-between items-center;
+
+      .footer-button {
+        @apply flex-1 mx-2.5;
+
+        .button-close {
+          @apply bg-bg_sr_color;
+        }
+
+        .button-countdown {
+          @apply h-10 w-full rounded text-sm text-center flex justify-center items-center border border-brand_color border-solid;
+
+          .rv-count-down {
+            @apply text-brand_color;
+          }
+        }
+
+        .rv-button {
+          @apply w-full;
+        }
+      }
+    }
+  }
+
+  .rv-dialog__footer {
+    @apply p-0;
+  }
+}
+
+:local(.pass-video-dialog-overlay) {
+  z-index: 1998!important;
+}

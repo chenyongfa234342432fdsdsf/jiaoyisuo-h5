@@ -1,0 +1,53 @@
+:local(.expired-page) {
+  @apply w-full;
+
+
+  .top-content {
+    @apply bg-bg_color;
+
+    .tab-box {
+      margin-top: 17px;
+      @apply mx-4;
+    }
+  }
+
+
+
+  .list {
+    @apply px-4;
+
+    padding-bottom: 52px;
+
+    .bottom-tip {
+      height: 52px;
+      @apply flex justify-center items-center left-0 fixed bottom-0 w-full bg-bg_color text-sm text-text_color_03;
+    }
+  }
+
+  .filter {
+    @apply bg-card_bg_color_01 flex justify-between items-center px-4;
+
+    height: 50px;
+    margin-top: 18px;
+
+    .select-group {
+      @apply text-text_color_03 font-normal text-xs;
+
+      .select {
+        margin-right: 32px;
+
+        .select-icon {
+          @apply text-xs ml-1;
+
+          color: #D2D2D2;
+          transform: scale(0.7);
+        }
+      }
+    }
+
+    .filter-icon {
+      @apply text-lg;
+    }
+  }
+}
+

@@ -1,0 +1,60 @@
+:local(.futures-assets-wrapper) {
+  @apply w-full flex flex-col relative;
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b !important;
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-line_color_02
+  }
+}
+
+
+:local(.assets-list-wrapper) {
+  .coin-withdraw-btn {
+    @apply !h-full w-16 bg-card_bg_color_03 border border-brand_color text-sm text-text_color_01 font-normal rounded-none;
+  }
+
+  .coin-recharge-btn {
+    @apply !h-full w-16 bg-brand_color border border-brand_color text-sm text-button_text_02 font-normal rounded-none;
+  }
+
+  .assets-list-item {
+    height: 75px;
+    @apply w-full flex items-center justify-between px-4 border-b border-line_color_02 relative;
+
+    .coin-info {
+      @apply flex items-center;
+
+      .coin-name {
+        @apply text-base text-text_color_01 font-medium ml-2;
+      }
+    }
+
+    .coin-right {
+      @apply flex flex-col items-end text-base font-medium text-text_color_01;
+
+      .coin-amount {
+        @apply text-xs text-text_color_02
+      }
+    }
+  }
+
+  .rv-popover__wrapper {
+    @apply w-full;
+  }
+}
+
+
+:local(.popover-content-wrapper) {
+  @apply flex flex-row items-center;
+
+  .popover-btn {
+    @apply text-sm font-medium text-button_text_01;
+  }
+
+  .popover-line {
+    @apply w-px h-3.5 bg-button_text_01 mx-3;
+  }
+}

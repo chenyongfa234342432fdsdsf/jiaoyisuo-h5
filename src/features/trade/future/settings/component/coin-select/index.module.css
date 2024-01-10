@@ -1,0 +1,37 @@
+:local(.scoped) {
+  @apply px-4 pt-4 pb-2;
+
+  .coin-select-wrap {
+    border: 0.5px solid var(--card_bg_color_01);
+    @apply p-3 mb-2 rounded bg-card_bg_color_01 relative overflow-hidden;
+
+    .select-wrap-icon {
+      @apply absolute top-0 right-0 w-5 h-4;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .select-wrap-title {
+      @apply mb-2 text-sm font-medium text-text_color_01;
+    }
+
+    .select-wrap-content {
+      @apply text-sm font-normal text-text_color_02;
+    }
+
+    .select-title {
+      @apply text-brand_color;
+    }
+
+    .select-content {
+      @apply text-text_color_01;
+    }
+  }
+
+  .select-wrap {
+    border: 0.5px solid var(--brand_color);
+    @apply bg-brand_color_special_02;
+  }
+}

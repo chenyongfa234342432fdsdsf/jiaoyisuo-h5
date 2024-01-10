@@ -1,0 +1,31 @@
+:local(.avatar-setting) {
+  @apply flex flex-col min-h-screen;
+
+  .content {
+    @apply flex flex-1 flex-col justify-between;
+  }
+
+  .avatar-wrap {
+    padding-top: 110px;
+    @apply flex flex-1 justify-between flex-col pb-4 items-center;
+
+    .reactEasyCrop_CropArea {
+      border-color: #ffffff;
+      @apply border-2;
+    }
+  }
+
+  .bm-wrap {
+    @apply p-4 pb-10 relative;
+
+    .tip {
+      @apply text-sm text-button_text_01 text-center mb-8;
+    }
+
+    .btn-wrap {
+      @apply grid grid-cols-2 gap-4;
+    }
+  }
+
+
+}

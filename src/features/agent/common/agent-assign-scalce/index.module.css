@@ -1,0 +1,61 @@
+:local(.pop) {
+  @apply bg-card_bg_color_03 ;
+
+  border: 16px 16px 0;
+  
+  .content {
+    @apply w-full px-4 box-border text-sm text-text_color_01 mt-4 mb-4;
+  
+    line-height: 22px;
+  }
+
+  .scale-slider {
+    .rv-cell__title {
+      @apply m-0;
+    }
+  }
+  
+  .rv-slider__button {
+    width: 16px;
+    height: 16px;
+    @apply ml-4;
+  }
+  
+  .rv-popup__title {
+    @apply text-left mt-4 mb-0 ml-4;
+  }
+  
+  .rv-popup__close-icon {
+    @apply top-2;
+  }
+  
+  .rv-field__error-message {
+    @apply mt-1;
+  }
+    
+  .form-wrap {
+    @apply bg-card_bg_color_03 mt-4;
+  }
+  
+  .rv-form-item {
+    @apply bg-card_bg_color_03 mt-0 pt-0 mb-0 pb-0;
+  }
+  
+  .rv-field__children {
+    @apply bg-card_bg_color_03;
+  }
+  
+  .rv-input {
+    @apply bg-bg_sr_color;
+  }
+  
+  .manage-form-text {
+    @apply text-xs text-text_color_01 bg-card_bg_color_03 px-4  flex justify-between mt-2 mb-4;
+  
+    line-height: 18px;
+  }
+  
+  .submit-button {
+    @apply h-10 w-full bg-brand_color font-medium text-sm text-button_text_02 rounded-lg;
+  }
+}

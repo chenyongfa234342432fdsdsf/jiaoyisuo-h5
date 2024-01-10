@@ -1,0 +1,13 @@
+:local(.scoped) {
+  .future-record-title {
+    @apply text-base text-text_color_01 ml-4;
+  }
+  
+  .future-record-list {
+    @apply px-4 border-b border-b-line_color_02;
+  }
+  
+  .future-record-list:last-child {
+    @apply border-none;
+  }
+}

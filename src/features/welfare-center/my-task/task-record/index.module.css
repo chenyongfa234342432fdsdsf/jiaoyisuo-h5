@@ -1,0 +1,110 @@
+:local(.welfare-center) {
+  @apply bg-card_bg_color_03;
+
+  .common-32-title {
+    color: #FFFFFF;
+    @apply text-[32px] font-medium leading-[48px];
+  }
+
+  .common-20-title {
+    
+    @apply text-xl text-text_color_01 leading-[30px];
+  }
+
+  .common-16-title {
+    
+    @apply text-text_color_01 text-base font-medium leading-[24px];
+  }
+
+  .common-16-content {
+    color: #FFFFFF;
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-16-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-14-content-02 {
+    color: rgb(224 224 224 / 100%);
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .common-14-title {
+    @apply text-text_color_01 text-sm font-medium leading-[22px];
+  }
+
+  .common-14-content {
+    color: #FFFFFF;
+    @apply text-sm font-normal leading-[18px];
+  }
+
+  .common-12-content {
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .common-12-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-xs font-normal leading-[18px];
+  }
+  
+  .banner {
+    height: 90px;
+    @apply bg-card_bg_color_01 px-4 relative;
+
+    .banner-title {
+      @apply text-text_color_01 text-base font-medium absolute z-1;
+
+      top: 18px;
+    }
+
+    .banner-tip {
+      @apply text-text_color_03 text-sm font-normal mt-2 absolute z-1;
+
+      bottom: 18px;
+    }
+
+    .banner-bg {
+      @apply absolute top-0 left-0;
+    }
+  }
+
+  .tab-switch {
+    @apply bg-bg_color;
+  
+    .line {
+      height: 1px;
+      @apply scale-y-50 w-full bg-line_color_02;
+    }
+
+    .rv-tab__text {
+      @apply text-base;
+    }
+
+    .rv-tabs__wrap {
+      @apply sticky w-full h-[44px] top-[46px];
+
+      z-index: 1;
+    }
+  }
+
+  .btn {
+    @apply px-4 py-1 bg-bg_sr_color text-sm leading-[18px] text-text_color_02 font-medium mr-3 cursor-pointer relative rounded-[18px];
+
+    
+
+    &.active {
+      @apply bg-brand_color text-button_text_02;
+    }
+
+    &.has-new::before {
+      top: -3px;
+      right: 6px;
+      background-color: #F6465D;
+      content: '';
+      @apply w-2 h-2 rounded-full absolute
+    }
+  }
+
+}

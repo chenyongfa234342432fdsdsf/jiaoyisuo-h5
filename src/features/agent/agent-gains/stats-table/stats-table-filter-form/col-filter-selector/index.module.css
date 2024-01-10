@@ -1,0 +1,14 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 rounded;
+
+  .rv-selector__item {
+    border-style: solid;
+    border-width: 2px;
+    @apply text-xs font-normal m-0 text-text_color_02 py-0.5 px-2 border-card_bg_color_01 my-auto !important;
+  }
+
+  .rv-selector__item--active {
+    @apply text-text_color_01 bg-card_bg_color_03 !important;
+  } 
+
+}

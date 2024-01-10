@@ -1,0 +1,12 @@
+:local(.scoped) {
+  @apply flex flex-col space-y-3 items-center;
+
+  .icons-wrapper {
+    @apply flex items-center justify-center space-x-2;
+    
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

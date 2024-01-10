@@ -1,0 +1,109 @@
+:local(.see-use-pop) {
+  @apply w-full bg-card_bg_color_03 text-sm;
+
+  max-height: 617px;
+
+  /* padding: 0 22px 40px; */
+  
+  p {
+    @apply mb-2;
+  }
+
+  .rv-popup__title {
+    @apply ml-4 text-left my-4;
+  }
+
+  .btn-group {
+    @apply flex justify-between mt-4 mx-4 mb-[40px];
+  
+    .confirm {
+      @apply bg-brand_color w-full rounded text-button_text_02;
+    }
+  }
+
+  .order-number {
+    @apply bg-bg_sr_color rounded text-text_color_02 h-9 flex items-center pl-3 justify-between pr-3;
+  }
+
+  .copy {
+    @apply text-text_color_02;
+
+    svg {
+      @apply w-4 h-4 relative;
+
+      top: 1px;
+    }
+  }
+
+  .fee {
+    @apply bg-brand_color_light_bg flex justify-between my-4 text-text_color_01 text-xs rounded;
+
+    padding: 6px 12px;
+
+    /* border-bottom-width: 0.5px; */
+
+    .fee-money {
+      @apply text-sell_down_color;
+    }
+  }
+
+  .trade-info {
+    @apply border-t border-line_color_02 pt-4 pb-2 mt-4;
+
+    .cell {
+      @apply flex justify-between mb-2;
+
+      .value {
+        @apply text-sm text-text_color_01;
+      }
+
+      .scenes-mark {
+        @apply bg-brand_color_special_02 text-brand_color text-xs;
+
+        margin-left: 6px;
+        padding: 2px 0;
+        border-radius: 2px;
+
+      }
+    }
+  }
+
+  .label {
+    @apply text-text_color_02 text-sm;
+  }
+
+  .order-data {
+    @apply border-t-4 border-line_color_02 px-4 pt-4;
+
+    .order-data-show {
+      @apply flex justify-between;
+    }
+
+    .no-data {
+      @apply mt-5 pb-5;
+    }
+
+    .money {
+      @apply text-sm text-sell_down_color;
+    }
+
+    .three-col {
+      @apply text-right;
+    }
+  }
+
+  .detail-used-mark {
+    @apply flex justify-center items-center;
+
+    width: 44px;
+    height: 44px;
+    color: #2EBD85;
+    background-size: cover;
+
+    .mark-text {
+      @apply text-xs inline-block font-medium;
+
+      transform: scale(0.8) rotate(45deg);
+    }
+  }
+}

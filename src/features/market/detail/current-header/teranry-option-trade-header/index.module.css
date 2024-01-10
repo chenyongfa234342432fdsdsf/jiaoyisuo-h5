@@ -1,0 +1,139 @@
+
+
+:local(.second-row) {
+  .chg-tag {
+    height: 22px;
+  }
+
+  .group {
+    font-size: 10px;
+    line-height: 15px;
+    @apply px-1 py-0.5 bg-brand_color_special_02 rounded-sm font-semibold text-brand_color ml-1;
+  }
+
+  .current-price {
+    @apply text-2xl font-semibold;
+
+    line-height: 36px;
+  }
+
+  .chg-wrap {
+    @apply text-base font-medium;
+  }
+
+  &.is-scrolling {
+    .current-price,
+    .chg-wrap {
+      @apply text-xs font-medium;
+    }
+  }
+
+}
+
+:local(.scoped) {
+  border-bottom: 0.5px solid var(--line_color_02);
+  @apply w-full box-border py-2;
+
+
+  .ws-delay-time {
+    @apply bg-success_color_special_02 text-success_color rounded-sm font-medium; 
+  }
+
+  .nav-wrapper {
+    @apply flex;
+
+    .common-icon {
+      @apply flex justify-center items-center;
+    }
+
+    .nav-divider {
+      width: 1px;
+      height: 16px;
+      @apply bg-line_color_01 mx-1;
+    }
+
+  }
+
+  .container {
+    width: 0
+  }
+
+  .content-wrap {
+    .coin {
+      @apply font-medium text-base flex items-center;
+
+      .pair-name-futures {
+        .base-symbol-name {
+          font-weight: 600;
+          font-size: 20px;
+          font-style: normal;
+          line-height: 30px; 
+        }
+      }
+
+      .quote-badge {
+        @apply mx-1 ;
+
+        bottom: 12px;
+        height: 18px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px; 
+      }
+    }
+
+    .row {
+      @apply flex items-center;
+
+      .content {
+        @apply flex;
+      }
+    }
+
+  }
+
+  .center-wrap {
+    @apply w-full block;
+
+    .row {
+      @apply justify-start;
+    
+      &:first-child {
+        /* @apply pb-1; */
+      }
+    }
+
+    .second-row {
+      @apply -translate-y-1;
+    }
+    
+  }
+
+  .right-wrap {
+    @apply flex items-center ml-1;
+
+    .screen {
+      @apply ml-2;
+
+      svg {
+        @apply text-base leading-4;
+      }
+    }
+
+    .star {
+      @apply text-base leading-4 mr-3;
+    }
+
+    .extra-wrap {
+      svg {
+        @apply text-base leading-4;
+      }
+    }
+  }
+
+  .common-icon {
+    svg {
+      @apply text-base leading-4;
+    }
+  }
+}

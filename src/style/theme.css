@@ -1,0 +1,924 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+
+body[theme= 'light'] {
+  /* 色版 */
+  --or-01: #4d2600;
+  --or-02: #764207;
+  --or-03: #9f6314;
+  --or-04: #C88726;
+  --or-05: #F1AE3D;
+  --or-06: #F4C25E;
+  --or-07: #F7D37F;
+  --or-08: #F9E2A1;
+  --or-09: #FCEFC4;
+  --or-10: #FFFAE8;
+  --or-11: rgba(241 174 61 / 10%);
+  --or-12: rgb(241 174 61 / 15%);
+  --gr-01: #004D39;
+  --gr-02: #06694D;
+  --gr-03: #108560;
+  --gr-04: #1DA173;
+  --gr-05: #2EBD85;
+  --gr-06: #4CCA96;
+  --gr-07: #6ED7A8;
+  --gr-08: #93E5BD;
+  --gr-09: #B2F2D1;
+  --gr-10: #BCF2D6;
+  --gr-11: rgb(46 189 133 / 10%);
+  --gr-12: rgb(46 189 133 / 15%);
+  --rd-01: #4D0014;
+  --rd-02: #770822;
+  --rd-03: #A11733;
+  --rd-04: #CC2B46;
+  --rd-05: #F6465D;
+  --rd-06: #F86674;
+  --rd-07: #FA858D;
+  --rd-08: #FBA6A9;
+  --rd-09: #FCB6B6;
+  --rd-10: #FDC7C7;
+  --rd-11: rgb(246 70 93 / 10%);
+  --rd-12: rgb(246 70 93 / 15%);
+
+  /* 中性色 */
+  --nc-01: #101010;
+  --nc-02: #19191C;
+  --nc-03: #202024;
+  --nc-04: #252526;
+  --nc-05: #7F7F81;
+  --nc-06: #9D9D9D;
+  --nc-07: #C0C0C0;
+  --nc-08: #DBDBDB;
+  --nc-09: #F2F2F2;
+  --nc-10: #FAFAFA;
+  --nc-11: #F2F2F2;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #101014;
+  --nc-15: #FFFFFF;
+  --nc-16: rgba(127 127 129 / 20%);
+  --nc-17: #363639;
+  --nc-18: rgba(16 16 20/ 60%);
+  --nc-19: rgba(212, 212, 212, 20%);
+  --nc-20: #E8E8E8;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 自定义 */
+  --customize-01: #1C1C20;
+  --customize-02: #FAFAFA;;
+
+  /* icon */
+  --ic-01: #D2D2D2;
+  --ic-02: #9F9F9F;
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #F1AE3D;
+  --be-03: rgb(241 174 61 / 10%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #EC9043;
+  --be-08: #E9A805;
+  --be-09: rgb(242 100 17 / 10%);
+  --be-10: rgb(233 168 5 / 10%);
+}
+
+
+body[theme= 'dark'] {
+  /* 色版 */
+  --or-01: #fffae8;
+  --or-02: #fcefc4;
+  --or-03: #f9e2a1;
+  --or-04: #C88726;
+  --or-05: #F1AE3D;
+  --or-06: #F4C25E;
+  --or-07: #9F6314;
+  --or-08: #764207;
+  --or-09: #F7D37F;
+  --or-10: #4D2600;
+  --or-11: rgb(241 174 61 / 10%);
+  --or-12: rgb(241 174 61 / 15%);
+  --gr-01: #E9F8F3;
+  --gr-02: #BCF2D6;
+  --gr-03: #93E5BD;
+  --gr-04: #1DA173;
+  --gr-05: #2EBD85;
+  --gr-06: #4CCA96;
+  --gr-07: #6ED7A8;
+  --gr-08: #93E5BD;
+  --gr-09: #108560;
+  --gr-10: #06694D;
+  --gr-11: rgb(46 189 133 / 10%);
+  --gr-12: rgb(46 189 133 / 15%);
+  --rd-01: #FFECEE;
+  --rd-02: #FDC7C7;
+  --rd-03: #FBA6A9;
+  --rd-04: #CC2B46;
+  --rd-05: #F6465D;
+  --rd-06: #F86674;
+  --rd-07: #FA858D;
+  --rd-08: #FBA6A9;
+  --rd-09: #A11733;
+  --rd-10: #770822;
+  --rd-11: rgb(246 70 93 / 10%);
+  --rd-12: rgb(246 70 93 / 15%);
+
+  /* 中性色 */
+  --nc-01: #ffffff;
+  --nc-02: #f2f2f2;
+  --nc-03: #e3e3e5;
+  --nc-04: #DBDBDB;
+  --nc-05: #C0C0C0;
+  --nc-06: #9D9D9D;
+  --nc-07: #53555A;
+  --nc-08: #414347;
+  --nc-09: #323337;
+  --nc-10: #1C1C20;
+  --nc-11: #2D2E34;
+  --nc-12: #101014;
+  --nc-13: #FFFFFF;
+  --nc-14: #101014;
+  --nc-15: #25262B;
+  --nc-16: rgba(127 127 129 / 20%);
+  --nc-17: #363639;
+  --nc-18: rgba(16 16 20/ 60%);
+  --nc-19: rgba(77, 77, 77, 20%);
+  --nc-20: #2B2C30;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 自定义 */
+  --customize-01: #FAFAFA;
+  --customize-02: #1C1C20;
+
+  /* icon */
+  --ic-01: #454545;
+  --ic-02: #929292;
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #F1AE3D;
+  --be-03: rgb(241 174 61 / 20%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #E67614;
+  --be-08: #D6AB42;
+  --be-09: rgb(242 100 17 / 20%);
+  --be-10: rgb(214 171 66 / 20%);
+}
+
+/* okx 亮色 */
+
+body[theme-color= 'okx'] {
+  --or-01: #000000;
+  --or-02: #000000;
+  --or-03: #000000;
+  --or-04: #121111;
+  --or-05: #000000;
+  --or-06: #202024;
+  --or-07: #16161C;
+  --or-08: #353535;
+  --or-09: #474747;
+  --or-10: #808080;
+  --or-11: rgb(0 0 0 / 10%);
+  --or-12: rgb(0 0 0 / 15%);
+  --gr-01: #004D26;
+  --gr-02: #076934;
+  --gr-03: #118543;
+  --gr-04: #1FA153;
+  --gr-05: #31BD65;
+  --gr-06: #56D580;
+  --gr-07: #70D78F;
+  --gr-08: #95E5AA;
+  --gr-09: #BDF2C9;
+  --gr-10: #C5F5CF;
+  --gr-11: rgb(49 189 101 / 10%);
+  --gr-12: rgb(49 189 101 / 15%);
+  --rd-01: #4D001B;
+  --rd-02: #74092B;
+  --rd-03: #9C193E;
+  --rd-04: #D2345B;
+  --rd-05: #EB4B6D;
+  --rd-06: #F96E87;
+  --rd-07: #F38797;
+  --rd-08: #F7A6B0;
+  --rd-09: #FBC7CB;
+  --rd-10: #FDD4D5;
+  --rd-11: rgb(235 75 109 / 10%);
+  --rd-12: rgb(235 75 109 / 15%);
+  --nc-01: #000000;
+  --nc-02: #19191C;
+  --nc-03: #202024;
+  --nc-04: #252526;
+  --nc-05: #929292;
+  --nc-06: #9A9A9A;
+  --nc-07: #DBDBDB;
+  --nc-08: #EBEBEB;
+  --nc-09: #F2F2F2;
+  --nc-10: #F9F9F9;
+  --nc-11: #EBEBEB;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #FFFFFF;
+  --nc-15: #FFFFFF;
+  --nc-16: rgb(146 146 146 / 20%);
+  --nc-17: #424242;
+  --nc-18: rgb(0 0 0 / 40%);
+  --nc-19: rgb(215 223 240 / 20%);
+  --nc-20: #E9E9E9;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+  --bk-01: #0569FF;
+  --bk-02: #0569FF;
+  --bk-03: rgb(5 105 255 / 10%);
+  --bk-04: #9E4D02;
+  --bk-05: #F26411;
+  --bk-06: #E06D31;
+  --bk-07: #EC9043;
+  --bk-08: #E9A805;
+  --bk-09: rgb(242 100 17 / 10%);
+  --bk-10: rgb(233 168 5 / 10%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #0569FF;
+  --be-03: rgb(5 105 255 / 10%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #EC9043;
+  --be-08: #E9A805;
+  --be-09: rgb(242 100 17 / 10%);
+  --be-10: rgb(233 168 5 / 10%);
+}
+
+/* okx 暗色，暂时关闭 */
+
+body[theme= 'dark3'][theme-color= 'okx'] {
+  /* 色版 */
+  --or-01: #FFFFFF;
+  --or-02: #FFFFFF;
+  --or-03: #FFFFFF;
+  --or-04: #E8E8E8;
+  --or-05: #FFFFFF;
+  --or-06: #F5F5F5;
+  --or-07: #F2F2F2;
+  --or-08: #EDEDED;
+  --or-09: #FFFFFF;
+  --or-10: #FFFFFF;
+  --or-11: rgb(255 255 255 / 10%);
+  --or-12: rgb(255 255 255 / 15%);
+  --gr-01: #E8FFEC;
+  --gr-02: #B4EEC0;
+  --gr-03: #86DD9A;
+  --gr-04: #189042;
+  --gr-05: #25A74F;
+  --gr-06: #42B964;
+  --gr-07: #64CA7E;
+  --gr-08: #8BDC9D;
+  --gr-09: #0E8638;
+  --gr-10: #127030;
+  --gr-11: rgb(37 167 79 / 10%);
+  --gr-12: rgb(37 167 79 / 15%);
+  --rd-01: #FFE8EA;
+  --rd-02: #F4C1C8;
+  --rd-03: #EA9DAA;
+  --rd-04: #AB2950;
+  --rd-05: #CA4064;
+  --rd-06: #D55D79;
+  --rd-07: #EF6981;
+  --rd-08: #F38797;
+  --rd-09: #9C193E;
+  --rd-10: #74092B;
+  --rd-11: rgb(235 75 109 / 10%);
+  --rd-12: rgb(235 75 109 / 15%);
+  
+  /* 中性色 */
+  --nc-01: #FFFFFF;
+  --nc-02: #F2F2F2;
+  --nc-03: #E3E3E5;
+  --nc-04: #E5E7EB;
+  --nc-05: #909090;
+  --nc-06: #6D6D6D;
+  --nc-07: #909090;
+  --nc-08: #413F40;
+  --nc-09: #242424;
+  --nc-10: #1A1A1A;
+  --nc-11: #2E2E2E;
+  --nc-12: #121212;
+  --nc-13: #FFFFFF;
+  --nc-14: #FFFFFF;
+  --nc-15: #202020;
+  --nc-16: rgb(144 144 144 / 20%);
+  --nc-17: #424242;
+  --nc-18: rgb(0 0 0 / 80%);
+  --nc-19: rgb(36 36 36 / 40%);
+  --nc-20: #2B2B2B;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+  --bk-01: #1F5FEB;
+  --bk-02: #0569FF;
+  --bk-03: rgb(5 105 255 / 40%);
+  --bk-04: #9E4D02;
+  --bk-05: #F26411;
+  --bk-06: #E06D31;
+  --bk-07: #E67614;
+  --bk-08: #D6AB42;
+  --bk-09: rgb(242 100 17 / 20%);
+  --bk-10: rgb(214 171 66 / 20%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #0569FF;
+  --be-03: rgb(5 105 255 / 20%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #E67614;
+  --be-08: #D6AB42;
+  --be-09: rgb(242 100 17 / 20%);
+  --be-10: rgb(214 171 66 / 20%);
+}
+
+/* 币安 亮色 */
+
+body[theme= 'light'][theme-color= 'binance'] {
+  --or-01: #4D3300;
+  --or-02: #77560B;
+  --or-03: #A17E1D;
+  --or-04: #CFA136;
+  --or-05: #F6D658;
+  --or-06: #F8E274;
+  --or-07: #FAEC90;
+  --or-08: #F5E4A6;
+  --or-09: #FDFACA;
+  --or-10: #FAF5E7;
+  --or-11: rgb(246 214 88 / 10%);
+  --or-12: rgb(246 214 88 / 15%);
+  --gr-01: #004D2E;
+  --gr-02: #0D6841;
+  --gr-03: #218355;
+  --gr-04: #1DA173;
+  --gr-05: #5EBA89;
+  --gr-06: #75C899;
+  --gr-07: #8FD6AB;
+  --gr-08: #AAE3BF;
+  --gr-09: #C8F1D6;
+  --gr-10: #E3F9EA;
+  --gr-11: rgb(94 186 137 / 10%);
+  --gr-12: rgb(94 186 137 / 15%);
+  --rd-01: #4D0011;
+  --rd-02: #720B1E;
+  --rd-03: #981C2F;
+  --rd-04: #CC2B46;
+  --rd-05: #E35461;
+  --rd-06: #E96F75;
+  --rd-07: #EE8C8D;
+  --rd-08: #F4AAA9;
+  --rd-09: #F9CAC8;
+  --rd-10: #FCE1DF;
+  --rd-11: rgb(227 84 97 / 10%);
+  --rd-12: rgb(227 84 97 / 15%);
+  --nc-01: #21252F;
+  --nc-02: #252526;
+  --nc-03: #202024;
+  --nc-04: #252526;
+  --nc-05: #868D9A;
+  --nc-06: #B8BDC5;
+  --nc-07: #B8BDC5;
+  --nc-08: #D9DCE0;
+  --nc-09: #EAECEF;
+  --nc-10: #FAFAFA;
+  --nc-11: #F5F5F5;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #21252F;
+  --nc-15: #FFFFFF;
+  --nc-16: rgb(120 127 140 / 20%);
+  --nc-17: #727988;
+  --nc-18: rgb(0 0 0 / 50%);
+  --nc-19: #FAFAFA;
+  --nc-20: #727988;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #F6D658;
+  --be-03: rgb(246 214 88 / 10%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #EC9043;
+  --be-08: #E9A805;
+  --be-09: rgb(242 100 17 / 10%);
+  --be-10: rgb(233 168 5 / 10%);
+}
+
+/* 币安 暗色 */
+
+body[theme= 'dark'][theme-color= 'binance'] {
+  --or-01: #FAF5E7;
+  --or-02: #FDFACA;
+  --or-03: #F5E4A6;
+  --or-04: #CFA136;
+  --or-05: #F6D658;
+  --or-06: #F8E274;
+  --or-07: #A17E1D;
+  --or-08: #77560B;
+  --or-09: #FAEC90;
+  --or-10: #4D3300;
+  --or-11: rgb(241 174 61 / 10%);
+  --or-12: rgb(241 174 61 / 15%);
+  --gr-01: #E9F8F3;
+  --gr-02: #E3F9EA;
+  --gr-03: #AAE3BF;
+  --gr-04: #1DA173;
+  --gr-05: #5EBA89;
+  --gr-06: #75C899;
+  --gr-07: #8FD6AB;
+  --gr-08: #AAE3BF;
+  --gr-09: #218355;
+  --gr-10: #0D6841;
+  --gr-11: rgb(46 189 133 / 10%);
+  --gr-12: rgb(46 189 133 / 15%);
+  --rd-01: #FFECEE;
+  --rd-02: #FCE1DF;
+  --rd-03: #F9CAC8;
+  --rd-04: #CC2B46;
+  --rd-05: #E35461;
+  --rd-06: #E96F75;
+  --rd-07: #EE8C8D;
+  --rd-08: #F4AAA9;
+  --rd-09: #981C2F;
+  --rd-10: #720B1E;
+  --rd-11: rgb(246 70 93 / 10%);
+  --rd-12: rgb(246 70 93 / 15%);
+  --nc-01: #FFFFFF;
+  --nc-02: #F2F2F2;
+  --nc-03: #727988;
+  --nc-04: #DBDBDB;
+  --nc-05: #868D9A;
+  --nc-06: #505765;
+  --nc-07: #505765;
+  --nc-08: #444B58;
+  --nc-09: #343A46;
+  --nc-10: #161A25;
+  --nc-11: #2A303C;
+  --nc-12: #191D24;
+  --nc-13: #FFFFFF;
+  --nc-14: #21252F;
+  --nc-15: #21252F;
+  --nc-16: rgb(134 141 154 / 20%);
+  --nc-17: #727988;
+  --nc-18: rgb(16 16 20 / 80%);
+  --nc-19: #2A303C;
+  --nc-20: #414753;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #F6D658;
+  --be-03: rgb(246 214 88 / 20%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #E67614;
+  --be-08: #D6AB42;
+  --be-09: rgb(242 100 17 / 20%);
+  --be-10: rgb(214 171 66 / 20%);
+}
+
+/* kucoin 亮色 */
+
+body[theme= 'light'][theme-color= 'kucoin'] {
+  --or-01: #004D44;
+  --or-02: #006859;
+  --or-03: #00846C;
+  --or-04: #01A07E;
+  --or-05: #01BC8D;
+  --or-06: #2ED0A2;
+  --or-07: #4FD7AC;
+  --or-08: #99E4D1;
+  --or-09: #B0F2D9;
+  --or-10: #E8FFF5;
+  --or-11: rgb(1 188 141  / 8%);
+  --or-12: rgb(1 188 141  / 15%);
+  --gr-01: #004D44;
+  --gr-02: #006859;
+  --gr-03: #00846C;
+  --gr-04: #01A07E;
+  --gr-05: #01BC8D;
+  --gr-06: #2ED0A2;
+  --gr-07: #4FD7AC;
+  --gr-08: #99E4D1;
+  --gr-09: #B0F2D9;
+  --gr-10: #E8FFF5;
+  --gr-11: rgb(1 188 141 / 8%);
+  --gr-12: rgb(1 188 141 / 15%);
+  --rd-01: #4D000A;
+  --rd-02: #770A15;
+  --rd-03: #A11C24;
+  --rd-04: #CC3439;
+  --rd-05: #F65454;
+  --rd-06: #FF7A76;
+  --rd-07: #FA958E;
+  --rd-08: #FBB4AC;
+  --rd-09: #FDD0CA;
+  --rd-10: #FFECE8;
+  --rd-11: rgb(246 84 84  / 8%);
+  --rd-12: rgb(227 84 97 / 15%);
+  --nc-01: #000D1D;
+  --nc-02: #06182F;
+  --nc-03: #1A2A3E;
+  --nc-04: #3B4A5E;
+  --nc-05: #68717D;
+  --nc-06: #93999F;
+  --nc-07: #BCC0C5;
+  --nc-08: #DBDDDF;
+  --nc-09: #F3F3F3;
+  --nc-10: #F7F8FB;
+  --nc-11: #EFF0F0;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #000D1D;
+  --nc-15: #FFFFFF;
+  --nc-16: rgb(104 113 125  / 20%);
+  --nc-17: #6D7788;
+  --nc-18: rgb(0 5 13 / 34%);
+  --nc-19: rgb(229 229 229 / 40%);
+  --nc-20: #EAEAEA;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #01BC8D;
+  --be-03: rgb(1 188 141 / 10%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #EC9043;
+  --be-08: #E9A805;
+  --be-09: rgb(242 100 17 / 10%);
+  --be-10: rgb(233 168 5 / 10%);
+}
+
+/* kucoin 暗色 */
+
+body[theme= 'dark'][theme-color= 'kucoin'] {
+  --or-01: #E8FFF5;
+  --or-02: #B0F2D9;
+  --or-03: #4FD7AC;
+  --or-04: #01A07E;
+  --or-05: #01BC8D;
+  --or-06: #5DC19D;
+  --or-07: #00846C;
+  --or-08: #006859;
+  --or-09: #0F5D51;
+  --or-10: #004D44;
+  --or-11: rgb(1 188 141  / 8%);
+  --or-12: rgb(1 188 141  / 15%);
+  --gr-01: #E8FFF5;
+  --gr-02: #B0F2D9;
+  --gr-03: #4FD7AC;
+  --gr-04: #01A07E;
+  --gr-05: #01BC8D;
+  --gr-06: #5DC19D;
+  --gr-07: #00846C;
+  --gr-08: #006859;
+  --gr-09: #0F5D51;
+  --gr-10: #004D44;
+  --gr-11: rgb(1 188 141 / 8%);
+  --gr-12: rgb(1 188 141 / 15%);
+  --rd-01: #FFECE8;
+  --rd-02: #FDD0CA;
+  --rd-03: #FA958E;
+  --rd-04: #CC3439;
+  --rd-05: #F65454;
+  --rd-06: #F87571;
+  --rd-07: #A11C24;
+  --rd-08: #770A15;
+  --rd-09: #640A13;
+  --rd-10: #4D000A;
+  --rd-11: rgb(246 84 84 / 8%);
+  --rd-12: rgb(246 84 84 / 15%);
+  --nc-01: #FFFFFF;
+  --nc-02: #E1E8F5;
+  --nc-03: #99A0AC;
+  --nc-04: #757D8B;
+  --nc-05: #99A0AC;
+  --nc-06: #6D747F;
+  --nc-07: #505662;
+  --nc-08: #333B4A;
+  --nc-09: #222833;
+  --nc-10: #111721;
+  --nc-11: #262C37;
+  --nc-12: #181E29;
+  --nc-13: #FFFFFF;
+  --nc-14: #000D1D;
+  --nc-15: #181E29;
+  --nc-16: rgb(153 160 172 / 20%);
+  --nc-17: #6D7788;
+  --nc-18: rgb(0 0 0 / 50%);
+  --nc-19: rgb(42 48 58 / 40%);
+  --nc-20: #1E242F;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #01BC8D;
+  --be-03: rgb(1 188 141 / 20%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #E67614;
+  --be-08: #D6AB42;
+  --be-09: rgb(242 100 17 / 20%);
+  --be-10: rgb(214 171 66 / 20%);
+}
+
+/** chainstar 亮色，取代 monkey 的默认色  */
+body[theme= 'light'][theme-color= ''][theme-business= 'chainstar'],
+body[theme= 'light'][theme-color= 'default'][theme-business= 'chainstar'] {
+  --or-01: #001A4D;
+  --or-02: #032C73;
+  --or-03: #09439A;
+  --or-04: #115DC0;
+  --or-05: #1B79E7;
+  --or-06: #4196EC;
+  --or-07: #78B8FA;
+  --or-08: #91CAF5;
+  --or-09: #BCE1FA;
+  --or-10: #E8F7FF;
+  --or-11: rgb(27 121 231 / 10%);
+  --or-12: rgb(27 121 231 / 15%);
+  --gr-01: #004D39;
+  --gr-02: #06694D;
+  --gr-03: #108560;
+  --gr-04: #1DA173;
+  --gr-05: #2EBD85;
+  --gr-06: #4CCA96;
+  --gr-07: #6ED7A8;
+  --gr-08: #93E58D;
+  --gr-09: #B2F2D1;
+  --gr-10: #BCF2D6;
+  --gr-11: rgb(46 189 133 / 10%);
+  --gr-12: rgb(46 189 133 / 15%);
+  --rd-01: #4D0014;
+  --rd-02: #770822;
+  --rd-03: #A11733;
+  --rd-04: #CC2B46;
+  --rd-05: #F6465D;
+  --rd-06: #F86674;
+  --rd-07: #FA858D;
+  --rd-08: #FBA6A9;
+  --rd-09: #FCB6B6;
+  --rd-10: #FDC7C7;
+  --rd-11: rgb(246 70 93 / 10%);
+  --rd-12: rgb(246 70 93 / 15%);
+  --nc-01: #101014;
+  --nc-02: #243952;
+  --nc-03: #202024;
+  --nc-04: #252526;
+  --nc-05: #7F7F81;
+  --nc-06: #9D9D9D;
+  --nc-07: #C0C0C0;
+  --nc-08: #DBDBDB;
+  --nc-09: #F2F2F2;
+  --nc-10: #FAFAFA;
+  --nc-11: #F2F2F2;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #FFFFFF;
+  --nc-15: #FFFFFF;
+  --nc-16: rgb(127 127 129 / 20%);
+  --nc-17: #363639;
+  --nc-18: rgb(16 16 20 / 80%);
+  --nc-19: rgb(212 212 212 / 20%);
+  --nc-20: #E8E8E8;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #1B79E7;
+  --be-03: rgb(27 121 231 / 10%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #EC9043;
+  --be-08: #E9A805;
+  --be-09: rgb(242 100 17 / 10%);
+  --be-10: rgb(233 168 5 / 10%);
+
+}
+
+/** chainstar 暗色，取代 monkey 的默认色  */
+body[theme= 'dark'][theme-color= ''][theme-business= 'chainstar'],
+body[theme= 'dark'][theme-color= 'default'][theme-business= 'chainstar'] {
+  --or-01: #E8F7FF;
+  --or-02: #BCE1FA;
+  --or-03: #91CAF5;
+  --or-04: #115DC0;
+  --or-05: #1B79E7;
+  --or-06: #4196EC;
+  --or-07: #09439A;
+  --or-08: #032C73;
+  --or-09: #6BB5FF;
+  --or-10: #001A4D;
+  --or-11: rgb(27 121 231 / 10%);
+  --or-12: rgb(27 121 231 / 15%);
+  --gr-01: #E9F8F3;
+  --gr-02: #BCF2D6;
+  --gr-03: #93E58D;
+  --gr-04: #1DA173;
+  --gr-05: #2EBD85;
+  --gr-06: #4CCA96;
+  --gr-07: #6ED7A8;
+  --gr-08: #93E58D;
+  --gr-09: #108560;
+  --gr-10: #06694D;
+  --gr-11: rgb(46 189 133 / 10%);
+  --gr-12: rgb(46 189 133 / 15%);
+  --rd-01: #FFECEE;
+  --rd-02: #FDC7C7;
+  --rd-03: #FBA6A9;
+  --rd-04: #CC2B46;
+  --rd-05: #F6465D;
+  --rd-06: #F86674;
+  --rd-07: #FA858D;
+  --rd-08: #FBA6A9;
+  --rd-09: #A11733;
+  --rd-10: #770822;
+  --rd-11: rgb(246 70 93 / 10%);
+  --rd-12: rgb(246 70 93 / 15%);
+  --nc-01: #FFFFFF;
+  --nc-02: #F2F2F2;
+  --nc-03: #E3E3E5;
+  --nc-04: #E5E7EB;
+  --nc-05: #C0C0C0;
+  --nc-06: #9D9D9D;
+  --nc-07: #53555A;
+  --nc-08: #414347;
+  --nc-09: #323337;
+  --nc-10: #1C1C20;
+  --nc-11: #2D2E34;
+  --nc-12: #101014;
+  --nc-13: #FFFFFF;
+  --nc-14: #FFFFFF;
+  --nc-15: #25262B;
+  --nc-16: rgb(127 127 129 / 20%);
+  --nc-17: #363639;
+  --nc-18: rgb(16 16 20 / 80%);
+  --nc-19: rgb(77 77 77 / 20%);
+  --nc-20: #2B2C30;
+  --nc-21: #F26411;
+  --nc-22: rgba(242 100 17 / 60%);
+
+  /* 辅助色 */
+  --be-01: #1F5FEB;
+  --be-02: #1B79E7;
+  --be-03: rgb(27 121 231 / 20%);
+  --be-04: #9E4D02;
+  --be-05: #F26411;
+  --be-06: #E06D31;
+  --be-07: #E67614;
+  --be-08: #D6AB42;
+  --be-09: rgb(242 100 17 / 20%);
+  --be-10: rgb(214 171 66 / 20%);
+}
+
+body {
+  /* 品牌色 - 重点元素/按钮/文字等 */
+  --brand_color_animate: var(--or-04); /* 辅助色 */
+  --brand_color: var(--or-05);
+  --brand_color_hover: var(--or-06);
+  --brand_color_special: var(--or-07);
+  --brand_color_disable: var(--or-08);
+  --brand_color_light_bg: var(--or-10);
+  --brand_color_special_02: var(--or-11);
+
+  /* 辅助色-K 线/涨跌色/提示文字等 */
+  --sell_down_color: var(--rd-05);
+  --sell_down_color_hover: var(--rd-06);
+  --sell_down_color_animate: var(--rd-04);
+  --sell_down_color_disable: var(--rd-08);
+  --sell_down_color_special: var(--rd-07);
+  --sell_down_color_light_bg: var(--rd-10);
+  --sell_down_color_special_02: var(--rd-11);
+  --sell_down_color_special_03: var(--rd-12);
+ 
+  /* 辅助色-K 线/涨跌色/提示文字等 */
+  --buy_up_color_animate: var(--gr-04);
+  --buy_up_color: var(--gr-05);
+  --buy_up_color_hover: var(--gr-06);
+  --buy_up_color_special: var(--gr-07);
+  --buy_up_color_disable: var(--gr-08);
+  --buy_up_color_light_bg: var(--gr-10);
+  --buy_up_color_special_02: var(--gr-11);
+  --buy_up_color_special_03: var(--gr-12);
+ 
+  /* 线条 Line */
+  --line_color_01: var(--nc-08);
+  --line_color_02: var(--nc-09);
+
+  /* 填充 Icon */
+  --icon_color: var(--nc-03);
+  --icon_color_01: var(--ic-01);
+  --icon_color_02: var(--ic-02);
+  
+
+  /* 文字 Text */
+  --text_color_01: var(--nc-01);
+  --text_color_02: var(--nc-05);
+  --text_color_03: var(--nc-06);
+  --text_color_04: var(--nc-07);
+  --button_text_01: var(--nc-13);
+  --button_text_02: var(--nc-14);
+  --button_hover_01: var(--nc-20);
+
+  /* 层级用色 Hierarchy */
+  --card_bg_color_01: var(--nc-10);
+  --card_bg_color_02: var(--nc-11);
+  --card_bg_color_03: var(--nc-15);
+  --card_bg_color_04: var(--nc-16);
+  --bg_button_disabled: var(--nc-08);
+
+  /* 背景色 */
+  --bg_color: var(--nc-12);
+  --bg_color_02: var(--nc-18);
+  --bg_color_03: var(--nc-19);
+
+
+  /* 输入框背景色 */
+  --bg_sr_color: var(--nc-09);
+
+  /* 提示 Tips */
+  --tips_color: var(--or-05);
+  --tips_color_hover: var(--or-06);
+  --tips_color_animate: var(--or-04);
+  --tips_color_disable: var(--or-08);
+  --tips_color_special: var(--or-07);
+  --tips_color_lightbg: var(--or-10);
+
+  /* 警告 Warning */
+  --warning_color: var(--rd-05);
+  --warning_color_hover: var(--rd-06);
+  --warning_color_animate: var(--rd-04);
+  --warning_color_disable: var(--rd-08);
+  --warning_color_special: var(--rd-07);
+  --warning_color_lightbg: var(--rd-10);
+
+  /* 成功 Success */
+  --success_color: var(--gr-05);
+  --success_color_hover: var(--gr-06);
+  --success_color_animate: var(--gr-04);
+  --success_color_disable: var(--gr-08);
+  --success_color_special: var(--gr-07);
+  --success_color_special_02: var(--gr-11);
+  --success_color_lightbg: var(--gr-10);
+
+  /* 辅助色 */
+  --auxiliary_icon_color_01: var(--be-01);
+  --auxiliary_color_01: var(--be-02);
+  --auxiliary_color_special_01: var(--be-03);
+  --auxiliary_color_special: var(--be-04);
+  --auxiliary_color_02: var(--be-05);
+  --text_label_color_01: var(--be-06);
+  --auxiliary_icon_color_02: var(--be-07);
+  --text_label_color_02: var(--be-08);
+  --auxiliary_color_special_02: var(--be-09);
+  --auxiliary_color_special_03: var(--be-10);
+
+  /* 渐变色 */
+  --buy_bg_gradient: linear-gradient(180deg, rgba(106, 200, 133, 80%) 0%, rgba(80, 177, 108, 80%) 100%);
+  --sell_bg_gradient: linear-gradient(180deg, rgba(243, 125, 126, 80%) 0%, rgba(233, 90, 92, 80%) 100%);
+  --brand_bg_gradient: linear-gradient(180deg, rgba(241, 174, 61, 80%) 0%, rgba(252, 189, 84, 80%) 100%);
+  --c2c_chat_bg_gradient: linear-gradient(90deg, rgba(241, 174, 61, 30%) 46.35%, rgba(241, 174, 61, 0%) 80%);
+
+  /* 提示 Toast */
+  --toast_bg_color: var(--nc-17);
+
+  /** 交易表单阴影和背景 */
+  --trade-form-box-bg: #FFFFFFE6;
+
+  /** c2c 广告 头像渐变背景 */
+  --c2c_ad_avatar_bg_gradinet: linear-gradient(180deg, var(--brand_color) 0%, var(--brand_color) 100%);
+  
+}
+
+body[theme= 'dark'] {
+  /** 交易表单阴影和背景 */
+  --trade-form-box-bg: #25262BE6;
+}
+
+body[theme-business= 'chainstar'] {
+  --c2c_chat_bg_gradient: linear-gradient(90deg, rgba(27, 121, 231, 0.30) 46.35%, rgba(241, 174, 61, 0.00) 100%, rgba(27, 121, 231, 0.00) 100%);
+}

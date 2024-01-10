@@ -1,0 +1,92 @@
+:local(.percent-wrapper) {
+  .bar-wrapper {
+    @apply flex relative;
+
+    .bar {
+      @apply h-7;
+
+      position: relative;
+
+      .text {
+        @apply absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-sm font-medium;
+      }
+
+      &::after {
+        content: "";
+
+        @apply absolute left-0 top-0 right-0 bottom-0;
+     
+      }
+
+      &::before {
+        @apply absolute top-0 rounded-lg h-7;
+
+        
+        width: 40%;
+        content: "";
+      }
+
+      &::after,
+      &::before {
+        @apply bg-bg_sr_color;
+      }
+        
+      &.sell {
+        @apply rounded-r-lg;
+
+        &.is-active {
+          &::after,
+          &::before {
+            @apply bg-sell_down_color;
+          }
+        }
+        
+
+        &::after {
+          @apply rounded-sm right-2;
+
+          transform: skewX(-15deg);
+        }
+
+        &::before {
+          right: -8px;
+        }
+      }
+
+      &.buy {
+        @apply rounded-l-lg;
+
+        &.is-active {
+          &::after,
+          &::before {
+            @apply bg-buy_up_color;
+          }
+        }
+
+        &::before {
+          @apply rounded-sm;
+
+          right: -8px;
+          transform: skewX(-15deg);
+        }
+
+        &::after {
+          @apply rounded-lg;
+        }
+      }
+
+      &.is-active {
+        .text {
+          @apply text-button_text_01;
+        }
+      }
+    }
+
+    .white-clip {
+      @apply absolute top-0 w-2 h-4 bg-bg_color;
+
+      /* 变为平行四边形 */
+      transform: skew(-20deg);
+    }
+  }
+}

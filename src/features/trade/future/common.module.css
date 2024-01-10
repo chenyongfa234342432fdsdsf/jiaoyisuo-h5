@@ -1,0 +1,168 @@
+/* stylelint-disable selector-id-pattern */
+:local(.exchange-order-modal-title-wrapper) {
+  @apply flex items-center;
+
+  .tag {
+    @apply px-2 py-1 mr-2 rounded flex items-center justify-between text-xs;
+  }
+}
+
+:local(.exchange-order-modal-wrapper) {
+  @apply pb-14;
+
+  .list-item {
+    @apply flex items-center justify-between px-4 py-1 first:pt-2;
+
+    .list-item__label {
+      @apply text-text_color_02;
+    }
+    
+    .list-item__content {
+      @apply font-medium;
+    }
+  }
+}
+
+:local(.margin-source-select-wrapper) {
+  .option-item {
+    @apply rounded bg-card_bg_color_02 p-3 mb-2 last:mb-0 text-sm relative border border-solid border-card_bg_color_02;
+
+    .selected-icon {
+      @apply absolute right-0 top-px flex items-center justify-center text-white;
+
+      svg {
+        width: 22px;
+        height: 15px;
+      }
+    }
+
+    .title {
+      @apply font-medium mb-2;
+    }
+
+    .balance {
+      @apply text-text_color_02 flex items-center;
+
+      .balance-number {
+        @apply ml-px;
+      }
+
+    }
+
+    &.is-selected {
+      @apply bg-brand_color_special_02 border-brand_color;
+
+      .title {
+        @apply text-brand_color;
+      }
+
+      .balance {
+        @apply text-text_color_01;
+      }
+    }
+
+    &.is-disabled {
+      @apply bg-card_bg_color_02;
+
+      .title,
+      .balance {
+        @apply text-text_color_04;
+      }
+    }
+  }
+}
+
+:local(.margin-source-coins-wrapper) {
+  .coin-item {
+    @apply text-base p-4 font-medium flex justify-between;
+  }
+
+  .coins--list-wrapper {
+    min-height: 200px;
+  }
+}
+
+:local(.exchange-balance-wrapper) {
+  @apply justify-between flex items-center;
+
+  .balance-number-wrapper {
+    @apply text-text_color_01 flex items-center flex-1 justify-end ml-1;
+
+    .balance-number {
+      @apply text-right;
+    }
+  }
+}
+
+:local(.percent-buttons-wrapper) {
+  @apply rounded flex;
+
+  .percent-button {
+    @apply text-text_color_02 flex-1 text-center text-xs font-medium;
+
+    &:not(:last-child) {
+      @apply mr-1
+    }
+
+    .bg-block {
+      @apply h-1 bg-card_bg_color_02 mb-0.5;
+
+      border-radius: 1px;
+    }
+
+    &.active {
+      .bg-block {
+        @apply bg-brand_color;
+      }
+    }
+
+    &.current-active {
+      @apply text-text_color_01;
+    
+    }
+
+    &.disabled {
+      @apply text-text_color_04 !important;
+
+      .bg-block {
+        @apply bg-bg_button_disabled !important;
+      }
+    }
+  }
+}
+
+:local(.trade-direction-buttons) {
+  @apply flex;
+
+  .button {
+    @apply flex-1 relative h-7;
+
+    .text {
+      @apply text-sm font-medium text-text_color_01 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+    &.is-active {
+      .text {
+        @apply text-button_text_01;
+      }
+    }
+
+    &:not(.is-active) {
+      @apply text-bg_sr_color;
+    }
+
+    svg,
+    .icon {
+      @apply w-full h-full;
+    }
+  }
+}
+
+/** 仅限这里，可以使用全局性的 css，来更改图标填充色，直接改不知道为什么无法上传 */
+
+#icon-Left_button,
+#icon-right_button {
+  path {
+    @apply fill-current;
+  }
+}

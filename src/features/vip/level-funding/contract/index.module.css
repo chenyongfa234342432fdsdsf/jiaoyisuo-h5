@@ -1,0 +1,79 @@
+:local(.scoped) {
+  @apply w-full relative box-border bg-bg_color;
+  
+  .rv-tabs__wrap {
+    @apply px-4 font-semibold;  
+  }
+
+  .common-32-title {
+    color: #FFFFFF;
+    @apply text-[32px] font-medium leading-[48px];
+  }
+
+  .common-20-title {
+    color: #FFFFFF;
+    @apply text-xl font-medium leading-[30px];
+  }
+
+  .common-16-title {
+    
+    @apply text-text_color_01 text-base font-medium leading-[24px];
+  }
+
+  .common-16-content {
+    color: #FFFFFF;
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-16-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-base font-normal leading-[24px];
+  }
+
+  .common-14-content-02 {
+    color: rgb(224 224 224 / 100%);
+    @apply text-sm font-normal leading-[22px];
+  }
+
+  .common-14-title {
+    @apply text-text_color_01 text-sm font-medium leading-[22px];
+  }
+
+  .common-14-content {
+    color: #FFFFFF;
+    @apply text-sm font-normal leading-[18px];
+  }
+
+  .common-12-content {
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .common-12-content-02 {
+    color: rgb(135 135 135 / 100%);
+    @apply text-xs font-normal leading-[18px];
+  }
+
+  .answer {
+    @apply px-3 py-2 box-border w-full bg-card_bg_color_01 rounded;
+  }
+
+  .spot-coin-table, .spot-coin-table tr th, .spot-coin-table tr td { 
+    border-color: var(--line_color_01);
+  }
+
+  .spot-coin-table {
+    width: max-content;
+    border-collapse: collapse;
+  } 
+
+  .vip-coin-table, .vip-coin-table tr th, .vip-coin-table tr td { 
+    border-color: var(--line_color_01);   
+  }
+
+  .vip-coin-table {
+    width: max-content;
+    border-collapse: collapse;
+  } 
+
+  
+}

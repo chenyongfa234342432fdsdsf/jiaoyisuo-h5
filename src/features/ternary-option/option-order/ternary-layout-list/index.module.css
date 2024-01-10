@@ -1,0 +1,64 @@
+:local(.new-order-item-wrapper) {
+  @apply flex justify-between py-3 text-sm;
+
+  .number-item {
+    @apply flex text-xs text-text_color_03;
+
+    .number-label {
+      @apply mr-8;
+    }
+  }
+}
+
+:local(.filled-order-item-wrapper) {
+  @apply py-3 text-sm;
+
+  .number-item {
+    @apply flex justify-between text-xs;
+
+    .number-label {
+      @apply mr-8;
+    }
+
+    .number-value {
+      @apply text-text_color_03;
+    }
+  }
+
+  .status-tag {
+    @apply flex w-auto justify-center items-center px-2 py-1 rounded text-xs;
+
+    &.success {
+      @apply bg-success_color text-success_color;
+    }
+  }
+}
+
+:local(.order-list-layout-wrapper) {
+  @apply px-0;
+
+  .empty-img {
+    .no-data-img {
+      width: 86px !important;
+      height: 84px !important;
+
+      img {
+        width: 86px !important;
+        height: 84px !important;
+      }
+    }
+  }
+
+}
+
+:local(.empty-img) {
+  @apply py-40;
+}
+
+:local(.order-filters-header-wrapper) {
+  @apply flex justify-between items-center p-4 text-sm;
+}
+
+:local(.order-loading) {
+  @apply bg-transparent fixed !important;
+}

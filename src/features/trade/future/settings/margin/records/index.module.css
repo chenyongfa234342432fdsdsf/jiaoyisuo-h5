@@ -1,0 +1,94 @@
+:local(.records-header-wrapper) {
+  @apply p-4;
+
+  .balance-item {
+    @apply mr-4;
+
+    .label {
+      @apply text-text_color_03 mb-1 text-xs;
+    }
+  }
+}
+
+:local(.record-list-wrapper) {
+  .cell {
+    border-bottom: 1px solid var(--line_color_02);
+    @apply flex p-4 cursor-pointer;
+
+    label {
+      @apply cursor-pointer;
+    }
+
+    &:first-child {
+      @apply pt-3;
+    }
+
+    .content {
+      @apply flex-1 mr-2;
+
+      .header, .footer {
+        @apply flex justify-between items-center;
+      }
+
+      .header {
+        @apply mb-1;
+
+        .text {
+          label {
+            font-size: 14px;
+            @apply text-text_color_01 font-medium;
+
+            &:first-child {
+              @apply mr-1;
+            }
+          }
+        }
+
+        .price {
+          @apply text-sm font-medium;
+        }
+
+        .buy {
+          label {
+            @apply text-buy_up_color;
+          }
+        }
+
+        .sell {
+          label {
+            @apply text-sell_down_color;
+          }
+        }
+      }
+
+      .footer {
+        .describe, .status {
+          label {
+            font-size: 12px;
+            @apply font-normal text-text_color_02;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-record-text {
+    @apply px-4 pb-8;
+
+    .record-text-box {
+      @apply flex;
+
+      .footer-list-icon {
+        @apply w-1.5 h-1.5 mt-1;
+  
+        svg {
+          @apply w-1.5 h-1.5;
+        }
+      }
+  
+      .footer-list-text {
+        @apply ml-1 text-xs font-normal text-text_color_03;
+      }
+    }
+  }
+}

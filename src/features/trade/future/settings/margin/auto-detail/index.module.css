@@ -1,0 +1,285 @@
+:local(.auto-add-margin-groups-wrapper) {
+  @apply px-4 pt-4;
+
+  .group-item {
+    @apply text-xs bg-brand_color_special_02 text-brand_color px-3 py-1 rounded mr-2 mb-2 relative;
+
+    .delete-icon {
+      @apply absolute right-1 -top-1;
+    }
+  }
+
+  .text-button {
+    @apply py-1 text-brand_color ml-2 mb-2 flex items-center;
+
+    .text-button-item {
+      @apply text-sm font-normal;
+    }
+
+    .text-button-icon {
+      @apply w-3 h-3 mt-px;
+
+      svg {
+        @apply w-3 h-3;
+      }
+    }
+  }
+}
+
+:local(.auto-add-margin-coins-wrapper) {
+  @apply p-4;
+
+  .coins-wrapper-header {
+    @apply text-sm font-normal;
+
+    .wrapper-header-left {
+      @apply mb-2 flex items-center;
+    }
+
+    .header-left-icon {
+      @apply ml-2 h-3 w-3;
+
+      svg {
+        @apply h-3 w-3;
+      }
+    }
+  }
+
+  .coins-wrapper-body {
+    @apply my-2;
+
+    .rv-input {
+      @apply rounded overflow-hidden;
+
+      .rv-input__control {
+        @apply py-2.5 px-3 bg-bg_sr_color text-text_color_01;
+      }
+    }
+  }
+
+  .coins-wrapper-footer {
+    @apply flex items-center justify-between;
+
+    .wrapper-footer-text {
+      @apply text-sm font-normal text-text_color_02;
+    }
+
+    .wrapper-footer-price {
+      @apply text-sm font-normal text-text_color_01;
+    }
+  }
+}
+
+:local(.coin-select-modal-wrapper) {
+  @apply rounded-t-lg;
+
+  .modal-header {
+    @apply px-4 py-3 flex items-center justify-between text-sm;
+
+    .title {
+      @apply font-semibold;
+    }
+
+    .cancel {
+      @apply text-text_color_03;
+    }
+  }
+
+  .coin-item {
+    @apply py-2 px-4 flex justify-between items-center;
+
+    .coin-icon {
+      @apply w-4 h-4 mr-2;
+    }
+
+    .checked-icon {
+      @apply w-4 ml-2;
+    }
+  }
+}
+
+:local(.auto-add-margin-groups-settings) {
+  @apply h-screen;
+
+  .groups-settings-icon {
+    @apply w-5 h-5;
+
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+
+  .auto-trigger-wrap {
+    @apply mb-2 flex items-center;
+
+    .trigger-wrap-text {
+      @apply text-base text-text_color_01;
+    }
+
+    .trigger-wrap-icon {
+      @apply ml-2 w-3 h-3;
+
+      svg {
+        @apply w-3 h-3;
+      }
+    }
+  }
+
+  .trigger-wrap-radio {
+    .settlement-select-icon {
+      @apply w-4 h-4;
+  
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .rv-radio__label {
+      @apply text-text_color_01;
+    }
+
+  }
+
+  .groups-settings-footer {
+    @apply px-4 pt-4 pb-10 fixed bottom-0 right-0 left-0 bg-bg_color;
+  }
+}
+
+:local(.auto-add-margin-bolus-wrapper) {
+  @apply p-4;
+
+  .progress {
+    @apply flex w-full h-5 rounded-full overflow-hidden;
+
+    .progress-l {
+      @apply relative rounded-l-full bg-sell_down_color;
+
+      .diagonal-bar {
+        top: -7px;
+        right: -7px;
+        transform: rotate(30deg) translateZ(0);
+        @apply flex absolute bottom-0 bg-bg_color w-3 h-7;
+
+        .red {
+          @apply bg-sell_down_color w-2;
+        }
+
+        .white {
+          @apply bg-bg_color w-1;
+        }
+      }
+    }
+
+    .progress-r {
+      @apply rounded-r-full bg-buy_up_color;
+    }
+  }
+
+  .bolus-wrapper-percentage-num {
+    @apply mt-2 mb-3 flex items-center justify-between;
+
+    .percentage-num-text {
+      .num-text-first {
+        @apply mr-1 text-sm font-normal text-text_color_02;
+      }
+
+      .num-text-second {
+        @apply text-sm font-normal text-brand_color;
+      }
+    }
+  }
+
+  .bolus-wrapper-percentage-contair {
+    @apply p-3 rounded bg-card_bg_color_01;
+
+    .percentage-contair-wrap {
+      label {
+        @apply text-sm font-normal text-text_color_02;
+      }
+
+      .contair-wrap-price {
+        @apply mt-1 text-base font-medium text-text_color_01;
+      }
+    }
+
+    .percentage-contair-wrap:nth-child(1) {
+      @apply mb-4;
+    }
+  }
+}
+
+:local(.auto-add-margin-adjust-coin) {
+  @apply pb-24;
+
+  .adjust-coin-footer {
+    @apply fixed bottom-0 left-0 right-0 px-4 pt-4 pb-10 flex bg-bg_color;
+
+
+    .coin-footer-button {
+      @apply flex-1;
+    }
+
+    .coin-footer-button:nth-child(1) {
+      @apply mr-4;
+    }
+  }
+
+  .adjust-coin-contair {
+    @apply pt-4 px-4;
+
+    .coin-contair-wrap {
+      border: 0.5px solid var(--card_bg_color_01);
+      @apply p-3 mb-4 rounded bg-card_bg_color_02 backdrop-opacity-20;
+
+      .contair-wrap-title {
+        @apply flex justify-between items-center mb-2 text-sm font-medium text-text_color_01;
+
+        .wrap-title-contair {
+          @apply flex;
+
+          .wrap-title {
+            @apply text-xs bg-brand_color_special_02 text-brand_color px-2 py-0.5 rounded inline-block;
+          }
+        }
+
+        .check-icon {
+          @apply w-4 h-4;
+
+          svg {
+            @apply w-4 h-4;
+          }
+        }
+      }
+  
+      .contair-wrap-content {
+        @apply flex items-center justify-between;
+
+        .wrap-content-text {
+          @apply text-sm font-normal text-text_color_02;
+        }
+
+        .select-content {
+          @apply text-text_color_01;
+        }
+
+        .wrap-content-increase {
+          @apply flex items-center;
+
+          .content-increase-text {
+            @apply ml-1 text-sm font-medium text-text_color_01;
+          }
+        }
+      }
+  
+      .select-title {
+        @apply text-brand_color;
+      }
+
+    }
+  
+    .select-wrap {
+      border: 0.5px solid var(--brand_color);
+      @apply bg-brand_color_special_02;
+    }
+  }
+}

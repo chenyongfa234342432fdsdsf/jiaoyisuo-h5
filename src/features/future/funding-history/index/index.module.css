@@ -1,0 +1,9 @@
+
+
+:local(.rate-info-chart-wrapper) {
+  @apply p-4;
+
+  .header {
+    @apply flex items-center justify-between;
+  }
+}

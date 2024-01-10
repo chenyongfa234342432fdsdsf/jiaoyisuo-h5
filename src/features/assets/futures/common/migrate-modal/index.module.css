@@ -1,0 +1,67 @@
+:local(.migrate-modal-root) {
+  @apply bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg flex flex-col !important;
+
+  .modal-wrapper {
+    @apply flex flex-col px-4;
+
+    .form-item {
+      @apply flex flex-col mt-6 relative;
+
+      &.form-item-slider {
+        margin-top: 30px;
+      }
+
+      .form-labels {
+        @apply flex items-center justify-between text-sm text-text_color_02;
+      }
+
+      .form-input {
+        @apply flex items-center justify-between w-full h-10 bg-bg_sr_color text-sm font-medium text-text_color_02 mt-2 rounded-lg px-3;
+      }
+
+      .input {
+        @apply w-full px-3;
+
+        .rv-input__control {
+          @apply placeholder:font-medium !font-medium;
+        }
+      }
+
+      .form-input-hint {
+        @apply flex items-center text-xs text-text_color_02 absolute;
+
+        bottom: -22px;
+        line-height: 18px;
+      }
+
+      .form-input-error {
+        @apply border border-warning_color;
+      }
+
+      .form-slider {
+        @apply mt-3 mb-1.5;
+      }
+
+      .form-size-hint {
+        @apply flex items-center justify-between mt-0.5 text-xs;
+
+        .hint-amount {
+          height: 60%;
+          @apply text-text_color_02;
+        }
+
+        .hint-error {
+          @apply text-sell_down_color;
+        }
+      }
+    }
+
+    .modal-btn {
+      @apply mt-8 mb-7 rounded-lg h-10;
+    }
+  }
+
+  .rv-slider {
+    @apply h-1 bg-bg_sr_color;
+  }
+}

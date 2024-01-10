@@ -1,0 +1,70 @@
+:local(.my-trade-wrapper) {
+  /* --tab-sticky-top: 274px; */
+  
+  .rv-tabs {
+    .rv-tabs__wrap {
+
+      @apply sticky  bg-bg_color z-10 border-b border-solid border-line_color_02 h-auto !important;; 
+
+      /** 此变量由 actions 组件设置  */
+      top: var(--tab-sticky-top);
+      border-bottom-width: 0.5px !important;
+      
+      /** 给右侧图标留出空间 */
+      @apply pr-9;
+    }
+
+
+    .rv-tabs__nav {
+      @apply pl-0;
+    }
+    
+    .rv-tabs__nav--line {
+      @apply pt-4 pb-2 !important;
+    }
+    
+    .rv-tabs__line {
+      @apply bottom-0 !important;
+    }
+  }
+
+  .tab-right-extra-wrapper {
+    /** 存在的问题是如果是容器有 padding-bottom 的话它和 tab 不是同一时间解决 stikcy 的，不过好在这里没有  */
+    @apply sticky z-10;
+
+    top: var(--tab-sticky-top);
+    z-index: 11;
+
+    .tab-right-extra {
+      @apply absolute top-4 right-4;
+    }
+  }
+  
+  .switch-wrapper {
+    @apply flex items-center p-4 text-xs;
+
+    .label {
+      @apply ml-2 text-text_color_03;
+    }
+  }
+  
+  .header {
+    @apply w-full py-2 flex items-center px-4 border-b border-line_color_02;
+
+    .hide-icon {
+      @apply mt-0;
+
+      svg {
+        @apply w-6 h-3.5;
+      }
+    }
+
+    span {
+      @apply ml-2 text-xs text-text_color_02;
+    }
+  }
+
+  .empty {
+    @apply py-8;
+  }
+}

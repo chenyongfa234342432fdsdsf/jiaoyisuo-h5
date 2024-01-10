@@ -1,0 +1,159 @@
+:local(.user-total-assets) {
+  @apply w-40 flex flex-row items-center text-sm text-text_color_01;
+
+  .title {
+    @apply whitespace-nowrap
+  }
+
+  .icon {
+    svg {
+      @apply w-5 h-5 ml-1 mt-0.5
+        }
+  }
+}
+
+:local(.trade-assets-list) {
+  @apply flex flex-col;
+
+  .current-content {
+    @apply flex flex-col py-4 pb-6 border-b-4 border-line_color_02;
+
+    .current-title {
+      @apply text-sm px-4 text-text_color_02
+    }
+    
+
+
+    .current-item {
+      @apply flex flex-col mt-4 px-4 pb-3 border-b border-line_color_02;
+
+      .current-info {
+        @apply flex flex-row items-center justify-between text-base font-medium text-text_color_01;
+
+        .info-left {
+          @apply flex flex-row items-center;
+
+          .coin-icon {
+            @apply mr-2
+          }
+        }
+      }
+
+      .expand-info {
+        @apply flex flex-row items-center justify-between text-xs text-text_color_02 ml-7
+      }
+      
+      .expand-info-detail {
+        .info-detail-item {
+          @apply w-1/3 inline-block;
+        }
+
+        .info-detail-item:first-child {
+          @apply text-left;
+        }
+
+        .info-detail-item:nth-child(2) {
+          @apply text-center;
+        }
+        
+        .info-detail-item:last-child {
+          @apply text-right;
+        }
+      }
+    }
+    
+    .current-item:last-child {
+      @apply border-none;
+    }
+  }
+}
+
+:local(.stop-service-root) {
+  @apply px-4 pt-11;
+
+  .top {
+    @apply flex flex-col items-center;
+
+    .hint {
+      @apply text-sm text-text_color_02 mt-4
+    }
+  }
+
+  .bottom {
+    @apply mb-8;
+
+    margin-top: 76px;
+
+    .setting-btn {
+      @apply rounded
+    }
+  }
+}
+
+:local(.search-wrapper) {
+  @apply flex items-center h-8 rounded-2xl bg-bg_sr_color mx-4 pl-3.5 pr-2;
+
+  .search-icon {
+    svg {
+      @apply w-3.5 h-3.5 mr-2;
+    }
+  }
+
+  .search-input {
+    @apply text-sm;
+  }
+
+  .close-icon {
+    @apply px-2;
+
+    svg {
+      @apply w-3.5 h-3.5
+  }
+  }
+}
+
+
+:local(.asset-goto-trade) {
+  @apply py-4;
+
+  .asset-popup-container {
+    .asset-popup-title {
+      @apply flex justify-between items-center px-4;
+    }
+  }
+  
+  .trade-item {
+    @apply rounded px-3 py-3.5 bg-card_bg_color_02 mt-2 float-left text-xs text-text_color_01 font-medium;
+  
+    width: 47%;
+
+    .name {
+      @apply flex flex-row items-center;
+    }
+
+    .price-container {
+      @apply flex justify-between mt-1 text-sm;
+    }
+  }
+
+}
+
+:local(.trade-assets-hande-item) {
+  .to-trade-handle {
+    .trade-handle-item {
+      width: 50px;
+      height: 50px;
+      @apply rounded-full bg-card_bg_color_01 flex justify-center items-center;
+
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+          
+    .trade-handle-text {
+      @apply flex justify-center text-sm text-text_color_01 mt-1 font-medium;
+    }
+  }
+}
+

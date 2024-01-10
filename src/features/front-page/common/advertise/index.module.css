@@ -1,0 +1,28 @@
+:local(.scoped) {
+  @apply my-20 flex flex-col items-center relative;
+
+  .describe {
+    @apply mb-6 w-60;
+
+    div {
+      font-size: 30px;
+      line-height: 46px;
+      @apply text-text_color_01 font-semibold text-center;
+    }
+  }
+
+  .btn {
+    .rv-button {
+      width: 168px;
+      height: 50px;
+      font-size: 16px;
+      @apply text-button_text_02 font-medium rounded-full;
+    }
+  }
+
+  .image {
+    width: 64px;
+    height: 130px;
+    @apply absolute -right-4;
+  }
+}

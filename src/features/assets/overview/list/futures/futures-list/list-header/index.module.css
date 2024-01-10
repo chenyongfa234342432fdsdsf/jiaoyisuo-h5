@@ -1,0 +1,72 @@
+:local(.futures-list-header-root) {
+  @apply flex items-center justify-between border-b border-line_color_02 px-4 py-3;
+
+  .header-sort {
+    @apply flex items-center text-xs text-text_color_03;
+
+    line-height: 18px;
+
+    .sort-text {
+      @apply whitespace-nowrap overflow-hidden overflow-ellipsis;
+    }
+    
+    .header-sort-icons {
+      @apply flex flex-col ml-1;
+
+      .sort-icon {
+        @apply mt-0 mb-0.5 last:mb-0;
+
+        svg {
+          width: 5px;
+          height: 5px;
+        }
+      }
+    }
+  }
+
+  .header-screen {
+    @apply flex items-center ml-3;
+
+    .name-input {
+      @apply h-6 bg-bg_sr_color rounded text-xs placeholder:text-text_color_04 placeholder:text-xs mr-0 ml-3;
+
+      width: 114px;
+
+      svg {
+        @apply mr-1;
+      }
+
+      .rv-input__control {
+        @apply text-xs placeholder:text-xs placeholder:text-text_color_04;
+      }
+
+      .close-icon {
+        @apply pr-0;
+
+        svg {
+          @apply mr-0;
+        }
+      }
+    }
+  }
+
+  .type-select {
+    @apply h-6 flex flex-row rounded bg-bg_sr_color text-xs text-text_color_02;
+
+    width: 100px;
+
+    .select-icon {
+      svg {
+        @apply w-2 h-2
+      }
+    }
+  }
+
+  .type-select-popover {
+    @apply py-3 px-5;
+
+    div {
+      @apply text-xs text-text_color_01 !important;
+    }
+  }
+}

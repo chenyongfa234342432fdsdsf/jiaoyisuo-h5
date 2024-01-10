@@ -1,0 +1,157 @@
+:local(.slider-plus-wrapper) {
+  @apply relative;
+
+  &.has-points {
+    @apply mb-4;
+  }
+
+  @keyframes tootip-fade-out {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .tooltip {
+    @apply py-0.5 px-1 rounded absolute text-xs font-medium bg-toast_bg_color text-button_text_01 z-10 opacity-0 pointer-events-none;
+
+    top: -32px;
+    transform: translateX(-50%);
+    transition: opacity .5s;
+
+    &.show {
+      @apply block opacity-100;
+      
+      transition: none;
+    }
+
+    .tooltip-arrow {
+      @apply absolute w-0 h-0 top-full left-1/2 -translate-x-1/2  border-transparent border-solid;
+
+      border-width: 4px;
+      border-top-color: black;
+    }
+  }
+
+  .rv-slider__bar {
+    @apply z-10 h-0.5;
+  }
+  
+  .rv-slider {
+    @apply !h-0.5 bg-line_color_02;
+  }
+
+  .slider-button-wrap {
+    @apply px-0.5 bg-transparent;
+  }
+
+  .slider-button {
+    @apply rounded-full flex items-center justify-center relative z-1;
+
+    width: 14px;
+    height: 14px;
+
+    .slider-button-inner {
+      /** 这里并不能简单按照边框 2 来计算，因为边框是圆角的 */
+      @apply w-2.5 h-2.5 rounded-full bg-white;
+    }
+  }
+
+  .rv-slider.rv-slider--disabled {
+    .slider-button {
+      background-color: var(--bg_button_disabled) !important;
+    }
+  }
+
+  &.at-start {
+    .slider-button-wrap {
+      @apply pl-0;
+
+      transform: translateX(6px);
+    }
+
+    .slider-button {
+      /* transform: translateX(6px); */
+    }
+
+    .tooltip {
+      transform: translateX(calc(-50% + 6px));
+    }
+  }
+
+  &.at-end {
+    .slider-button-wrap {
+      @apply pr-0;
+
+      transform: translateX(-8px);
+    }
+
+    .slider-button {
+      /* transform: translateX(-8px); */
+    }
+
+    .tooltip {
+      transform: translateX(calc(-50% - 8px));
+    }
+  }
+
+  .slider-point-wrap {
+    @apply absolute cursor-pointer top-1/2 -translate-y-1/2 z-1 -translate-x-1 px-0.5;
+
+    &.at-end {
+      @apply pr-0 -translate-x-2.5;
+
+      .slider-point-text {
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+  
+    &.at-start {
+      @apply pl-0 translate-x-0;
+
+      .slider-point-text {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .slider-point {
+    /* @apply absolute cursor-pointer bg-bg_button_disabled w-2 h-2 rounded-full top-1/2 -translate-y-1/2 z-1 -translate-x-1; */
+
+    @apply cursor-pointer bg-bg_button_disabled w-2 h-2 rounded-full;
+
+    &.at-end {
+      .slider-point-text {
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+
+    &.at-start {
+      .slider-point-text {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+
+    .slider-point-text {
+      @apply text-xs absolute font-medium;
+  
+      top: calc(100% + 4px);
+      line-height: 18px;
+      transform: translateX(-50%);
+    }
+
+    &:not(.at-end) {
+      left: 50%;
+
+    }
+  }
+
+  
+}

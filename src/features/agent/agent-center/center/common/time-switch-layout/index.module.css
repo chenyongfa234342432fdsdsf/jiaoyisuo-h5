@@ -1,0 +1,28 @@
+:local(.time-switch-layout) {
+  @apply flex flex-col w-full py-4 bg-bg_color;
+
+  .time-switch-wrap {
+    @apply flex items-center w-full overflow-x-scroll px-4;
+
+    .time-switch-cell {
+      @apply rounded-lg flex items-center justify-center py-0.5 px-4 text-sm text-text_color_02 whitespace-nowrap;
+
+      line-height: 22px;
+
+      &.active {
+        @apply bg-bg_sr_color text-text_color_01;
+      }
+    }
+  }
+
+  .time-text {
+    @apply text-sm text-text_color_03 mt-2 px-4;
+
+    line-height: 22px;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}

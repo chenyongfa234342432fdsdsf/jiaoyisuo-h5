@@ -1,0 +1,9 @@
+:local(.scoped) {
+  @apply h-screen flex justify-center items-center;
+
+  img {
+    width: 64px;
+    height: 48px;
+  }
+}
+

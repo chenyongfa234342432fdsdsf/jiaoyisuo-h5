@@ -1,0 +1,47 @@
+:local(.actions-wrapper) {
+  .actions {
+    @apply flex justify-between;
+
+    .action-item {
+      @apply relative h-14 w-14 rounded-full flex justify-center items-center;
+
+      .hot-tag {
+        @apply absolute -right-1 -top-2;
+
+        img {
+          width: 32px;
+          height: 19px;
+        }
+      }
+
+      .direction-icon {
+        svg {
+          width: 24px;
+          height: 32px;
+        }
+
+        &.is-over {
+          svg {
+            width: 32px;
+            height: 24px;
+          }
+        }
+      }
+
+      .guide-finger {
+        @apply absolute left-1/2 -translate-x-1/2;
+
+        bottom: -10px;
+
+        img {
+          width: 16px;
+          height: 27px;
+        }
+      }
+    }
+  }
+
+  .balance-wrapper {
+    @apply flex bg-card_bg_color_01 px-3 py-2 rounded-md items-center justify-between;
+  }
+}

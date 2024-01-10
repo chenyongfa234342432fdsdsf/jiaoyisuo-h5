@@ -1,0 +1,49 @@
+:local(.currency-modal-root) {
+  @apply flex flex-col !bg-card_bg_color_03 !rounded-tl-2xl !rounded-tr-2xl;
+
+  height: 60%;
+
+  .modal-header {
+    @apply flex items-center justify-between w-full bg-card_bg_color_03 p-4 fixed !rounded-tl-2xl !rounded-tr-2xl;
+
+    .header-title {
+      @apply text-base text-text_color_01 font-medium;
+    }
+
+    .close-icon {
+      @apply mt-0;
+
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  }
+
+  .currency-cell {
+    @apply w-full px-4 py-2 flex items-center text-base text-text_color_01 font-medium my-4 last:mb-0;
+
+    .name {
+      @apply ml-2;
+    }
+
+    &.active {
+      @apply text-auxiliary_color_01;
+    }
+  }
+
+  .currency-cell:active {
+    @apply bg-bg_color_03;
+  }
+
+  .search {
+    @apply h-8 mt-14;
+
+    .rv-input__control {
+      @apply font-normal placeholder:font-normal;
+    }
+  }
+
+  .rv-list__loadmore {
+    @apply hidden;
+  }
+}

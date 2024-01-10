@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply flex flex-row mx-4 mt-3;
+
+  .rv-selector__item {
+    @apply !bg-transparent border-none my-auto;
+  }
+  
+  > * {
+    @apply text-sm text-text_color_02 font-normal py-0.5 px-2 !important;
+  }
+  
+  .rv-selector__item--active {
+    @apply text-text_color_01 font-medium bg-bg_sr_color !important;
+  }
+}

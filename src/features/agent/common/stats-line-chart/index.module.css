@@ -1,0 +1,67 @@
+:local(.scoped) {
+  .chart-title {
+    @apply text-text_color_01 text-base font-medium flex flex-col mx-4 pb-4;
+
+    .chart-title-icon {
+      @apply w-1 h-4 bg-brand_color mr-1;
+    }
+  }
+
+  .line-legend {
+    @apply flex flex-1 flex-col mx-4 justify-center;
+
+    .rv-checkbox__icon {
+      svg {
+        @apply rounded;
+      }
+    }
+      
+    .legend {
+      @apply flex flex-col text-xs mb-2 last:mb-0;
+      
+      .legend-header {
+        height: 18px;
+        @apply flex items-center justify-between;
+      
+        .legend-icon {
+          @apply w-1.5 h-1.5 rounded-full;
+        }
+      
+        .legend-title {
+          min-width: 70px;
+          @apply text-text_color_01 mx-1 font-medium;
+        }
+      
+        .legend-tag {
+          height: 18px;
+          transform: scale(0.83);
+          @apply px-2;
+        }
+      }
+      
+      .legend-num {
+        @apply text-text_color_02 ml-3.5 mt-px;
+      }
+    }
+  }
+}
+
+:local(.stats-chart-tabs) {
+  /* height: 30px; */
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  span {
+    border-radius: 4px;
+
+  }
+  @apply flex flex-row items-center;
+
+  > * {
+    @apply mr-2 cursor-pointer text-text_color_02 px-2 py-1 text-sm font-normal;
+  }
+
+  :last-child {
+    @apply mr-0;
+  }
+}

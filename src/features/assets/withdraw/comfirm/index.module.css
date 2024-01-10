@@ -1,0 +1,136 @@
+:local(.withdraw-confirm-wrapper) {
+  .info-list-wrapper {
+    @apply rounded-lg bg-card_bg_color_01 p-4;
+  
+    .info-item {
+      @apply text-sm text-text_color_01 flex flex-row mb-4 last:mb-0;
+  
+      .name {
+        @apply text-text_color_02 pr-4;
+  
+        min-width: 30%;
+      }
+  
+      .value {
+        @apply break-all w-4/5 font-medium;
+      }
+  
+      .uid {
+        @apply mr-2 border-b border-dashed border-text_color_01;
+      }
+  
+      .uid-icon {
+        @apply mt-0;
+  
+        svg {
+          @apply w-4 h-4 self-center
+          }
+      }
+    }
+  }
+  
+  .note-item {
+    @apply flex text-xs text-text_color_02 px-4 mb-1;
+  
+    .note-icon {
+      @apply mt-1;
+  
+      svg {
+        @apply w-1.5 h-1.5 mr-1
+        }
+    }
+  }
+  
+  .rv-hairline--bottom {
+    @apply border-line_color_02
+    }
+  
+  .rv-hairline--bottom::after {
+    @apply border-line_color_02
+    }
+}
+
+:local(.withdraw-confirm-success) {
+  .confirm-icon {
+    @apply flex items-center justify-center mt-11 mb-4 w-16 h-16 mx-auto;
+  }
+  
+  .hint {
+    @apply text-base text-text_color_01 mb-8 text-center font-medium;
+  }
+  
+  .coin-info {
+    @apply flex flex-row items-center h-12 border-t border-b border-line_color_02 px-4 justify-between text-sm;
+  
+    .info-name {
+      @apply text-text_color_02;
+    }
+  
+    .info-value {
+      @apply text-text_color_01;
+    }
+  }
+  
+  .rv-icon {
+    @apply w-2.5 h-2.5
+    }
+  
+  .rv-steps {
+    background: none;
+  }
+  
+  .rv-step--vertical {
+    @apply py-4
+    }
+  
+  .rv-step--vertical .rv-step__circle-container {
+    @apply top-6
+    }
+  
+  .rv-step--vertical .rv-step__line {
+    top: 22px;
+    background: linear-gradient(180deg, #F1AE3D 0%, #414347 100%);
+  }
+  
+  .rv-hairline {
+    @apply border-0
+    }
+  
+  .rv-hairline::after {
+    @apply border-0
+    }
+  
+  .rv-step--waiting {
+    @apply text-text_color_02
+    }
+  
+  .rv-hairline--bottom {
+    @apply border-0
+    }
+  
+  .rv-hairline--bottom::after {
+    @apply border-0
+    }
+}
+
+:local(.bottom-action-wrapper) {
+  @apply fixed bottom-10 left-0 w-full px-4;
+  
+  .save-address {
+    @apply mb-8 flex flex-row items-center text-sm text-text_color_01;
+  
+    .save-address-icon {
+      svg {
+        @apply w-5 h-5 mr-2;
+      }
+    }
+  }
+  
+  .withdraw-confirm-btn {
+    @apply w-full h-10 rounded
+    }
+}
+
+:local(.withdraw-confirm-root) {
+  @apply w-full h-full !bg-bg_color;
+}

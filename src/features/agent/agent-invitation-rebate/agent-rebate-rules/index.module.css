@@ -1,0 +1,26 @@
+:local(.agent-rebate-rules-wrap) {
+  .rules-main {
+    @apply p-4;
+
+    p {
+      @apply mt-8 mb-3 text-base font-medium;
+
+      &:first-child {
+        @apply mt-0;
+      }
+    }
+
+    label {
+      @apply text-xs text-text_color_02;
+
+      p {
+        line-height: 18px!important;
+        @apply text-xs;
+      }
+
+      div {
+        line-height: 18px!important;
+      }
+    }
+  }
+}

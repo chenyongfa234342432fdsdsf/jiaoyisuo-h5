@@ -1,0 +1,8 @@
+:local(.slide-top-icon) {
+  @apply fixed bottom-20 right-8;
+  
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

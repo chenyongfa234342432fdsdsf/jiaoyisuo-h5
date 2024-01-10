@@ -1,0 +1,23 @@
+:local(.dropdown-reference-root) {
+  @apply w-full h-10 bg-bg_sr_color flex items-center justify-between rounded-lg px-3 text-sm text-text_color_01 font-medium;
+
+  .dropdown-icon {
+    svg {
+      @apply w-2 h-2;
+    }
+  }
+
+  .rv-popover__wrapper {
+    @apply w-full;
+  }
+}
+
+:local(.dropdown-root) {
+  .rv-popover__arrow {
+    @apply hidden;
+  }
+
+  .rv-popover__content {
+    @apply rounded bg-card_bg_color_03 -mt-2;
+  }
+}

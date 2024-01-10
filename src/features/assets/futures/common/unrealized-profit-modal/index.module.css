@@ -1,0 +1,11 @@
+:local(.selector) {
+  @apply flex mt-4 mb-6;
+
+  .rv-selector__item {
+    @apply flex-grow rounded-lg;
+  }
+
+  .rv-selector__item:first-child {
+    margin-right: 15px;
+  }
+}

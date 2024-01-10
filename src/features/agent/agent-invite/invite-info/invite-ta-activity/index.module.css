@@ -1,0 +1,133 @@
+:local(.ta-modal-activity) {
+  .page-content {
+    min-height: calc(60 * var(--vh));
+  }
+
+  .user-info {
+    @apply flex;
+
+    min-height: 30px;
+  }
+
+  .user-info-divider {
+    height: 4px;
+    @apply bg-line_color_02;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @apply flex items-center justify-center bg-brand_color mr-4 mt-4;
+
+    .text {
+      @apply text-text_color_01 font-medium;
+    }
+  }
+
+  .name-row {
+    @apply flex pt-4 pb-1 items-center;
+
+   
+
+    .name {
+      font-size: 16px;
+      @apply text-text_color_01 font-medium;
+    }
+  }
+
+  .uid-row {
+    .uid {
+      @apply text-xs text-text_color_02 pr-2;
+    }
+  }
+
+  .icon-row {
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+
+  }
+
+  .footer {
+    height: 40px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    @apply mx-4;
+  }
+
+  .check-more-btn {
+    @apply bg-brand_color cursor-pointer flex items-center justify-center text-button_text_02 text-sm font-medium;
+  }
+
+
+  .ta-activities {
+    @apply mx-4;
+
+    > * {
+      @apply flex flex-row py-2 justify-between;
+    }
+
+    > :last-child {
+      @apply pb-4;
+    }
+
+    .label {
+      @apply text-sm text-text_color_02;
+    }
+
+    .value {
+      > * {
+        @apply text-sm text-text_color_01;
+      }
+    }
+  }
+
+  .rebate-info {
+    border-bottom: 0.5px solid var(--line_color_02);
+  }
+
+  .user-details {
+    @apply mt-2;
+  }
+}
+
+:local(.ta-datetime-tab) {
+  @apply whitespace-nowrap flex flex-row justify-between items-center mt-4;
+
+  span {
+    font-size: 12px;
+    @apply text-text_color_02 cursor-pointer mr-2;
+
+    &:last-child {
+      @apply text-text_color_01 cursor-text;
+    }
+  }
+
+  .checked {
+    @apply text-brand_color font-normal;
+  }
+
+  .arco-picker, .arco-input-inner-wrapper {
+    border-color: transparent;
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-input input {
+    @apply text-xs;
+  }
+
+  .arco-picker-input-active input, .arco-picker-focused .arco-picker-input-active input {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker:hover {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-suffix-icon {
+    @apply hidden;
+  }
+}

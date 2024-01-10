@@ -1,0 +1,68 @@
+:local(.local) {
+  .content {
+    @apply p-4;
+
+  }
+
+  .row {
+    @apply flex justify-between;
+
+    > * {
+      @apply flex items-center;
+    }
+
+
+  }
+
+  .title-row {
+    @apply mb-2;
+
+    .text {
+      @apply text-text_color_01;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .right {
+      @apply text-text_color_03 text-sm; 
+    }
+  }
+
+  .profit-row {
+    margin-bottom: 22px;
+    @apply bg-card_bg_color_01 p-3;
+
+    .text {
+      @apply text-text_color_02 text-sm;
+    }
+
+    .profit-money {
+      .increase-wrap {
+        @apply text-sm font-medium;
+      }
+    }
+
+  }
+
+  .row-2 {
+    height: 46px;
+    border-radius: 4px;
+    @apply bg-card_bg_color_01;
+  }
+
+  .profit-echarts {
+    height: 174px;
+
+    > div {
+      height: 250px;
+      margin: 0;
+      padding: 0;
+    }
+
+
+  }
+
+}

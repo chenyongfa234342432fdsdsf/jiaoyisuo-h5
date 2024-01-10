@@ -1,0 +1,81 @@
+:local(.select-trade-pair-wrapper) {
+  @apply mr-8;
+
+  .selected-label {
+    @apply text-sm text-text_color_03 flex items-center;
+  }
+}
+
+:local(.select-trade-pair-modal-wrapper) {
+  .rv-action-sheet__cancel {
+    height: 89px;
+    @apply flex bg-card_bg_color_03 justify-center pt-4 text-text_color_02;
+  }
+  
+  .rv-action-sheet__gap {
+    @apply h-1 !important;
+  }
+
+
+  .rv-action-sheet__content {
+    height: 360px;
+    @apply bg-card_bg_color_03 relative overflow-y-auto;
+
+    .header {
+      @apply w-full bg-card_bg_color_03 sticky top-0 left-0;
+
+      .title {
+        @apply text-base text-text_color_01 p-4;
+      }
+    
+      .rv-search {
+        @apply bg-card_bg_color_03;
+
+        .rv-cell__value {
+          top: 2px;
+        }
+      }
+  
+    }
+
+    .options-wrapper {
+      @apply w-full;
+    }
+
+    .option {
+      height: 52px;
+      @apply text-sm text-text_color_01 font-medium border-b border-b-line_color_02 flex items-center pl-4;
+
+      &.active {
+        @apply text-brand_color;
+      }
+    }
+  }
+
+  /* .title {
+    @apply text-base font-semibold p-4;
+  }
+
+  .rv-field__body {
+    @apply w-full;
+  }
+  
+  .rv-cell__value {
+    @apply flex items-center;
+  }
+
+  .options-wrapper {
+    @apply overflow-y-auto bg-bg_color;
+
+    height: 350px;
+
+  }
+
+  .option {
+    @apply p-4 text-sm font-semibold;
+
+    &.active {
+      @apply text-brand_color;
+    }
+  } */
+}

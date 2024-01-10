@@ -1,0 +1,97 @@
+:local(.vip-special-avatar-page) {
+  .wrap {
+    height: calc(var(--vh100) - 46px);
+
+    @apply flex flex-col justify-between;
+    
+    .list-content {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  
+      @apply overflow-auto flex-grow;
+    }
+
+    .list-content::-webkit-scrollbar {
+      display: none;
+    }
+  
+  }
+
+  .avatar-wrap {
+    @apply sticky top-0 shrink-0;
+
+
+    .avatar {
+      width: 68px;
+      height: 68px;
+
+      @apply absolute left-1/2 top-1/2 -ml-8 -mt-10 rounded-full overflow-hidden;
+    }
+
+    .avatar-decorate {
+      width: 100px;
+      height: 100px;
+      margin-top: -58px;
+      @apply absolute left-1/2 top-1/2 -ml-12  ;
+    }
+  }
+
+  .list-content {
+    @apply -mt-4 rounded-lg;
+  }
+
+  .list-wrap {
+    
+    @apply p-4 grid gap-x-2 gap-y-4 grid-cols-3 rounded-lg  relative z-1 bg-card_bg_color_03;
+
+    .list-item-wrap {
+      @apply p-4  rounded-lg flex flex-col items-center border border-solid border-transparent relative overflow-hidden;
+
+      background-color: #F2F2F2;
+
+      &.dark {
+        background-color: #323337;
+      }
+
+      &.checked {
+        @apply border border-solid border-brand_color;
+      }
+
+      .list-item-img {
+        @apply mb-2 flex-grow;
+
+      }
+
+      span {
+        @apply font-normal  text-sm text-text_color_02;
+
+        line-height: 22px;;
+      }
+      
+
+      .checked-tag {
+        @apply absolute left-0 top-0 px-1 py-0.5 bg-brand_color_special_02 text-xs font-normal text-brand_color rounded-br-lg;
+      }
+    }
+  }
+
+  .btn-wrap {
+    @apply pb-10 px-4 pt-4 flex-shrink-0;
+
+    .button {
+      &.selected {
+        @apply text-text_color_04 !important;
+
+        background-color: var(--nc-09) !important;
+        border-color: var(--nc-09) !important;
+      }
+
+      &.over-level {
+        @apply text-text_color_04 !important;
+
+        background-color: var(--bg_button_disabled) !important;
+        border-color: var(--bg_button_disabled) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:local(.future-trade-header-wrapper) {
+  @apply flex justify-between items-center;
+
+  .left {
+    @apply flex-1 flex justify-between;
+  }
+
+  .right {
+    @apply flex justify-end;
+
+    width: calc((100% - 16px) * 0.4)
+  }
+}
+
+:local(.account-tips-wrapper) {
+  @apply text-sm;
+
+  .rv-indicator__dot {
+    @apply w-1.5 h-1.5 bg-bg_sr_color opacity-100;
+
+    &.rv-indicator__dot--active {
+      @apply bg-brand_color
+    }
+  }
+
+  .rv-swiper-item {
+    @apply pb-4;
+  }
+}
+
+:local(.group-name-in-trade-modal) {
+  max-width: calc(100% - 18px);
+}

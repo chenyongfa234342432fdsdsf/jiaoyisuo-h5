@@ -1,0 +1,36 @@
+:local(.scoped) {
+  border-top: 0.5px solid var(--line_color_02);
+}
+
+:local(.currency-setting-checkbox) {
+  border-bottom: 0.5px solid var(--line_color_02);
+  @apply items-center w-full p-4;
+
+  .check-icon {
+    @apply w-4 h-4 mb-1;
+
+    svg {
+      @apply w-4 h-4; 
+    }
+  }
+
+  .rv-checkbox__label {
+    @apply w-full;
+
+    .coin-drag-item {
+      @apply flex items-center;
+      
+      .currency {
+        @apply text-text_color_01 flex-1;
+      }
+
+      .price {
+        @apply text-sm text-text_color_01;
+      }
+
+      .drag-icon {
+        @apply ml-4 pt-0.5;
+      }
+    }
+  }
+}

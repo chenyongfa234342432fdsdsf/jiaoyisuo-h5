@@ -1,0 +1,50 @@
+:local(.scoped) {
+  @apply flex flex-col;
+
+  /* temporary */
+  .rv-checkbox-group {
+    @apply hidden;
+  }
+
+  .rv-selector {
+    @apply mx-9 mb-6 grid grid-flow-col grid-rows-1;
+
+    > * {
+      height: 30px;
+      @apply flex items-center justify-center rounded-2xl ml-4;
+    }
+
+    :first-child {
+      @apply ml-0;
+    }
+    
+  }
+
+  .rv-selector__item {
+    @apply bg-bg_sr_color text-xs;
+  }
+
+  .rv-selector__item--active {
+    @apply bg-brand_color_special_02;
+  }
+
+  .rv-divider {
+    @apply border-line_color_02 border-2 h-0;
+  }
+
+  .gains-tabs {
+    border-bottom: 1px solid var(--line_color_02);
+  }
+
+  
+}
+
+:local(.gains-detail-popup) {
+  .rv-picker__toolbar {
+    @apply mb-4;
+  }
+
+  .rv-picker__confirm {
+    @apply text-sm;
+  }
+}

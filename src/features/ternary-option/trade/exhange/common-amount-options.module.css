@@ -1,0 +1,19 @@
+:local(.common-amount-options-popup-wrapper) {
+  .rv-selector {
+    @apply grid grid-cols-4 gap-2;
+
+    .rv-selector__item {
+      @apply mr-0 mb-0 font-medium !important;
+
+      &.rv-selector__item--multiple-active,
+      &.rv-selector__item--active {
+        @apply bg-bg_color !important;
+      }
+      
+    }
+  }
+
+  .button {
+    @apply rounded-full !important;
+  }
+}

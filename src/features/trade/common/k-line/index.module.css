@@ -1,0 +1,83 @@
+:local(.trade-kline-wrapper) {
+  @apply relative;
+
+  .rv-cell {
+    @apply py-1 h-8 box-border;
+
+    .rv-cell__title {
+      @apply flex items-center;
+    }
+  }
+
+  .rv-collapse-item__content {
+    @apply p-0;
+  }
+
+  .rv-collapse-item {
+    .rv-cell__right-icon {
+      @apply hidden;
+    }
+  }
+
+  .rv-collapse-item__title {
+    @apply bg-bg_color;
+
+    transition: height var(--rv-collapse-item-transition-duration) ease-in-out;
+  }
+
+  &.is-option {
+    .k-set-wrap {
+      @apply border-t-0;
+    }
+
+    &.is-expanded {
+      .rv-collapse-item__title {
+        @apply h-0 p-0 ;
+
+      }
+    }
+  }
+
+  .expand {
+    height: 19px;
+    font-size: 8px;
+    line-height: 15px;
+    @apply absolute right-4 top-2 text-text_color_02 flex items-center;
+  }
+
+  .expanded-wrap {
+    font-size: 10px;
+    line-height: 15px;
+
+    @apply flex items-center text-text_color_02 space-x-2 overflow-x-scroll;
+
+    .selected-coin {
+      @apply px-1 py-0.5 bg-brand_color_special_02 text-text_color_01;
+    }
+
+    &::-webkit-scrollbar { 
+      display: none;  
+    }
+
+    .base-symbol-name,
+    .quote-symbol-name {
+      @apply text-xs;
+    }
+    
+    .quote-badge {
+      @apply ml-1;
+    }
+  }
+
+  .fade-light {
+    @apply w-[22px] h-[17px] block;
+
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, #FFFFFF 58.82%);
+  }
+
+  .fade-dark {
+    @apply w-[22px] h-[17px] block;
+
+    background: linear-gradient(90deg, rgb(16 16 20 / 0%) 0%, #101014 58.82%);
+  }
+}

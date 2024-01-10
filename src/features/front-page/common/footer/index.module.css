@@ -1,0 +1,31 @@
+:local(.scoped) {
+  @apply flex flex-col items-center mb-6;
+
+  .brand {
+    @apply flex mb-2;
+
+    .logo {
+      @apply mr-2;
+
+      img {
+        width: 30px;
+        height: 30px;
+        @apply rounded-full;
+      }
+    }
+
+    .name {
+      label {
+        font-size: 16px;
+        @apply text-brand_color font-medium;
+      }
+    }
+  }
+
+  .describe {
+    label {
+      font-size: 12px;
+      @apply text-text_color_01 font-normal;
+    }
+  }
+}

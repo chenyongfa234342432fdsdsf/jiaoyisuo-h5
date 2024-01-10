@@ -1,0 +1,26 @@
+
+
+:local(.header-wrapper) {
+  @apply sticky top-0  bg-bg_color;
+
+  z-index: 14;
+}
+
+/** 自动定位的不对，手动给它重置一下 */
+:local(.intro-tooltip-actions) {
+  width: calc(100% - 32px);
+  max-width: unset !important;
+
+  .introjs-arrow {
+    left: 48% !important;
+  }
+}
+
+/** 自动定位的不对，手动给它重置在最左边 */
+:local(.intro-tooltip-left-align) {
+  left: -4px !important;
+
+  .introjs-arrow {
+    left: 24px !important;
+  }
+}

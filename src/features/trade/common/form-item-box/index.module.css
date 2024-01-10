@@ -1,0 +1,25 @@
+:local(.trade-from-box) {
+  @apply bg-bg_sr_color rounded-lg px-2 py-1.5;
+
+  height: 40px;
+
+  &.has-border {
+    @apply h-7;
+
+    &::after {
+      @apply border-line_color_01;
+    }
+  }
+
+  &.h-30 {
+    height: 30px;
+  }
+
+  &.h-26 {
+    height: 26px;
+  }
+
+  &.disabled {
+    @apply bg-bg_button_disabled;
+  }
+}

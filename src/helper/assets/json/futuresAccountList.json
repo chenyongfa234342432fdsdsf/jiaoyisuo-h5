@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "isOk": true,
+  "message": "success",
+  "data": {
+    "list": [
+      {
+        "positionAsset": "30.39105",
+        "isAutoAdd": "no",
+        "groupId": "461570615740395520",
+        "accountType": "immobilization",
+        "marginAvailable": "1000",
+        "groupName": "定投账户",
+        "totalYield": "-0.14270648760079036426",
+        "positionCoinAsset": "31.01",
+        "lockMarginAsset": "0",
+        "unrealizedProfit": "600",
+        "marginCoinAvailable": "999.91",
+        "totalRevenue": "-4.337",
+        "groupAsset": "4600",
+        "groupCoinAsset": "1030.92",
+        "lockCoinAsset": "0",
+        "baseCoin": "USD"
+      }
+    ]
+  }
+}

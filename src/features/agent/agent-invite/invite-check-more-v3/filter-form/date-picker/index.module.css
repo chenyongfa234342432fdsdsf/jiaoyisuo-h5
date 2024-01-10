@@ -1,0 +1,131 @@
+:local(.common-date-wrapper) {
+  @apply flex flex-col text-sm bg-card_bg_color_03;
+  
+  .title {
+    @apply text-text_color_02 mb-2
+    }
+  
+  .date {
+    @apply w-full flex flex-row items-center justify-between mb-4;
+  
+    .date-item {
+      width: 45%;
+      height: 34px;
+      @apply rounded-lg bg-bg_sr_color flex items-center justify-center text-text_color_01;
+    
+      &.active {
+        @apply border-brand_color border;
+      }
+    }
+  
+    .separate {
+      @apply text-text_color_02
+      }
+
+    
+  }
+  
+
+
+  .date-hint {
+    @apply text-xs text-text_color_01;
+
+    line-height: 18px;
+  }
+
+  .hint-icon {
+    @apply ml-1 mt-0;
+
+    svg {
+      @apply w-3 h-3;
+    }
+  }
+
+  .err-text {
+    @apply text-xs text-warning_color bottom-1;
+  }
+}
+  
+:local(.date-picker-modal-root) {
+  @apply rounded-tl-lg rounded-tr-lg !important;
+  
+  .date-picker-modal-wrapper {
+    @apply flex flex-col;
+  
+    .date {
+      @apply flex flex-row items-center justify-between px-5 my-4;
+  
+      .active-item {
+        @apply border border-brand_color
+      }
+  
+      .item {
+        @apply w-36 h-9 flex items-center justify-center bg-bg_sr_color text-sm text-brand_color rounded
+      }
+  
+      .separate {
+        @apply text-sm text-text_color_03
+      }
+  
+      .date-none {
+        @apply text-sm text-text_color_03
+      }
+    }
+  
+    .rv-picker__toolbar {
+      @apply h-12 border-b border-line_color_02;
+  
+      .rv-picker__cancel {
+        @apply text-base text-text_color_03 px-6
+        }
+      
+      .rv-picker__confirm {
+        @apply text-base text-brand_color px-6
+        }
+    }
+  
+    .rv-datetime-picker {
+      @apply bg-card_bg_color_03
+    }
+  
+    .rv-picker__mask {
+      background: none;
+    }
+  
+    .rv-picker-column__item {
+      @apply text-sm text-text_color_03
+    }
+  
+    .rv-picker-column__item--selected {
+      @apply text-auxiliary_color_01
+    }
+  
+    .rv-hairline-unset--top-bottom::after {
+      @apply border-line_color_02
+    }
+  }
+}
+
+:local(.hint-popup-wrapper) {
+  @apply flex flex-col items-center rounded-2xl bg-card_bg_color_03;
+  
+  width: 75%;
+  padding: 22px;
+  
+  .popup-title {
+    @apply text-base text-text_color_01 font-medium;
+  }
+  
+  .popup-content {
+    @apply text-sm text-text_color_01 my-4;
+  
+    line-height: 22px;
+  }
+  
+  .popup-btn {
+    @apply w-full rounded-lg text-sm text-button_text_02 font-medium;
+  
+    height: 36px;
+    line-height: 22px;
+  }
+}

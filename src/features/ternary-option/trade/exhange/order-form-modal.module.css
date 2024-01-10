@@ -1,0 +1,100 @@
+:local(.exchange-order-modal-title-wrapper) {
+  @apply flex items-center;
+
+  .tag {
+    @apply px-1 mr-1 rounded-sm flex items-center font-normal justify-between text-xs;
+  }
+}
+
+:local(.exchange-order-modal-form) {
+  @apply text-sm;
+
+  .slider-wrapper {
+    .tooltip {
+      @apply py-px;
+
+      top: -29px;
+
+      .tooltip-arrow {
+        border-width: 3px;
+      }
+    }
+  }
+
+  .rv-checkbox__label {
+    @apply ml-1;
+  }
+
+  .order-types-wrapper {
+    @apply flex justify-between items-center px-3 py-2 rounded-md;
+
+    &::after {
+      @apply border-line_color_01 rounded-md;
+    }
+  }
+  
+}
+
+:local(.sticky-wrapper) {
+  @apply sticky z-10 bg-bg_color;
+
+  top: 62.5px;
+
+  .form-button {
+    @apply flex h-10 rounded w-full items-center justify-center text-center font-medium;
+  }
+}
+
+:local(.table-wrapper) {
+  &::after {
+    @apply border-line_color_01;
+  }
+  
+  .table-header {
+    >div {
+      @apply bg-card_bg_color_01 text-text_color_02 text-xs py-2 h-9 flex justify-center items-center;
+    }
+  }
+
+  .table-tr {
+    >div {
+      @apply text-sm py-3 h-10 flex justify-center items-center;
+    }
+
+    &.is-selected {
+      @apply bg-brand_color_special_02 relative;
+
+      .icon {
+        @apply absolute left-3 top-1/2 -translate-y-1/2;
+      }
+    }
+  }
+
+  .table-body {
+    @apply overflow-y-auto;
+
+    max-height: calc(60 * var(--vh, 1vh) - 280px);
+  }
+
+  .table-header,
+  .table-tr {
+    &::after {
+      @apply border-line_color_01;
+    }
+          
+    @apply flex;
+
+    >div {
+      @apply text-center flex-1 w-0;
+
+      &:nth-child(2) {
+        flex: 1.5;
+      }
+
+      &::after {
+        @apply border-line_color_01;
+      }
+      
+    }
+  }
+}

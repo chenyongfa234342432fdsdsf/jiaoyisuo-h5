@@ -1,0 +1,68 @@
+:local(.scoped) {
+  @apply flex-1 -ml-4 pl-4 overflow-hidden;
+
+  .trade-order-book-containe-wrap {
+    @apply w-full;
+
+    .buy,
+    .sell {
+      @apply relative flex h-5 leading-5;
+  
+      .price, .volume {
+        @apply text-xs flex-1 font-medium leading-5;
+      }
+  
+      .volume {
+        @apply text-right text-text_color_01;
+      }
+  
+      .progress {
+        @apply absolute inset-y-0 right-0 max-w-full;
+      }
+
+      .entrust {
+        top: 6px;
+        left: -10px;
+        width: 6px;
+        height: 6px;
+        @apply rounded-full absolute bottom-0;
+      }
+
+      .buy-entrust {
+        background-color: var(--buy_up_color);
+      }
+
+      .sell-entrust {
+        background-color: var(--sell_down_color);
+      }
+
+    }
+  
+    .buy .price {
+      @apply text-buy_up_color;
+    }
+  
+    .sell .price {
+      @apply text-sell_down_color;
+    }
+  
+  
+    .buy .progress {
+      @apply bg-buy_up_color_special_02;
+    }
+  
+    .sell .progress {
+      @apply bg-sell_down_color_special_02;
+    }
+  
+    .buy, .sell {
+      label {
+        @apply font-normal;
+      }
+    }
+  }
+}
+
+:local(.trade-order-book-sell-container) {
+  @apply flex flex-col justify-end;
+}

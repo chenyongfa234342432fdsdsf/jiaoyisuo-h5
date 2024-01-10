@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.newbit.common.proto.perpetual";
+option java_outer_classname = "ClosePositionHistoryProto";
+
+message ClosePositionHistory{
+  string uid = 1; //用户 uid
+  string symbol = 2; //交易对
+    string type = 3;//类型
+    string closePositionTime = 4;//平仓时间
+
+}

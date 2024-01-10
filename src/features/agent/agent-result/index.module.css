@@ -1,0 +1,42 @@
+:local(.scoped) {
+  padding-bottom: 74px;
+  @apply h-screen w-full relative overflow-y-scroll box-border bg-bg_color;
+
+  .apply-wrap {
+    
+    @apply w-full p-4 box-border flex flex-col items-center;
+
+    .apply-img {
+      width: 132px;
+      height: 105px;
+      @apply mt-20;
+
+      object-fit: cover;
+    }
+
+    .fail-img {
+      width: 70px;
+      height: 70px;
+      @apply mt-20;
+
+      object-fit: cover;
+    }
+
+    .title {
+      @apply font-medium text-base text-text_color_01 text-center;
+  
+      line-height: 24px;
+    }
+
+    .content {
+      height: 44px;
+      @apply w-full mt-2 text-center text-sm text-text_color_02;
+  
+      line-height: 22px;
+    }
+
+    .confirm-button {
+      @apply h-10 w-full bg-brand_color flex justify-center items-center font-medium text-button_text_02 text-sm rounded-lg;
+    }
+  }
+}

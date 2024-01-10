@@ -1,0 +1,171 @@
+:local(.assets-transfer-root) {
+  @apply w-screen h-screen flex flex-col relative;
+
+  .assets-transfer-content {
+    @apply flex-1 flex flex-col pb-20 p-4;
+
+    .transfer-content {
+      padding: 26px 0;
+      @apply w-full bg-card_bg_color_01 rounded px-4 flex items-center mb-6;
+
+      .transfer-index {
+        @apply flex flex-col items-center;
+
+        .to-index {
+          @apply w-1.5 h-1.5 rounded-md bg-brand_color mb-4;
+        }
+
+        .spacer {
+          @apply w-0.5 h-0.5 mb-1 last:mb-0 bg-bg_button_disabled;
+        }
+
+        .from-index {
+          @apply w-1.5 h-1.5 rounded-md bg-success_color mt-4;
+        }
+      }
+
+      .transfer-account {
+        @apply flex flex-col flex-1 ml-3.5;
+
+        margin-right: 18px;
+
+        .account-cell {
+          @apply w-full flex items-center justify-between;
+
+          .account-index {
+            @apply text-sm text-text_color_03 mr-8;
+          }
+
+          .account-info {
+            @apply flex items-center flex-1;
+
+            .account-name {
+              @apply text-sm text-text_color_01 font-medium;
+
+              line-height: 22px;
+            }
+
+            .current-tag {
+              @apply flex px-1 rounded-sm bg-brand_color_special_02 text-center ml-1;
+
+              height: 18px;
+
+              .current-tag-text {
+                @apply text-xs text-brand_color;
+
+                line-height: 18px;
+                transform: scale(0.83);
+              }
+            }
+
+            .new-tag {
+              @apply flex px-1 rounded-sm bg-success_color_special_02 text-center ml-1;
+
+              height: 18px;
+
+              .new-tag-text {
+                @apply text-xs text-success_color;
+
+                line-height: 18px;
+                transform: scale(0.83);
+              }
+            }
+          }
+
+          .account-icon {
+            @apply ml-4;
+
+            svg {
+              @apply w-2 h-2;
+            }
+          }
+        }
+
+        .account-spacer {
+          @apply w-full h-px bg-line_color_02;
+
+          margin: 26px 0;
+        }
+      }
+
+      .transfer-icon {
+        svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+
+    .transfer-coin {
+      @apply flex flex-col mb-6;
+
+      .coin-title {
+        @apply text-sm text-text_color_02 mb-2;
+      }
+
+      .coin-cell {
+        @apply w-full h-10 px-3 bg-bg_sr_color rounded flex items-center justify-between;
+
+        .coin-info {
+          @apply flex items-center flex-1;
+
+          .coin-name {
+            @apply text-sm text-text_color_01 ml-1;
+          }
+        }
+      }
+    }
+
+    .transfer-cell {
+      @apply w-full h-10 px-3 bg-bg_sr_color rounded flex items-center justify-between;
+
+      .transfer-input {
+        @apply flex-1;
+
+        .rv-input__control {
+          @apply text-sm placeholder:text-text_color_04 placeholder:text-sm placeholder:font-normal;
+        }
+      }
+
+      .transfer-info {
+        @apply flex items-center text-sm ml-2;
+
+        line-height: 22px;
+
+        .info-name {
+          @apply text-text_color_01;
+        }
+
+        .info-spacer {
+          @apply text-text_color_04;
+        }
+
+        .info-btn {
+          @apply text-brand_color;
+        }
+      }
+    }
+
+    .transfer-max {
+      @apply flex items-center mt-1 text-xs;
+
+      line-height: 18px;
+
+      .max-label {
+        @apply text-text_color_02;
+      }
+
+      .max-num {
+        @apply text-text_color_01;
+      }
+    }
+  }
+
+  .commit-cell {
+    @apply w-full px-4 fixed bottom-10;
+
+    .commit-btn {
+      @apply w-full rounded h-10;
+    }
+  }
+}

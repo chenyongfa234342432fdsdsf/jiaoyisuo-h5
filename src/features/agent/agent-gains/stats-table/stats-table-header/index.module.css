@@ -1,0 +1,53 @@
+:local(.scoped) {
+  @apply mx-4;
+
+  .table-header-title, .table-header-filter {
+    @apply flex flex-row justify-between items-center;
+
+    svg, use {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .rv-divider {
+    height: 0.5px;
+    @apply border-line_color_02 text-line_color_02;
+  }
+
+  .popover-input {
+    min-width: 124px;
+    height: 26px;
+
+    @apply bg-bg_sr_color flex flex-row;
+
+    >span {
+      @apply my-auto text-text_color_01 text-sm font-medium px-2;
+    }
+
+    .drop-icon {
+      @apply ml-auto w-2 my-auto mr-2;
+    }
+  }
+}
+
+:local(.popup-select) {
+  .popup-item {
+    border-bottom-width: 0.5px;
+    @apply hover:text-brand_color text-center font-medium text-sm py-4 border-line_color_02 my-auto;
+  }
+
+  .cancel-btn {
+    padding-bottom: 39px;
+    @apply border-b-0 text-text_color_02;
+  }
+
+  .rv-divider {
+    height: 4px;
+    @apply my-0 bg-line_color_02;
+
+    ::before {
+      border-width: 0 !important;
+    }
+  }
+}

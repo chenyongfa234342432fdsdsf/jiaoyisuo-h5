@@ -1,0 +1,8 @@
+{
+  "name": "Monkey Global",
+  "start_url": "/",
+  "display": "fullscreen",
+  "scope": "/",
+  "background_color": "#182034",
+  "theme_color": "#3a4764"
+}

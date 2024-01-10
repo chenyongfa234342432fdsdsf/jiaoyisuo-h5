@@ -1,0 +1,21 @@
+
+:local(.fill-blank) {
+  height: calc(var(--vh100, 100vh) - 32px - 112px - var(--tab-sticky-top, 200px));
+}
+
+:local(.tabs-wrapper) {
+  &.is-tutorial-mode {
+    .rv-tabs__nav--start .rv-tab {
+      @apply px-1 mx-3;
+    }
+
+    .rv-tabs__line {
+      @apply bottom-5;
+    }
+  }
+
+  .tab-right-extra {
+    top: 14px;
+    @apply absolute flex right-4 items-center;
+  }
+}

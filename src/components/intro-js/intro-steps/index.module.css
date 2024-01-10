@@ -1,0 +1,117 @@
+:local(.introjs-helperLayer-custom-default) {
+  box-shadow: var(--bg_color_02) 0 0 0 var(--vh100) !important;
+  @apply bg-card_bg_color_03;
+}
+
+:local(.introjs-tooltip-custom-default) {
+  .introjs-tooltiptext {
+    border-radius: 4px;
+    @apply h-full w-full p-2 bg-card_bg_color_01;
+  }
+
+  /*
+  .introjs-tooltipbuttons,
+  */
+  .introjs-bullets,
+  .introjs-tooltip-header {
+    @apply hidden;
+  }
+
+  .introjs-tooltipbuttons {
+    @apply border-none !important;
+  }
+}
+
+/** 引导图相关样式，有需要可自行引用，样式表现查看合约交易页面  */
+:local(.intro-jump-btn-root) {
+  @apply rounded-xl bg-bg_sr_color text-sm text-text_color_01 font-normal text-center fixed;
+
+  top: 38px;
+  right: 16px;
+  z-index: 999999991;
+  width: 62px;
+  height: 26px;
+  line-height: 26px;
+}
+
+:local(.introjs-helperLayer-brand-border) {
+  @apply bg-transparent !important;
+
+  z-index: 9999999;
+
+  &::after {
+    @apply absolute border-brand_color border-2 border-dashed rounded-sm;
+
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    content: '';
+
+  }
+}
+
+:local(.intro-tooltip) {
+  /** 整体背景色透明，只展示文字内容的背景色 */
+  @apply bg-card_bg_color_03 flex-col;
+
+  
+  display: flex !important;
+  min-width: unset;
+
+  .introjs-tooltiptext {
+    @apply p-4 pb-0 bg-card_bg_color_03 relative rounded-t;
+  }
+
+  .introjs-tooltip-header {
+    @apply hidden;
+  }
+
+  .introjs-arrow {
+    @apply border-none w-4 h-4 rounded-sm rotate-45 bg-card_bg_color_03 top-0;
+
+    &.bottom,
+    &.bottom-middle,
+    &.bottom-right {
+      @apply border-t-card_bg_color_03 bottom-0;
+
+      top: unset;
+      transform: rotate(45deg) translateY(3px);
+    }
+
+    &.top-middle,
+    &.top,
+    &.top-right {
+      @apply border-b-card_bg_color_03;
+
+      transform: rotate(45deg) translateY(-3px);
+    }
+  }
+
+  .introjs-tooltipbuttons {
+    @apply bg-card_bg_color_03 pt-2.5 pb-4 px-4 border-t-0 rounded-b;
+
+    /** 下一步和确定按钮 */
+    .introjs-button {
+      @apply flex items-center justify-center px-2.5 box-border rounded bg-brand_color border-brand_color text-xs text-button_text_02 shadow-none;
+
+      min-width: 68px;
+      height: 24px;
+      line-height: 24px !important;
+      text-shadow: none;
+    }
+
+    /** 隐藏上一步 */
+    .introjs-prevbutton {
+      @apply hidden;
+    }
+  }
+
+  /** 按钮在顶部 */
+  &.in-top {
+    .introjs-tooltipbuttons {
+      @apply -order-1;
+    }
+  }
+
+}

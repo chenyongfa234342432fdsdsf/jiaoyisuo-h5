@@ -1,0 +1,9 @@
+:local(.scoped) {
+  @apply w-full h-screen overflow-y-hidden;
+
+
+  .rv-tabs__wrap {
+    border-bottom-width: 0.5px;
+    @apply border-line_color_02;
+  }
+}

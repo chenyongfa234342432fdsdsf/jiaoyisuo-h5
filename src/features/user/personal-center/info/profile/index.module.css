@@ -1,0 +1,51 @@
+:local(.profile-homepage) {
+  @apply flex flex-col min-h-screen;
+
+  .content {
+    @apply flex flex-1 flex-col justify-between;
+  }
+
+  .form-wrap {
+    @apply p-4;
+
+  }
+
+  .rv-textarea {
+    @apply p-3 text-text_color_01 border border-solid border-line_color_01 rounded mb-6;
+
+    border-width: 0.5px;
+
+    textarea {
+      height: 144px !important;
+      @apply text-text_color_01 text-sm;
+
+      line-height: 22px;
+    }
+
+    .rv-textarea__word-limit {
+      @apply text-text_color_03 text-sm;
+
+      line-height: 22px;
+    }  
+  }
+
+  .desc-list {
+    .desc { 
+      @apply text-sm font-normal text-text_color_03 mb-3 pl-3.5 relative;
+  
+      line-height: 22px;
+  
+      .add-icon {
+        @apply absolute left-0 top-2.5;
+  
+        font-size: 6px;
+      }
+    }
+  }
+
+
+  .btn-wrap {
+    @apply p-4 pb-10;
+  }
+
+}

@@ -1,0 +1,139 @@
+:local(.scoped) { 
+  .stop-profitloss-container {
+    @apply px-4 pb-24;
+
+    .stop-profitloss-title {
+      @apply flex justify-between items-center py-3.5;
+      
+      div:nth-child(1) { 
+        @apply flex items-center;
+
+        span:nth-child(1) {
+          @apply text-text_color_01 text-base;
+        }
+        
+        span:nth-child(2) {
+          @apply px-1 h-5 ml-2 bg-brand_color_special_02 inline-flex justify-center text-brand_color text-xs items-center;
+        }
+      }
+    
+      div:nth-child(2) {
+        @apply text-text_color_02 text-xs;
+      } 
+    }
+    
+    .stop-profitloss-explain {
+      .stop-profitloss-detail {
+        @apply flex justify-between mb-2 text-sm;
+      }
+    }
+    
+    .stop-profitloss-content {
+      @apply bg-card_bg_color_01 px-4 py-3.5 mb-4;
+      
+      .stop-profitloss-item:nth-child(2) {
+        @apply mb-4;
+      }
+
+      .stop-profitloss-item {
+        span {
+          @apply text-xs;
+        }
+
+        span:first-child {
+          @apply text-xs text-text_color_02;
+        }
+        
+        @apply flex items-center justify-between mb-2 text-xs;
+
+        .stop-profitloss-item-container {
+          @apply relative;
+        }
+        
+        .stop-profitloss-item-picker {
+          height: 30px;
+          @apply w-28 inline-flex items-center justify-between px-3 py-1.5 bg-bg_sr_color rounded;
+          
+        }
+        
+        .stop-profitloss-icon {
+          @apply absolute right-3.5 top-2.5;
+
+          svg {
+            width: 10px;
+            @apply text-xs;
+          }
+        }
+        
+        
+        .stop-profitloss-item-picker-disable {
+          height: 30px;
+          @apply w-28 inline-flex items-center cursor-not-allowed justify-between px-3 py-1.5 bg-bg_button_disabled rounded;
+        }
+        
+        .stop-profitloss-item-input {
+          @apply w-28 relative;
+                  
+          .stop-profitloss-item-trigger {
+            @apply w-28 inline-block  px-3 py-1.5 bg-bg_sr_color rounded;
+            
+            .rv-input__control {
+              @apply pr-7;
+            }
+          }
+          
+          .stop-profitloss-item-trigger-disable {
+            @apply w-28 inline-block  px-3 py-1.5  rounded bg-bg_button_disabled;
+            
+            .rv-input__control {
+              @apply pr-7;
+            }
+          }
+          
+          .stop-profitloss-item-trigger-type {
+            @apply absolute text-text_color_01 text-xs;
+
+            top: 8px;
+            right: 4px;
+          }
+        }
+      }
+
+      .stop-profitloss-item:first-child {
+        @apply mb-3.5;
+
+        span {
+          @apply text-sm;
+        }
+
+        span:first-child {
+          @apply text-sm text-text_color_01;
+        }
+      }
+    }
+    
+    .stop-profitloss-agreement {
+      @apply flex items-center;
+
+      span:first-child {
+        transform: rotateZ(45deg);
+        @apply w-1 h-1 bg-brand_color inline-block text-brand_color text-xs;
+      }
+
+      span:last-child {
+        @apply text-brand_color ml-1 text-xs;
+      }
+    }
+  }
+
+  .stop-profitloss-button-container {
+    @apply w-full bg-bg_color h-20 fixed bottom-0 flex justify-center;
+
+    .stop-profitloss-button {
+      width: 343px;
+      @apply bg-brand_color mt-2 flex items-center justify-center h-10 rounded;
+    }
+  }
+
+
+}

@@ -1,0 +1,126 @@
+:local(.futures-details-wrapper) {
+  @apply w-full min-h-screen flex flex-col relative;
+
+  .futures-overview-layout-wrap {
+    @apply flex flex-col border-b-4 border-line_color_02;
+
+    .futures-overview-intro-wrap {
+      @apply flex flex-col;
+
+      .navbar-wrap {
+        @apply flex items-center w-full;
+
+        .navbar-title {
+          @apply whitespace-nowrap overflow-hidden overflow-ellipsis;
+        }
+      }
+
+      .overview-tabs-wrap {
+        @apply px-4;
+
+        .overview-tabs {
+          @apply w-full py-4;
+      
+          .tabs-cell {
+            @apply w-full bg-card_bg_color_01 p-0.5 rounded flex items-center;
+      
+            height: 30px;
+      
+            .tab-cell {
+              @apply w-1/2 h-full flex items-center justify-center text-sm text-text_color_02;
+      
+              line-height: 22px;
+            }
+      
+            .active-tab-cell {
+              @apply bg-card_bg_color_03 rounded text-text_color_01;
+            }
+          }
+        }
+      }
+    
+      .overview-wrap {
+        @apply flex flex-col px-4;
+      }
+    }
+  }
+
+  .header-icon {
+    svg {
+      @apply w-5 h-5
+    }
+  }
+
+  .tabs {
+    @apply mt-2 flex-1;
+  }
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b !important;
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-line_color_02
+  }
+
+  .loading {
+    z-index: 2099;
+    @apply bg-bg_color_02;
+  }
+}
+
+:local(.margin-list-wrapper) {
+  .coin-withdraw-btn {
+    @apply !h-full w-16 bg-card_bg_color_03 border border-brand_color text-sm text-text_color_01 font-normal rounded-none;
+  }
+
+  .coin-recharge-btn {
+    @apply !h-full w-16 bg-brand_color border border-brand_color text-sm text-button_text_02 font-normal rounded-none;
+  }
+
+  .margin-list-item {
+    height: 75px;
+    @apply w-full flex items-center justify-between px-4 border-b border-line_color_02 relative;
+
+    .coin-info {
+      @apply flex items-center;
+
+      .coin-name {
+        @apply text-base text-text_color_01 font-medium ml-2;
+      }
+    }
+
+    .coin-right {
+      @apply flex flex-col items-end text-base font-medium text-text_color_01;
+
+      .coin-amount {
+        @apply text-xs text-text_color_02
+      }
+    }
+  }
+
+  .withdraw-item {
+    @apply px-3 py-2.5 text-sm text-button_text_01 font-medium;
+  }
+
+  .withdraw-line {
+    @apply w-px h-3.5 bg-button_text_01;
+  }
+
+  .rv-popover__wrapper {
+    @apply w-full;
+  }
+}
+
+
+:local(.popover-content-wrapper) {
+  @apply flex flex-row items-center;
+
+  .popover-btn {
+    @apply text-sm font-medium text-button_text_01;
+  }
+
+  .popover-line {
+    @apply w-px h-3.5 bg-button_text_01 mx-3;
+  }
+}

@@ -1,0 +1,23 @@
+:local(.future-selector-wrapper) {
+  @apply bg-bg_sr_color px-4 py-2 rounded flex items-center justify-between;
+
+  width: 228px;
+}
+
+:local(.popup-future-list-wrapper) {
+  @apply h-screen bg-bg_color;
+
+  width: 80vw;
+
+  .title {
+    @apply pt-16 px-6 mb-4 text-base font-semibold;
+  }
+
+  .future-item {
+    @apply px-6 py-4 text-sm font-medium;
+
+    &.is-selected {
+      @apply bg-bg_sr_color;
+    }
+  }
+}

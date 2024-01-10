@@ -1,0 +1,47 @@
+:local(.popup-overlay) {
+  background: var(--bg_color_02, rgb(16 16 16 / 60%)) !important;
+  animation-duration: 0ms !important;
+}
+
+:local(.popup-content) {
+  position: fixed;
+  top: 32px !important;
+  right: 16px !important;
+  left: auto !important;
+
+  /* height: 80px; */
+  border-radius: 4px ;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+  transform: none !important;
+  transition: none;
+  transition-duration: 0ms !important;
+
+  @apply bg-card_bg_color_03; 
+
+  .menu-options {
+    @apply p-4;
+  }
+
+  .action {
+    height: 18px;
+    @apply flex w-full p-0 items-center;
+
+    &:not(:last-child) {
+      @apply mb-6;
+    }
+
+    .icon {
+      @apply mr-2 mt-0 h-full flex items-center;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    > * {
+      @apply text-sm;
+    }
+  }
+}
+

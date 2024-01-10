@@ -1,0 +1,43 @@
+:local(.scoped) {
+  .item {
+    @apply flex mb-6;
+
+    .icon {
+      margin-top: 6px;
+      @apply flex justify-center items-center w-9 h-9 mr-2 bg-bg_sr_color rounded-full;
+
+      & > div {
+        @apply mt-0;
+      }
+
+      svg {
+        font-size: 18px;
+      }
+
+      img {
+        @apply rounded-full;
+      }
+    }
+
+    .content {
+      @apply flex-1;
+
+      .title {
+        margin-bottom: 2px;
+
+        label {
+          font-size: 16px;
+          @apply text-text_color_01 font-medium;
+        }
+      }
+
+      .text {
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          @apply text-text_color_02 font-normal;
+        }
+      }
+    }
+  }
+}

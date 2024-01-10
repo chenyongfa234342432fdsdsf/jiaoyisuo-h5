@@ -1,0 +1,204 @@
+:local(.scoped) {
+  border-radius: 8px 8px 0 0;
+  @apply w-full p-4  mt-4 box-border bg-bg_color;
+
+  .overview {
+    @apply flex justify-between h-6 items-center;
+
+    .total {
+      @apply font-medium text-base text-text_color_01;
+    }
+
+    .detail {
+      @apply font-medium text-sm text-brand_color;
+    }
+  }
+
+  .select {
+    @apply mt-2 w-full h-10 flex justify-between items-center px-3 box-border rounded bg-card_bg_color_01;
+
+    .all {
+      @apply text-sm text-text_color_01;
+    }
+
+    svg {
+      height: 5px;
+      @apply w-2;
+    }
+  }
+
+  .all-time {
+    @apply flex mt-4;
+
+    .time-li {
+      @apply px-2 py-1 text-sm;
+
+      line-height: 18px;
+    }
+    
+  }
+
+  .all {
+    @apply text-xs text-text_color_03 mt-2;
+  }
+
+  .peo-wrap {
+    height: 62px;
+    @apply flex mt-4;
+
+    .peo-col {
+      /* height: 62px; */
+      @apply flex-1 pl-3 box-border bg-card_bg_color_01 rounded flex flex-col justify-center;
+
+      .peo {
+        @apply text-xs text-text_color_02;
+
+        .svg {
+          @apply text-sm;
+        }
+      }
+
+      .num {
+        @apply mt-1 font-medium text-base text-text_color_01;
+      }
+    }
+  }
+
+  .view-wrap {
+    /* height: 166px; */
+    @apply w-full mt-4 p-3 box-border rounded bg-card_bg_color_01;
+
+    .total-rebate {
+      height: 62px;
+      @apply flex justify-between items-center;
+
+      .left-wrap {
+        @apply flex flex-col justify-center;
+
+        .unit {
+          @apply text-xs text-text_color_02 flex items-center h-[18px];
+
+          .eyes-icon {
+            @apply mt-0;
+
+            svg {
+              @apply ml-2 text-xl;
+            }
+          }
+        }
+
+        .num {
+          @apply text-base leading-6 text-text_color_01 font-semibold;
+        }
+      }
+
+      .rebate-chart {
+        width: 60px; 
+        height: 50px;
+        @apply flex justify-start;
+
+        text {
+          font-size: 12px!important;
+          @apply font-normal;
+        }
+      }
+    }
+
+    .team-wrap {
+      @apply flex flex-wrap w-full;
+
+      .team-li {
+        width: calc((100% - 16px)/2);
+
+        .team-title {
+          @apply text-text_color_02 text-xs;
+
+          line-height: 18px;
+        }
+
+        .team-value {
+          @apply text-text_color_01 text-xs font-medium;
+
+          line-height: 18px;
+        }
+      }
+    }
+
+    .single-rebate {
+      @apply w-full;
+
+      .single-row {
+        height: 18px;
+        @apply flex justify-between items-center;
+
+        .color0 {
+          width: 10px;
+          height: 10px;
+          background: #FF7E77;
+        }
+
+        .color1 {
+          width: 10px;
+          height: 10px;
+          background: #56F0B0;
+        }
+
+        .color2 {
+          width: 10px;
+          height: 10px;
+          background: #6195F6;
+        }
+      }
+    }
+  }
+
+  .pyramid-detail {
+    @apply mt-6 text-base leading-6;
+  }
+ 
+  .common-brand-text {
+    @apply font-medium text-brand_color;
+
+    line-height: 18px!important;
+  }
+
+  .common-02-text {
+    @apply text-xs text-text_color_02;
+
+    line-height: 18px!important;
+  }
+
+  .common-01-text {
+    
+    @apply font-medium text-text_color_01;
+
+    line-height: 18px!important;
+  }
+
+}
+
+:local(.gains-detail-popup) {
+  .rv-picker__toolbar {
+    @apply mb-4;
+  }
+}
+
+.agent-picker-select-time {
+  @apply bg-card_bg_color_03;
+
+  .rv-picker__mask {
+    display: none;
+  }
+
+  .rv-hairline-unset--top-bottom {
+    display: none;
+  }
+
+  .rv-picker-column__item {
+    @apply text-text_color_01;
+  }
+
+  .rv-picker-column__item--selected {
+    @apply text-auxiliary_color_01;
+  }
+}

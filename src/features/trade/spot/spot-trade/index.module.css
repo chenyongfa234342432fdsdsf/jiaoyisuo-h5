@@ -1,0 +1,13 @@
+:local(.scoped) {
+  .content {
+    @apply px-4;
+
+    .trade-orderbook-wrapper {
+      @apply flex-1 w-0;
+    }
+
+    .trade-exchange-wrapper {
+      width: calc((100% - 16px) * 0.6)
+    }
+  }
+}

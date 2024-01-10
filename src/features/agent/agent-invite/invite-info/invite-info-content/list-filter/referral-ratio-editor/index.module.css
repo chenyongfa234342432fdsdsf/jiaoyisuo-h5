@@ -1,0 +1,13 @@
+:local(.referral-ratio-modal) {
+  .arco-modal-close-icon {
+    top: 14px !important;
+    right: 20px !important;
+  }
+  
+}
+
+:local(.filter-form-popup) {
+  .rv-popup__title {
+    @apply text-left mx-4;
+  }
+}

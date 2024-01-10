@@ -1,0 +1,127 @@
+:local(.voucher-card) {
+  height: 143px;
+  @apply flex;
+
+  margin-top: 18px;
+
+  .card-bg {
+    height: 143px;
+    @apply relative left-0 w-3;
+  }
+
+  .card-content {
+    @apply flex flex-col justify-between border border-l-0 flex-1 border-line_color_02 rounded-e-lg relative bg-bg_color;
+
+    .expired {
+      top: -2px;
+      right: -6px;
+      height: 22.5px;
+      padding: 2px 6px;
+      color: #F6465D;
+      background: rgb(246 70 93 / 10%);
+      border-radius: 0 8px;
+      transform: scale(0.8);
+      @apply absolute  text-xs font-semibold
+    }
+
+    .new {
+      top: -2px;
+      right: -6px;
+      height: 22.5px;
+      padding: 1px 6px;
+      border-radius: 0 8px;
+      transform: scale(0.8);
+      @apply absolute  text-xs text-brand_color bg-brand_color_special_02 font-semibold; 
+    }
+
+    .tag-box {
+      top: 0;
+      right: 0;
+      @apply absolute;
+
+      width: 43px;
+      height: 43px;
+    }
+
+    .card-upper-part {
+      @apply flex pt-4 px-3 justify-between;
+
+      .left-content {
+        @apply flex flex-1;
+
+        .card-icon {
+          @apply w-11 h-11 bg-brand_color_special_02 rounded-full flex justify-center items-center mr-2;
+        
+          .icon {
+            @apply text-[22px];
+          }
+
+          &.invalid {
+            @apply bg-card_bg_color_02;
+          }
+        }
+
+        .rule-content {
+          .money {
+            @apply text-xl text-text_color_01 font-semibold leading-[30px];
+          }
+
+          .use-rule-tip {
+            @apply text-xs text-text_color_01 mt-1;
+          }
+
+          .use-rule {
+            @apply text-xs text-text_color_04;
+          }
+
+          span {
+            @apply text-text_color_03;
+          }
+        }
+      }
+
+
+      .btn {
+        @apply text-xs font-medium text-button_text_02;
+
+        height: 26px;
+        margin-top: 9px;
+        border-radius: 23px;
+
+        &.invalid {
+          @apply bg-card_bg_color_02 !text-text_color_04 border-card_bg_color_02;
+        }
+      }
+
+
+    }
+
+    .card-lower-part {
+      @apply flex justify-between items-center pl-3 pr-3 border-t border-t-line_color_02 border-dashed;
+
+      height: 42px;
+
+      .expire-time {
+        @apply text-xs text-text_color_03;
+      }
+
+      .active-title {
+        @apply text-xs text-text_color_02 bg-bg_sr_color px-2 h-5 ;
+
+        line-height: 20px;
+        border-radius: 23px;
+      }
+
+      .expire {
+        @apply text-text_color_04;
+      }
+    }
+
+    .invalid {
+      @apply !text-text_color_04;
+    }
+  }
+
+
+}
+

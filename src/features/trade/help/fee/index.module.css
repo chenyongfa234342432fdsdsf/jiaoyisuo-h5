@@ -1,0 +1,171 @@
+:local(.spot-fee-wrapper) {
+  @apply text-sm;
+
+  .page-top {
+    @apply flex flex-col w-full pt-4 bg-bg_color;
+  }
+
+  .popover-btn {
+    @apply border-text_color_02 border-b border-dashed
+    }
+
+  .underline-tip {
+    @apply underline underline-offset-1 decoration-dashed;
+  }
+
+  .header {
+    @apply p-4 flex justify-between text-text_color_03 text-xs;
+  }
+
+  .fee-item {
+    @apply flex items-center justify-between px-4 pb-6 text-sm text-text_color_01;
+
+    .item-left {
+      @apply flex flex-row items-center;
+
+      .coin-name {
+        @apply font-medium text-base ml-2
+      }
+
+      .coin-full-name {
+        @apply text-xs text-text_color_02
+      }
+    }
+  }
+}
+
+:local(.trade-fee-wrapper) {
+  @apply flex flex-col;
+
+  .rv-hairline--bottom {
+    @apply border-0
+  }
+
+  .rv-hairline--bottom::after {
+    @apply border-0
+  }
+
+  .rv-tabs__wrap {
+    @apply border-solid border-line_color_02 border-b;
+  }
+
+  .rv-tabs__nav--line, .rv-tabs__nav--capsule, .rv-tabs__nav--jumbo {
+    @apply px-3 overflow-x-scroll;
+
+    .rv-tab {
+      @apply ml-0 mr-8 px-0 flex-none;
+    }
+  }
+}
+
+:local(.withdraw-fee-wrapper) {
+  @apply flex flex-col;
+
+  .page-top {
+    @apply flex flex-col w-full pt-4 bg-bg_color;
+  }
+
+  .heder-text {
+    @apply text-xs text-text_color_03 mb-4 mt-4;
+  }
+
+  .list-coin {
+    @apply mb-6 text-text_color_01 text-sm
+    }
+
+  .row {
+    @apply flex flex-row items-center px-4;
+
+    .row-left {
+      @apply w-2/5 flex flex-row items-center;
+
+      .sort {
+        @apply flex flex-col ml-1 h-3.5 justify-between;
+    
+        .sort-icon {
+          svg {
+            @apply w-2 h-2
+            }
+        }
+      }
+
+      .coin-name {
+        @apply ml-2 text-base font-medium
+        }
+    }
+
+    .row-middle {
+      @apply flex flex-col items-end w-1/5;
+    }
+
+    .row-right {
+      @apply flex flex-col items-end w-2/5;
+
+      .popover-btn {
+        @apply border-text_color_02 border-b border-dashed
+        }
+    }
+  }
+}
+
+:local(.fee-notice-wrapper) {
+  @apply w-full h-8 flex flex-row items-center bg-brand_color_special_02 px-4 justify-between;
+
+  .notice-left {
+    @apply flex flex-row items-center
+  }
+
+  .notice-icon {
+    svg {
+      @apply w-3 h-3
+    }
+  }
+
+  .rv-swiper-item {
+    @apply h-8 flex items-center text-xs text-tips_color px-1
+  }
+
+  .rv-swiper__indicator--vertical {
+    display: none;
+  }
+}
+
+:local(.futures-fee-wrapper) {
+  @apply flex flex-col;
+
+  .page-top {
+    @apply flex flex-col w-full pt-4 bg-bg_color
+  }
+
+  .popover-btn {
+    @apply border-text_color_02 border-b border-dashed
+    }
+
+  .underline-tip {
+    @apply underline underline-offset-1 decoration-dashed;
+  }
+
+  .header {
+    @apply p-4 flex justify-between text-text_color_03 text-xs;
+  }
+
+  .futures-info {
+    @apply flex items-center justify-between mb-6 px-4 last:mb-0;
+
+    .info-coin {
+      @apply flex items-center;
+
+      .coin-name {
+        @apply text-base font-medium text-text_color_01 ml-2 mr-1;
+      }
+
+      .futures-type {
+        @apply px-1.5 py-1 text-text_color_02 font-medium bg-card_bg_color_02 rounded text-xs scale-75;
+      }
+    }
+
+    .info-fee {
+      @apply text-sm text-text_color_01;
+    }
+  }
+}

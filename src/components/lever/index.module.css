@@ -1,0 +1,31 @@
+:local(.lever-wrapper) {
+  .price-input-step-wrapper {
+    @apply flex items-center justify-center;
+    
+    width: 156px;
+  }
+
+  .rv-stepper {
+    --price-input-height: 45px;
+
+    @apply items-center;
+
+    background-color: transparent !important;
+
+    .rv-stepper__input {
+      @apply bg-transparent mr-3 font-medium;
+
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    button.rv-stepper__minus,
+    button.rv-stepper__plus {
+      @apply w-6 h-6 bg-bg_sr_color rounded;
+    }
+  }
+
+  .input-lever-suffix {
+    @apply text-sm absolute bottom-2.5 translate-y-1 left-1/2 font-medium;
+  }
+}

@@ -1,0 +1,72 @@
+:local(.margin-scale-root) {
+  max-height: 70%;
+  @apply rounded-tl-lg rounded-tr-lg !important;
+
+  .wrapper {
+    @apply h-full flex flex-col justify-between bg-card_bg_color_03;
+
+    .scale-content {
+      @apply flex flex-col flex-1;
+
+      margin-bottom: 110px;
+
+      .header {
+        @apply w-full flex items-center justify-between text-base text-text_color_01 font-medium p-4 fixed bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg leading-6;
+
+        .close-icon {
+          @apply text-xl;
+        }
+      }
+
+      .margin-info-content {
+        @apply flex flex-col border-b border-line_color_02 mx-4 pb-4 pt-14;
+  
+        .margin-info-cell {
+          @apply flex items-center justify-between mb-2 last:mb-0;
+  
+          .info-label {
+            @apply text-sm text-text_color_02;
+          }
+  
+          .info-value {
+            @apply text-sm text-text_color_01;
+          }
+        }
+      }
+
+      .list-header {
+        @apply flex items-center justify-between pt-4 px-4 text-xs text-text_color_03;
+      }
+    }
+
+    .empty {
+      @apply mb-5; 
+
+      margin-top: 60px;
+    }
+
+    .scale-cell {
+      @apply w-full h-14 flex items-center justify-between px-4 border-b border-line_color_02 text-sm text-text_color_01 font-medium;
+
+      .scale-cell-coin {
+        @apply flex items-center;
+      }
+    }
+
+    .rv-list__finished {
+      @apply hidden;
+    }
+
+    .bottom {
+      @apply w-full fixed bottom-0 pb-10 px-4 bg-card_bg_color_03;
+
+      .bottom-btn {
+        @apply w-full h-10 rounded;
+      }
+    }
+
+    .list {
+      @apply bg-card_bg_color_03;
+    }
+  }
+}

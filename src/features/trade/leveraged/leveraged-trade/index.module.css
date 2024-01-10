@@ -1,0 +1,19 @@
+:local(.scoped) {
+  @apply text-text_color_05;
+
+  .content.right {
+    flex-direction: row-reverse;
+  }
+
+  .content.vertical {
+    flex-direction: column-reverse;
+  }
+
+  .rv-popup--top {
+    width: 128px !important;
+  }
+
+  .borrow-btn {
+    @apply bg-bg_sr_color text-text_color_01;
+  }
+}

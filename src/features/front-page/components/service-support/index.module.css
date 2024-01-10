@@ -1,0 +1,32 @@
+:local(.scoped) {
+  margin-top: 46px;
+  @apply flex flex-col;
+
+  .item {
+    margin-bottom: 24px;
+    @apply w-1/2;
+
+    .title {
+      @apply mb-4;
+
+      label {
+        font-size: 18px;
+        @apply text-text_color_01 font-medium;
+      }
+    }
+
+    .options {
+      min-height: 18px;
+      font-size: 14px;
+      @apply font-normal decoration-transparent mb-4;
+
+      label {
+        @apply my-auto;
+      }
+
+      a {
+        @apply text-text_color_01;
+      }
+    }
+  }
+}

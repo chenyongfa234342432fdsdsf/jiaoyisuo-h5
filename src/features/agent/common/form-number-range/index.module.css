@@ -1,0 +1,39 @@
+:local(.scoped) {
+  .rv-field {
+    @apply p-0;
+  }
+  
+  .rv-field__suffix {
+    @apply text-text_color_02 pr-2;
+  }
+
+  &.num-range {
+    @apply flex flex-row items-center bg-card_bg_color_03;
+
+    > * {
+      @apply mr-3;
+    }
+  
+    > :last-child {
+      @apply mr-0;
+    }
+
+    input {
+      @apply text-center;
+
+      height: 34px !important;
+
+      &::placeholder {
+        @apply font-normal text-text_color_04;
+
+      }
+    }
+
+    .rv-input__control {
+      @apply !rounded-lg;
+    }
+  }
+}
+  
+  
+  
